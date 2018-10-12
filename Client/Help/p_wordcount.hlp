@@ -1,0 +1,8 @@
+[1;33m@WordCount[0m
+[1;44m                                                                                [0m
+
+Format: [1m@WordCount(text)[0m
+
+Returns the number of words in the text passed in.
+
+[1;44m                                                                                [0m

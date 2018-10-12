@@ -1,0 +1,45 @@
+[1;33mSystem Variables[0m
+[1;44m                                                                                [0m
+
+$CurrentLogFile[0m
+Empty if the session is not logging but is the log file name while logging. 
+This allows you to have script check forlogging. 
+@isempty($CurrentLogFile) returns 0 while logging and 1 once the log is closed
+
+[1m$ReturnTripMsecs[0m
+Contains the milliseconds between when the last text was sent
+to the mud and the first bytes received from the mud after that. This is
+always displayed on the bottom status portion of the window to the left of Cmds:
+
+[1m$ANSICopy[0m
+This holds the Full ANSI color clipboard information. Filled when you press
+control while selecting text on the display.
+
+[1m$TimeSinceLastInput[0m
+Tells you amount of seconds since you last had an input.
+
+[1m$LoopCount[0m
+Used with the Loop command it has your current Loop number.
+
+[1m$ForeColor[0m
+Keeps track of the current text color. Could be used in an /if statement to
+validate a color of a trigger.
+
+[1m$ListItem[0m
+This is the variable to use when using list procedures. It holds the value of
+the current list item when cycling through the list.
+
+[1m$LoopCount[0m
+When using the /loop command this is the current value of the loop.
+
+[1m$CmdsProcessed[0m
+This is the number of commands and procedures Mud Master has processed since
+the session file was opened.
+
+[1m$LinesReceived[0m
+This is the number of lines received from the mud since the session was opened.
+
+[1m$BytesReceived[0m
+This is the number of bytes received from the mud since the session was opened.
+
+[1;44m                                                                                [0m

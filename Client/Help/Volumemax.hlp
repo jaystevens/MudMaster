@@ -1,0 +1,10 @@
+[1;33mVolumeMax[0m
+[1;44m                                                                 [0m
+
+Format: [1m/volumemax {[1;35m1-100[0m}[0m
+
+This sets the maximum volume the client will play sounds at. This number is
+a percentage of the volume for your sound card. All sound volumes are compared
+against this value. 
+
+[1;44m                                                                 [0m

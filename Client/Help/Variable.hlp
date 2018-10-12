@@ -1,0 +1,28 @@
+[1;33mVariable[0m
+[1;44m                                                                                [0m
+
+Format: [1m/variable [0m{[1;35mvariable name[0m} {[1;35mvalue[0m} {[1;35mgroup name[0m}
+
+The variable command adds a variable to your variable list and assigns it a
+value. If the variable is already in the list the value is replaced with the new
+value. A variable can be recalled by putting a @Var() around it's name, such as
+"@Var(example)". You can also put a $ in front of the variable name to recall
+it, such as "$example".
+
+   þ {[1;35mvariable name[0m} What you want to name the variable.
+   þ {[1;35mvalue[0m} The value to assign to the variable.
+   þ {[1;35mgroup name[0m} This is an optional parameter. See the user guide for help on
+     groups.
+
+Example:
+
+/variable [0m{[1;35mTarget[0m} {[1;35morc[0m}
+Adds a variable called Target to your list of variables and gives it a value of
+"orc".
+
+There are several variables that are defined by the client. The client will let
+you if you insist, but you should probably not define variables with these
+names. If you do your version of the variable will be found before the system
+variable. For a list of system variables see the User Guide.
+
+[1;44m                                                                                

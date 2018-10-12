@@ -1,0 +1,61 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mm2k6.css">
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+			<meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+			<title>Mudmaster 2000 Command Reference </title>
+	</head>
+	<body>
+		<h3>
+			Baritem</h3>
+		<hr>
+		Format: /baritem {item name} {text to print} {position} {max length} {fore 
+		color} {back color} {group} 
+		<P>BarItem adds text to the status bar.
+		<ul>
+			<li>
+			{item name} identifies the item which you can later use to enable or disable, 
+			modify or delete the item later.
+			<li>
+			{text to print} is the text you want displayed on the status bar. This can 
+			either be literal text, or it can be a variable or procedure.
+			<li>
+			{position} is the column position you want the item to start printing at on the 
+			bar. The position must be a number between 1 and 160.
+			<li>
+			{max length} is the maximum number of characters you want this item to display. 
+			If the text to be printed is longer than the max length, it will be truncated. 
+			This prevents items from printing over the top of neighboring items.
+			<li>
+			{fore color} Items can have colors separate from the status bar. This can be a 
+			number from 0 to 15. If you leave both the fore color and the back color at 0, 
+			it will use the color of the status bar. This parameter is optional and will 
+			default to 0 if you don't specify it.
+			<li>
+			{back color} The background color of the item. Can be a number from 0 to 7. 
+			This parameter is optional and will default to 0 if you don't specify it.
+			<li>
+			{group} Optional parameter. See the user guide on grouping.
+		</ul>
+		You are responsible for making sure your bar items do not overlap. If you 
+		create two bar items that start at position 1,one of them will be overwritten. 
+		<P>/baritem {Target} {$Target} {1} {12} {11} {0}<br>
+		 This will create an item called 
+		Target. It will display the value of the variable $Target. It will start at 
+		position 1, have a maximum length of 12. It will use foreground color 11, and 
+		back ground color 0.
+		<p>/baritem {Target} {$Target} {1} {12}<br>
+		 This creates the same 
+		thing as above. The colors have not been specified, so it will default to using 
+		the colors of the status bar.
+		<p>
+			<hr>
+			<br>
+		Related Commands:
+				<br>
+				&nbsp;
+				<p>Click <a href="javascript:history.back(1)">here</a>
+		to return to previous page.
+	</body>
+</html>

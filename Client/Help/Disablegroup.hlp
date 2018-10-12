@@ -1,0 +1,11 @@
+[1;33mDisableGroup[0m
+[1;44m                                                                                [0m
+
+Format: [1m/disablegroup [0m{[1;35mgroup name[0m}
+
+Disables all the defined commands in a group. All your events, aliases, actions,
+bar items and macros belonging to the group will be disabled.
+
+   þ {[1;35mgroup name[0m} The name of the group to disable.
+
+[1;44m                                                                                [0m

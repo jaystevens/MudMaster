@@ -1,0 +1,9 @@
+[1;33m@SubStr[0m
+[1;44m                                                                                [0m
+
+Format: [1m@SubStr(string,startCharIndex,endCharIndex)[0m
+
+SubStr returns a string which is a substring of the original starting from
+the startCharIndex until the endCharIndex. The index is 0 based.
+
+[1;44m                                                                                [0m

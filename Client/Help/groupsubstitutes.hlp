@@ -1,0 +1,10 @@
+[1;33mGroupSubstitute[0m
+[1;44m                                                                                [0m
+
+Format: [1m/groupsubstitute [0m{[1;35mgroup name[0m}
+
+Displays all the substitutes with the group name.
+
+   þ {[1;35mgroup name[0m} Name of the group from which you want to list the substitutes.
+
+[1;44m                                                                                [0m

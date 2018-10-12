@@ -1,0 +1,10 @@
+[1;33mEmpty[0m
+[1;44m                                                                                [0m
+
+Format: [1m/empty [0m{[1;35mvariable name[0m}
+
+Empty creates a variable with an empty string (a string with no data in it).
+
+   þ {[1;35mvariable name[0m} The name of the variable to create or set to empty.
+
+[1;44m                                                                                [0m

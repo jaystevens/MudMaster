@@ -1,0 +1,17 @@
+[1;33mFireEvent[0m
+[1;44m                                                                                [0m
+
+Format: [1m/fireevent [0m{[1;35mevent number[0m}
+Format: [1m/fireevent [0m{[1;35mevent name[0m}
+
+FireEvent causes an event to be fired before the time has elapsed. This also
+resets the time elapsed to 0 for this event.
+
+   þ {[1;35mevent number[0m} The number of the event to fire.
+   þ {[1;35mevent name[0m} The name of the event to fire.
+
+/fireevent 1
+Would fire the first event in the event list. Also the time elapsed is set
+back to 0.
+
+[1;44m                                                                                [0m

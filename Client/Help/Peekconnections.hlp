@@ -1,0 +1,14 @@
+[1;33mPeekConnections[0m
+[1;44m                                                                                [0m
+
+Format: [1m/peekconnections [0m{[1;35mchat name[0m}
+Format: [1m/peekconnections [0m{[1;35mchat number[0m}
+
+   þ {[1;35mchat name[0m} Name of the chat connection you wish to peek at.
+   þ {[1;35mchat number[0m} Number of the chat connection you wish to peek at.
+
+This command will return you a list of connections another chat user has. This
+is very similar to request connections except it will not try to connect you
+to all of the returned connections.
+
+[1;44m                                                                                [0m

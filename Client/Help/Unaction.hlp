@@ -1,0 +1,14 @@
+[1;33mUnAction[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unaction [0m{[1;35mreference number[0m}
+Format: [1m/unaction [0m{[1;35mtext pattern[0m}
+
+Removes an action from your action list. You can either type the number of the
+action which you see when you list the actions or an exact text match of the
+trigger portion.
+
+   þ {[1;35mreference number[0m} The number of the action to remove.
+   þ {[1;35mtext pattern[0m} The trigger text of the action to remove.
+
+[1;44m                                                                                [0m

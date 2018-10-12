@@ -1,0 +1,24 @@
+[1;33mListCopy[0m
+[1;44m                                                                                [0m
+
+Format: [1m/listcopy [0m{[1;35mold list[0m} {[1;35mnew list[0m} {[1;35ma or d[0m}
+
+Copies an entire list into a new list. If you don't provide NewList it uses the
+original name with Copy tacked on. If the old list doesn't exist nothing
+happens.
+
+   þ {[1;35mold list[0m} Name of the list you want to copy from.
+   þ {[1;35mnew list[0m} Name of the list to copy to.
+   þ {[1;35ma or d[0m} A will sort the list in ascending order, D will sort the list in
+     descending order.
+
+Examples:
+
+/listcopy [0m{[1;35mKhraitShips[0m}
+This will duplicate the list called KhraitShips into a list called KhraitShipsCopy.
+
+/listcopy [0m{[1;35mKhraitShips[0m} {[1;35mOldKhraitShips[0m} {[1;35ma[0m}
+This will duplicate the list called KhraitShips into a list called
+OldKhraitShips and sort the new list in ascending order.
+
+[1;44m                                                                                [0m

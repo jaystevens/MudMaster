@@ -1,0 +1,14 @@
+[1;33mChatAll[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatall [0m{[1;35mtext[0m}
+
+Sends text to all of your chat connections.
+
+   þ {[1;35mtext[0m} The text to send.
+
+Example:
+
+/chatall [1;35mHi.[0m
+[1;44m                                                                                [0m
+

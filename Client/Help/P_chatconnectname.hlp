@@ -1,0 +1,15 @@
+[1;33m@ChatConnectName[0m
+[1;44m                                                                                [0m
+
+Format: [1m@ChatConnectName(chat connection)[0m
+
+Returns a string containing the name of the specified chat connection
+
+   þ chat connection - The number of the chat connection for which you wish to
+   retrieve the chat name
+
+Example: 
+
+@ChatConnectName(1)
+
+[1;44m                                                                                [0m

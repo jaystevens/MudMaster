@@ -1,0 +1,27 @@
+[1;33mLoadLibrary[0m
+[1;44m                                                                                [0m
+
+Format: [1m/loadlibrary [0m{[1;35mdll name[0m}
+Format: [1m/loadlibrary [0m{[1;35mdrive:\folder\dll name[0m}
+Format: [1m/loadlibrary [0m{[1;35mdll name[0m} {[1;35mdrive:\folder\dll name[0m}
+
+Loads a user defined DLL.
+
+   þ {[1;35mdll name[0m} Filename of the DLL to load.
+   þ {[1;35mdrive:\folder\dll name[0m} Path and filename of the DLL to load.
+
+Examples:
+
+/loadlibrary {[1;35mmath.dll[0m}
+This will attempt to load the math dll from the program folder. If it loads
+successfully then it will load as "math.dll".
+
+/loadlibrary {[1;35mC:\Program Files\PortableMudMaster\math.dll[0m}
+This will attempt to load the math dll. If it loads successfully then it will load as "C:\Program Files\PortableMudMaster\math.dll".
+
+/loadlibrary {[1;35mmath.dll[0m} {[1;35mC:\Program Files\PortableMudMaster\math.dll[0m}
+This will attempt to load the math dll. If it loads successfully then it will load as "math.dll".
+
+Check the UserGuide for more information on Dll's.
+
+[1;44m                                                                                [0m

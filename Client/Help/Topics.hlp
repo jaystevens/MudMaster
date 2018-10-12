@@ -1,0 +1,17 @@
+[1;33mHelp Topics[0m
+[1;44m                                                                                [0m
+
+Commands           Procedures          UserGuide
+
+
+To view a help topic type "/help [1;35mtopic name[0m".  To see all the
+commands available type "/help [1;35mcommands[0m".
+
+If this is the first time you are using Mud Master you will
+probably want to take a look at the session command first.  That
+is the command that connects you to a mud.  "/help session"
+
+Selecting text on the display with the mouse automatically
+copys that text and puts it in the clipboard for pasting.
+
+[1;44m                                                                                [0m

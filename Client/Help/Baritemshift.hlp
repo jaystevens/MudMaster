@@ -1,0 +1,21 @@
+[1;33mBarItemShift[0m
+[1;44m                                                                                [0m
+
+Format: [1m/baritemshift [0m{[1;35mstart item[0m} {[1;35mend item[0m} {[1;35mnumber to shift[0m}
+
+BarItemShift allows you to shift items on the statusbar to the left or right
+without having to hand edit all the positions.
+
+   þ {[1;35mstart item[0m} The number of the first item you want to shift.
+   þ {[1;35mend item[0m} The number of the last item you want to shift.
+   þ {[1;35mnumber to shift[0m} If you put a positive number here all the items will be
+     shifted to the right that many character places. If you put a negative number, they
+     will all be shifted left.
+
+Example:
+
+[0m/baritemshift [0m{[1;35m1[0m} {[1;35m3[0m} {[1;35m5[0m}
+/baritemshift [1;35m1 3 5[0m
+Either of these will shift the items 1 through 3 five places to the right.
+
+[1;44m                                                                                [0m

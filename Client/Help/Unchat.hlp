@@ -1,0 +1,13 @@
+[1;33mUnChat[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unchat [0m{[1;35mreference number[0m}
+Format: [1m/unchat [0m{[1;35mchat name[0m}
+
+UnChat hangs up a chat connection.
+
+   þ {[1;35mreference number[0m} The number of the chat connection you want to hang
+     up on.
+   þ {[1;35mchat name[0m} The name of the chat connection you want to hang up on.
+
+[1;44m                                                                                [0m

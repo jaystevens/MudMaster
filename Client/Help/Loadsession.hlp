@@ -1,0 +1,25 @@
+[1;33mLoadSession[0m
+[1;44m                                                                                [0m
+
+Format: [1m/loadsession [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/loadsession [0m{[1;35mfilename.ext[0m}
+
+This command allows any script to open another session. Most likely this is
+something that would be done in the start up script of the main session but is
+not limited to that. Sessions that are opened do not have to connect to any mud
+but can be used to display messages or log channels.
+
+   þ {[1;35mdrive:\filename.ext[0m} Path and filename of the session to load.
+   þ {[1;35mfilename.ext[0m} Filename of the session to load. This will look in
+     the program folder.
+
+Example: In a start up script you could have:
+
+/autoexec {[1;35m/loadsession {C:\Program Files\MyMudMaster\sessionFiles\helpview.mms}[0m}
+If you have already saved that session with its position set appropriately and
+with its Max Width=1 (checked Max Width in Options, session options) then
+you'll likely also want to execute
+
+/window {[1;35mhelpview.mms[0m} {[1;35m/removecaption[0m} as well.
+
+[1;44m                                                                                [0m

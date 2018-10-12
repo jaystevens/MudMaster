@@ -1,0 +1,14 @@
+[1;33mSetIP[0m
+[1;44m                                                                                [0m
+
+Format: [1m/setip [0m{[1;35mip address[0m}
+
+If Mud Master is unable to determine your IP address, or you start up MM
+before you make your internet connection, you can use /setip to let MM know
+what your IP address is. This is the address people will see when they have a
+chat connection with you. Also the address returned with connection requests
+(/requestconnets).
+
+   þ {[1;35mip address[0m} Your machines IP address.
+
+[1;44m                                                                                [0m

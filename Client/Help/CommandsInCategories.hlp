@@ -1,0 +1,122 @@
+[1;33mCommands[0m
+========
+
+Status Bar Commands
+===================
+barback            barfore             baritem             baritemback
+baritemfore        baritemshift        barseparator        editbaritem
+statusbar          updatebaritem       updatestatusbar
+===========================================================================
+
+Chat Commands
+=============
+autoaccept         call                cg                  chat
+chatall            chatback            chatcommands        chatfore
+chatgroup          chatgroupremove     chatgroupset        chatignore
+chatname           chatprivate         chatport            chatserve
+chatsnoop          chattransfers       chatversions        dnd
+downloadpath       eg                  emote               emoteall     
+emotegroup
+filecancel         filestatus          peekconnections     ping 
+requestconnects    sendaction          sendalias           sendarray
+sendbaritem        sendevent           sendfile            sendgag
+sendgroup          sendhighlight       sendlist            sendmacro
+sendsubstitute     sendvariable        snoop               startchatserver   
+stopchatserver     uploadpath
+===========================================================================
+
+List Commands
+=============
+clearlist          itemadd             itemdelete                       
+listadd            listdelete          listitems           lists
+===========================================================================
+
+Script Control Commands
+=======================
+autoexec           char                disableaction       disablealias
+disablebaritem
+disableevent       disablegag          disablegroup        disablehighlight
+disablemacro       disablesubstitute   doevents            editaction
+editalias          editevent           editgag
+edithighlight      editmacro           editsubstitute      editvariable
+enableaction       enablealias         enablebaritem
+enableevent        enablegag           enablegroup         enablehighlight
+enablemacro        enablesubstitute    fireevent           ignore
+ignorealiases      killall             killgroup
+resetevent         seteventtime        substitutedepth     unaction   
+unalias            unarray             unautoexec
+unbaritem          unchat              undo                unevent
+ungag              unhighlight         unmacro             unsubstitute
+unvariable
+===========================================================================
+
+Dll Commands
+============
+calldll            dll                 freelibrary         loadlibrary
+notifydll          
+===========================================================================
+
+Script Entity Information
+=========================
+grep               groupactions        groupaliases
+grouparrays        groupbaritems       groupevents         groupgag
+grouplists         groupmacros         groupsubstitutes    grouptablist
+groupvariables     information         message             
+===========================================================================
+
+Sound Commands
+==============
+bell               msp                 playmidi            playwav 
+processfx          processmidi         showmsptriggers     soundpath           
+useplaysound       volumedefault       volumemax           volumebits
+===========================================================================
+
+Script Entities
+================
+action             alias               array               assign
+empty              event               gag                 highlight 
+macro              substitute          tabadd              tabdelete
+tablist            variable
+===========================================================================
+
+Log Commands
+=============
+logclose            logopen             logpath 
+rawmudlogopen       rawmudlogclose      savescrollback    viewlog
+===========================================================================
+
+Script Flow Control
+====================
+if                  loop                while
+===========================================================================
+
+Session Control Commands
+========================
+debugdepth         defaultsession       defaultscript      echo
+maxonopen          promptoverwrite      session            sessionaddress
+sessionname        sessionpath          sessionport        setip
+zap
+===========================================================================
+
+Display Output Commands
+=======================
+cr                 showme                  
+===========================================================================
+
+Speed Walk Commands
+===================
+pace               speedwalk            walkstop                     
+===========================================================================
+
+File Commands
+=============
+dir                filedelete 
+textin             textout              write               writegroup
+===========================================================================
+
+Other
+=====             
+intersection       math                 presubstitute               
+changes            help                 version         
+                      
+===

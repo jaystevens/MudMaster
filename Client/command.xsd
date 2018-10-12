@@ -1,0 +1,16 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation>
+		Command documentation schema for MudMaster 2k6.
+		Copyright 2000 Kevin Cook. All rights reserved.
+	</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="commandlist" type="commandListType" />
+	<xsd:complexType name="Command">
+		<xsd:element name="name" type="xsd:string" />
+		<xsd:element name="description" type="xsd:string" />
+		<xsd:element name="examples" type="Examples" />
+		<xsd:element name="relatedcommands" type="RelatedCommands" />
+	</xsd:complexType>
+	<xsd:complexType name="RelatedCommands">
+		<xsd:element name="command" minOccurs="0" maxOccurs="unbounded">

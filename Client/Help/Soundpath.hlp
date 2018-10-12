@@ -1,0 +1,12 @@
+[1;33mSoundPath[0m
+[1;44m                                                                                [0m
+
+Format: [1m/soundpath [0m{[1;35mdrive:\folder[0m}
+Format: [1m/soundpath [0m{[1;35mfolder[0m}
+
+Sets a directory to use for finding sound and music files.
+
+   þ {[1;35mdrive:\folder[0m} The location for the sound path.
+   þ {[1;35mfolder[0m} The sub-folder to be used. This will be in the program folder.
+
+[1;44m                                                                                [0m

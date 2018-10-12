@@ -1,0 +1,33 @@
+[1;33mAction[0m
+[1;44m                                                                                [0m
+
+Format: [1m/action [0m{[1;35mtext pattern[0m} {[1;35mcommands[0m} {[1;35mgroup name[0m}
+
+Action tells the client to look for a specific string of text from the mud and
+to execute a command or multiple commands when it finds it. Typing /action by
+itself will list all of the actions you have defined.
+
+   þ {[1;35mtext pattern[0m} This is the text to look for to trigger the action.
+   þ {[1;35mcommands[0m} The commands are the actions you want to take when the action
+     is triggered.
+   þ {[1;35mgroup name[0m} This is an optional parameter. See the user guide for help on
+     groups.
+
+Examples:
+
+/action [0m{[1;35mYou are hungry.[0m} {[1;35mtake food bag[1;32m;[1;35eat food[0m}
+This is the most basic form of an action. It sees the text "You are hungry."
+and then sends the commands "take food bag" and "eat food" to the mud.
+
+/action [0m{[1;35m^You are hungry.[0m} {[1;35mtake food bag[1;32m;[1;35meat food[0m}
+You can 'anchor' an action by starting it with a caret (^). When an action is
+anchored the text to search for must be at the beginning of the line.
+
+/action [0m{[1;35m%0 looks at you.[0m} {[1;35msay Hi $0[0m}
+%0-%9 are substitution variables that you can use in the trigger side of an
+action. They work like a wildcard character but store the text the wildcard
+represents for your use. If the mud sent the text "Arithon looks at you." it
+would send the command "say Hi Arithon" back. You can use up to 10 (0-9)of
+these variables to help you match a text pattern.
+
+[1;44m                                                                                [0m

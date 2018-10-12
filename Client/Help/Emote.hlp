@@ -1,0 +1,16 @@
+[1;33mEmote[0m
+[1;44m                                                                                [0m
+
+Format: [1m/emote [0m{[1;35mchat name[0m} {[1;35mtext[0m}
+Format: [1m/emote [0m{[1;35mreference number[0m} {[1;35mtext[0m}
+
+Emote send an emote to a specific chat connection.
+
+   þ {[1;35mchat name[0m} The chat name of the person you want to emote to.
+   þ {[1;35mreference number[0m} The number of the person you want to emote to.
+   þ {[1;35mtext[0m} The text to emote.
+
+/emote 1 hugs you.
+Chat connection 1 would see "<ChatName> hugs you."
+
+[1;44m                                                                                [0m

@@ -1,0 +1,13 @@
+[1;33mChatGroupSet[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatgroupset [0m{[1;35mreference number[0m} {[1;35mgroup name[0m}
+Format: [1m/chatgroupset [0m{[1;35mchat name[0m} {[1;35mgroup name[0m}
+
+Assigns a group name to a chat connection.
+
+   þ {[1;35mreference number[0m} The number of the chat connection you want to change.
+   þ {[1;35mchat name[0m} The name of the chat connection you want to change.
+   þ {[1;35mgroup name[0m} The name of the group you want to set to someone.
+
+[1;44m                                                                                [0m

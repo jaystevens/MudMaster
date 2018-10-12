@@ -1,0 +1,11 @@
+[1;33mEnableMacro[0m
+[1;44m                                                                                [0m
+
+Format: [1m/enablemacro [0m{[1;35mkey name[0m}
+
+Enables a macro key.
+
+   þ {[1;35mkey name[0m} The name of the key to enable. See the help on macros for a
+     list of key names.
+
+[1;44m                                                                                [0m

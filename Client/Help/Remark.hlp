@@ -1,0 +1,13 @@
+[1;33mRemark[0m
+[1;44m                                                                                [0m
+
+Format: [1m/remark [0m{[1;35mYour Text Here[0m}
+
+You can use /remark in your script files if you write them in external editors.
+When loaded /remark lines will have no effect on your scripting and will not be
+seen by the client.
+
+*Remarks will NOT save if you save from MudMaster 2k6 to a script file. They
+are only useful for external use.
+
+[1;44m                                                                                [0m

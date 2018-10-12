@@ -1,0 +1,87 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>If</b></h3>
+
+<hr>
+<br><b>Format: /if {conditional statement} {then} {else}</b><b></b>
+<p><b>If commands need to be activated in some fashion in order to be evaluated.</b>
+<br><b>Most commonly you would place an if command inside an action. However,
+they</b>
+<br><b>could also be place inside an alias or macro. The if command has
+been modeled</b>
+<br><b>after an if statement in C.</b><b></b>
+<p><b><li> {conditional statement} This is a statement
+that evaluates to either true</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; or false. Any statement evaluating to a
+0 is considered false, while any</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; other result would be considered true.</b>
+<br><b><li> {then} The commands you place here will be
+executed if the condition is</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; evaluated to true.</b>
+<br><b><li> {else} The commands you place here will be
+executed if the condition is</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; evaluated to false. This paramater is optional.</b><b></b>
+<p><b>Operators recognized by if:</b><b></b>
+<p><b>&nbsp;&nbsp; Operator&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Operator&nbsp;&nbsp; Description</b>
+<br><b>&nbsp;&nbsp; --------&nbsp;&nbsp; ---------------------&nbsp;&nbsp;&nbsp;&nbsp;
+--------&nbsp;&nbsp; ------------------------</b>
+<br><b>&nbsp;&nbsp; &amp;&amp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+And&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Or</b>
+<br><b>&nbsp;&nbsp; ==&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Equal To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Equal To</b>
+<br><b>&nbsp;&nbsp; !=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Not Equal To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Greater Than</b>
+<br><b>&nbsp;&nbsp; &lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Less Than&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Greater Than or Equal
+To</b>
+<br><b>&nbsp;&nbsp; &lt;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Less Than or Equal To&nbsp;&nbsp;&nbsp;&nbsp; ()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Precedence</b><b></b>
+<p><b>Operators are evaluated in this order: (), &amp;&amp;, ||, =, ==,
+!=, >, &lt;, >=, &lt;=.</b><b></b>
+<p>
+Conditional statements or parts of conditional statements can be negated with !
+as long as the portion of the statement being negated is surrounded by parentheses.
+<br>
+To use !, it would be something like<br>
+/if {!($0 > 5)} {/showme {$0 is smaller}} {/showme {$0 is larger}} 
+
+<p><b>/action {^You are hungry.} {/if {$AutoEat = 1} {take food bag;eat
+food}}</b>
+<br><b>The above would allow you to turn eating on and off. You need to
+define a</b>
+<br><b>variable called AutoEat and give it a value of 1 when you want eating
+to be</b>
+<br><b>automatic, and any other number when you want to turn it off.</b><b></b>
+<p><b>/action {%0 enters the room.} {/if {$MeanMode = 1 &amp;&amp; $0 =
+"Atlas" || $0 =</b>
+<br><b>"Breedan"} {spit $0}}</b>
+<br><b>Assuming the mud sent the text "&lt;character name> enters the room."
+each time</b>
+<br><b>somebody entered the room. Each time somebody enters the room the
+client would</b>
+<br><b>check to see if MeanMode is 1, and that the name of the person who
+entered is</b>
+<br><b>either Atlas or Breedan, and if it is, would spit on them.</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

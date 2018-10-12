@@ -1,0 +1,16 @@
+[1;33mSpam[0m
+[1;44m                                                                                [0m
+
+Format: [1m/spam [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/spam [0m{[1;35mfilename.ext[0m}
+
+Display a text file into the MudMaster 2k6 session window
+
+   þ {[1;35mdrive:\filename.ext[0m} Path and filename of the text file to display.
+   þ {[1;35mfilename.ext[0m} Path and filename of the text file to display.
+
+Example:
+
+/spam [0m{[1;35mC:\readme.txt[0m}
+
+[1;44m                                                                                [0m

@@ -1,0 +1,114 @@
+[1;44mCommands[0m
+
+[1;44mStatus Bar Commands                                                             [0m
+                 == barback             barfore             baritem
+                 == baritemback         baritemfore         baritemshift
+                 == barseparator        statusbar           statusbarsize
+                 == updatebaritem       updatestatusbar
+
+[1;44mChat Commands                                                                   [0m
+                 == autoaccept          autoserve           call
+                 == cg                  chat                chatall
+                 == chatback            chatcommands        chatfore
+                 == chatgroup           chatgroupremove     chatgroupset
+                 == chatignore          chatname            chatport
+                 == chatprivate         chatserve           chatsnoop
+                 == chattransfers       chatversions        dnd
+                 == downloadpath        eg                  emote
+                 == emoteall            emotegroup          filecancel
+                 == filestatus          peekconnections     ping
+                 == requestconnects     sendaction          sendalias
+                 == sendarray           sendbaritem         sendevent
+                 == sendfile            sendgag             sendgroup
+                 == sendhighlight       sendlist            sendmacro
+                 == sendsubstitute      sendvariable        snoop
+                 == startchatserver     stopchatserver      uploadpath
+
+[1;44mList Commands                                                                   [0m
+                 == clearlist           itemadd             itemdelete
+                 == listadd             listcopy            listdelete
+                 == listitems           lists
+
+[1;44mScript Control Commands                                                         [0m
+                 == autoexec            char                disableaction
+                 == disablealias        disablebaritem      disableevent
+                 == disablegag          disablegroup        disablehighlight
+                 == disablemacro        disablesubstitute   doevents
+                 == editaction          editalias           editbaritem
+                 == editcurrentsession  editevent           editgag
+                 == edithighlight       editmacro           editsubstitute
+                 == editvariable        enableaction        enablealias
+                 == enablebaritem       enableevent         enablegag
+                 == enablegroup         enablehighlight     enablemacro
+                 == enablesubstitute    fireevent           ignore
+                 == ignorealiases       killall             killgroup
+                 == resetevent          seteventtime        unaction
+                 == unalias             unarray             unautoexec
+                 == unbaritem           unchat              undo
+                 == unevent             ungag               unhighlight
+                 == unmacro             unsubstitute        unvariable
+
+[1;44mDll Commands                                                                    [0m
+                 == calldll             dll                 freelibrary
+                 == handledbydll        loadlibrary
+
+[1;44mScript Entity Information                                                       [0m
+                 == grep                groupactions        groupaliases
+                 == grouparrays         groupbaritems       groupevents
+                 == groupgag            grouphighlights     grouplists
+                 == groupmacros         groupsubstitutes    grouptablist
+                 == groupvariables      information         message
+                 == scrollgrep
+
+[1;44mSound Commands                                                                  [0m
+                 == bell                msp                 playmidi
+                 == playwave            processfx           processmidi
+                 == showmsptriggers     soundpath           useplaysound
+
+[1;44mScript Entities                                                                 [0m
+                 == action              alias               array
+                 == assign              empty               event
+                 == gag                 highlight           macro
+                 == substitute          tabadd              tabdelete
+                 == tablist             variable
+
+[1;44mLog Commands                                                                    [0m
+                 == logclose            logopen             logopenappend
+                 == logpath             rawmudlogclose      rawmudlogopen
+                 == savescrollback      timestamplog        viewlog
+
+[1;44mScript Flow Control                                                             [0m
+                 == if                  loop                while
+
+[1;44mSession Control Commands                                                        [0m
+                 == debugdepth          defaultsession      defaultscript
+                 == echo                loadsession         maxonopen
+                 == maxrestore          ontop               promptoverwrite
+                 == session             sessionaddress      sessionname
+                 == sessionpath         sessionport         setip
+                 == unzap               zap
+
+[1;44mDisplay Output Commands                                                         [0m
+                 == background          cr                  showme
+                 == showtoast
+
+[1;44mSpeed Walk Commands                                                             [0m
+                 == pace                speedwalk           walkstop
+
+[1;44mFile Commands                                                                   [0m
+                 == dir                 filedelete          read
+                 == readviaweb          textin              textout
+                 == write               writegroup
+
+[1;44mSession Window Commands                                                         [0m
+                 == addcaption          removecaption       scrollback
+                 == showother           window
+
+[1;44mOther                                                                           [0m
+                 == allcommands         changes             clearscreen
+                 == fullscreen          help                intersection
+                 == math                presubstitute       remark
+                 == spam                substitutedepth     verbatim
+                 == version
+
+[1;44m                                                                                [0m

@@ -1,0 +1,13 @@
+[1;33m[1;33mHandledByDLL[0m
+[1;44m                                                                                [0m
+
+Format: [1m/handledbydll [0m{[1;35mtrue/false[0m}
+
+If any dll calls the /HandledByDll {TRUE} command via the callback then
+MudMaster 2k6 will not process the line beyond that point. Otherwise regular
+processing will continue.
+
+   þ {[1;35mtrue/false[0m} True will cause MudMaster 2k6 to not process beyond that
+     point. False will cause regular processing to continue.
+
+[1;44m                                                                                [0m

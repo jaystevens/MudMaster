@@ -1,0 +1,16 @@
+[1;33mSendEvent[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sendevent [0m{[1;35mchat name[0m} {[1;35mreference number[0m}
+Format: [1m/sendevent [0m{[1;35mchat name[0m} {[1;35mevent name[0m}
+Format: [1m/sendevent [0m{[1;35mchat reference number[0m} {[1;35mreference number[0m}
+Format: [1m/sendevent [0m{[1;35mchat reference number[0m} {[1;35mevent name[0m}
+
+SendEvent sends one of your events to another chat user.
+
+   ş {[1;35mchat name[0m} The chat name of the person you want to send to.
+   ş {[1;35mchat reference number[0m} The number of the person you want to send to.
+   ş {[1;35mreference number[0m} The number of the bar item you want to send.
+   ş {[1;35mevent name[0m} The name of the event you want to send.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,11 @@
+[1;33mChatName[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatname [0m{[1;35mname[0m}
+
+Sets your chat name. You must set a chat name before you can make any chat
+calls.
+
+   þ {[1;35mname[0m} The name you wish to be known by.
+
+[1;44m                                                                                [0m

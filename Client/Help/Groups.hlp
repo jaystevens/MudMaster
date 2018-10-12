@@ -1,0 +1,31 @@
+[1;33mGroups[0m
+[1;44m                                                                                [0m
+
+Grouping gives you some extra flexibility in how you manage your command files.
+
+All of the command types can be assigned a group: actions, aliases, events,
+lists, tab words, macro, bar items. All of the commands take a group name as an
+optional parameter. Once your commands are grouped there are a number of group
+commands that make life a little easier.
+
+You can permanently remove all the items in a group from memory with
+/killgroup, or temporarily disable all the items in a group with /disablegroup.
+
+Each of the command types has a command for listing only the member of a
+specific group. For instance, if you wanted to list all the actions belonging
+to the group called "Formation" you could type:
+
+/groupact Formation
+
+This keeps you from having to weed your way through dozens of actions looking
+for what you know applies to a formation group. Works with other types of
+groups as well, /grouphigh, /groupalias, etc.
+
+You can write all the items of a group to their own command file using the
+/writegroup {drive:\filename.ext} {Groupname} command.
+
+Example:
+
+/writegroup [0m{[1;35mColors.mm[0m} {[1;35mColors[0m}
+
+[1;44m                                                                                [0m

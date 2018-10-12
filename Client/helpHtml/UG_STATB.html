@@ -1,0 +1,58 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2000 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+StatusBar</h3>
+
+<hr>
+<br>The statusbar is a user definable bar at the bottom of the screen.
+It can be up to 160 characters wide and the font used can be set in the
+Session, Options... menu. It can be
+position either above or below the input line. What gets displayed
+and in what
+colors is up to you. The items can contain literal text strings,
+as well as
+procedure names that return a value and variables.
+<p>If you have a bar item grouped, and you disable that group, the item
+will not
+be drawn on the statusbar. If it is showing at the time it will
+be removed.
+<p><b>/barfore</b> and <b>/barback</b> control the color of the statusbar. Items added
+to the
+bar can either default to use the statusbar colors, or you can specify
+individual colors for each item you add.
+<p><b>/baritemfore</b> and <b>/baritemback</b> can be used to change the color of
+an item once
+it has been placed on the bar.
+<p><b>/baritem</b> is used to add items to the bar and list definitions of
+the items
+already on the bar.
+<p><b>/barseparator</b> puts a vertical bar on the status bar, to visually
+help you
+divide up the items you place on the bar.
+<p><b>/updatebaritem</b> is used to cause the bar item to redraw itself. You
+would use
+this if the bar item has a variable in it and you change the value
+of the
+variable. The item would update with the current value of the variable.
+<p><b>/baritemshift</b> is used to shift a range of items that are already
+on the bar to
+the left or right. Using this is a shortcut to adjusting the positions
+of all
+the items by hand.
+<p><b>/unbaritem</b> is used to remove an item from the bar.
+<p>
+<hr>
+<br><b>Related Commands:</b>
+<br>
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

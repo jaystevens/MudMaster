@@ -1,0 +1,14 @@
+[1;33mDisableEvent[0m
+[1;44m                                                                                [0m
+
+Format: [1m/disableevent [0m{[1;35mreference number[0m}
+Format: [1m/disableevent [0m{[1;35mevent name[0m}
+
+DisableEvent allows you to turn individual events off. You can see which events
+you have disabled when you list all of your defined events. Disabled events will
+have an asterisk right after their reference number.
+
+   ş {[1;35mreference number[0m} The number of the event to disable.
+   ş {[1;35mevent name[0m} The name of the event to disable.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,57 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+<TITLE>
+	Mudmaster 2k6 Command Reference
+</TITLE>
+</head>
+<BODY>
+	<h3>Action</h3>
+	<HR>
+	<B>Format:</B><BR>
+	<blockquote>
+	/action {trigger} {action} {group name}
+	</blockquote>
+	<B>Description:</B><br><br>
+	Action tells the client to look for a specific string of text from the mud
+	and to execute a command or multiple commands when it finds it. Typing 
+	/action by itself will list all of the actions you have defined.
+	<UL>
+	<LI>{trigger} This is the text to look for to trigger the action. </LI>
+	<LI>{action} The commands are the actions you want to take when the action is triggered.</LI>
+	<LI>{group name} This is an optional parameter. See the user guide for help on groups.</LI>
+	</UL>
+	</P>
+	%0-%9 are substitution variables that you can use in the trigger of an
+	action. They work like a wildcard character but store the text the wildcard
+	represents for your use.
+	<P>
+	<B>Examples:</B>
+	<blockquote>
+	/action {You are hungry.} {take food bag;eat food} 
+	</blockquote>
+	This is the most basic form of an action. It sees the text "You are 
+	hungry." and then sends the commands "take food bag" and "eat food" to 
+	the mud. 
+	<blockquote>
+	/action {^You are hungry.} {take food bag;eat food} 
+	</blockquote>
+	You can 'anchor' an action by starting it with a caret (^). When an action
+	is anchored the text to search for must be at the beginning of the line. 
+	<blockquote>
+	/action {%0 looks at you.} {say Hi $0} 
+	</blockquote>
+	If the mud sent the text "Arithon looks at you." MudMaster 2k6 would send the command "say Hi Arithon" back. 
+	You can use up to 10 (0-9) of these variables to help you match a text pattern.
+	<HR>
+	<B>Related Commands:</B>
+	<A HREF=DISACT.html>/disableaction</A>,
+	<A HREF=EACTION.html>/editaction</a>,
+	<A HREF=ENACT.html>/enableaction</A>,
+	<A HREF=GRPACT.html>/groupaction</A>,
+	<A HREF=SENDACT.html>/sendaction</A>,
+	<A HREF=UNACTION.html>/unaction</A>
+	<P>
+	Click <A HREF=javascript:history.back(1)>here</A> to return to previous page.
+</BODY>
+</HTML>

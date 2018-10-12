@@ -1,0 +1,24 @@
+[1;33mDisplay Output Commands[0m
+[1;44m                                                                 [0m=
+cr                 showme                  
+
+
+Speed Walk Commands
+[1;44m                                                                 [0m
+pace               speedwalk            walkstop                     
+
+
+File Commands
+[1;44m                                                                 [0m
+dir                filedelete 
+textin             textout
+write              writegroup
+
+
+Other
+[1;44m                                                                 [0m             
+intersection       math                 presubstitute               
+help               version 
+
+[1;44m                                                                 [0m
+

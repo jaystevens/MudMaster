@@ -1,0 +1,13 @@
+[1;33mUnMacro[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unmacro [0m{[1;35mkey name[0m}
+Format: [1m/unmacro [0m{[1;35mreference number[0m}
+
+Removes the definition of a macro key.
+
+   þ {[1;35mkey name[0m} Name of the macro key to remove. See help on macros for the key
+     names.
+   þ {[1;35mreference number[0m} The number of the macro you want to remove.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,16 @@
+[1;33mChat Commands[0m
+[1;44m                                                                   [0m
+autoaccept         autoserve          call                cg           
+chat               chatall            chatback            chatcommands        
+chatfore           chatgroup          chatgroupremove     chatgroupset        
+chatignore         chatname           chatprivate         chatport            
+chatserve          chatsnoop          chattransfers       chatversions        
+dnd                downloadpath       eg                  emote               
+emoteall           emotegroup         filecancel          filestatus          
+peekconnections    ping               requestconnects     sendaction          
+sendalias          sendarray          sendbaritem         sendevent           
+sendfile           sendgag            sendgroup           sendhighlight       
+sendlist           sendmacro          sendsubstitute      sendvariable        
+snoop              startchatserver    stopchatserver      uploadpath
+[1;44m                                                                   [0m
+

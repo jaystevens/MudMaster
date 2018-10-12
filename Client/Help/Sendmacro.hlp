@@ -1,0 +1,14 @@
+[1;33mSendMacro[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sendmacro [0m{[1;35mchat name[0m} {[1;35mkey name[0m}
+Format: [1m/sendmacro [0m{[1;35mchat reference number[0m} {[1;35mkey name[0m}
+
+SendMacro sends one of your macros to another chat user.
+
+   þ {[1;35mchat name[0m} The chat name of the person you want to send to.
+   þ {[1;35mchat reference number[0m} The number of the person you want to send to.
+   þ {[1;35mkey name[0m} The name of the key you want to send. Refer to the macro help
+     file for a full list of key names.
+
+[1;44m                                                                                [0m

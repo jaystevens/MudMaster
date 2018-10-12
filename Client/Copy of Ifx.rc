@@ -1,0 +1,2317 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "../BuildInfo.rc"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""../BuildInfo.rc""\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Ifx.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MMMain.ico"
+IDR_IFXTYPE             ICON                    "res\\IfxDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_WORKSPACE           BITMAP                  "res\\workspace.bmp"
+IDR_IFXTYPE             BITMAP                  "res\\toolbar1.bmp"
+IDB_CATEGORY            BITMAP                  "res\\bitmap1.bmp"
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+IDB_CHECK               BITMAP                  "res\\check.bmp"
+IDB_CHAT_TREE_BMP       BITMAP                  "res\\chat_tre.bmp"
+IDR_FULLSCREEN          BITMAP                  "res\\bmp00001.bmp"
+IDB_SPLITTER            BITMAP                  "res\\bmp00002.bmp"
+IDB_NEWSESSION_WATERMARK BITMAP                  "res\\bmp00003.bmp"
+IDB_BANNER_ICON         BITMAP                  "res\\bmp00004.bmp"
+IDB_NEW_SMALLBANNER     BITMAP                  "res\\MudMaster2000_Replacement.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_IFXTYPE TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_SESSION_CONNECT
+    BUTTON      ID_SESSION_ZAP
+    SEPARATOR
+    BUTTON      ID_VIEW_OPTIONS
+    SEPARATOR
+    BUTTON      ID_CONFIGURATION_ACTIONSTRIGGERS
+    BUTTON      ID_CONFIGURATION_ACTIONS
+    BUTTON      ID_CONFIGURATION_ALIASES
+    BUTTON      ID_CONFIGURATION_EVENTS
+    BUTTON      ID_CONFIGURATION_MACROS
+    BUTTON      ID_CONFIGURATION_STATUSBARITEMS
+    SEPARATOR
+    BUTTON      ID_SESSION_LOG
+    BUTTON      ID_SESSION_SAVESCROLLBACK
+    BUTTON      ID_SESSION_READSCRIPT
+    SEPARATOR
+    BUTTON      ID_SESSION_STARTCHATSERVER
+    BUTTON      ID_SESSION_STOPCHATSERVER
+    SEPARATOR
+    BUTTON      ID_HELP_SENDBUGREPORT
+    BUTTON      ID_WINDOW_ARRANGE
+    BUTTON      ID_FULL_SCREEN
+END
+
+IDR_MENU_IMAGES TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+END
+
+IDR_FULLSCREEN TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FULL_SCREEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Character...\tCtrl+N",   ID_FILE_WIZARD
+        MENUITEM "&Load Character...\tCtrl+O",  ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit Defaults...",           ID_FILE_EDITDEFAULTS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Send Bug Report...",         ID_HELP_SENDBUGREPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&About Mud Master 2000...",   ID_APP_ABOUT
+        MENUITEM "&Help for Mud Master 2000",   ID_HELP_FINDER
+    END
+END
+
+IDR_IFXTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Character\tCtrl+N",      ID_FILE_WIZARD
+        MENUITEM "&Load Character...\tCtrl+O",  ID_FILE_OPEN
+        MENUITEM "&Close Character",            ID_FILE_CLOSE
+        MENUITEM "&Save Character\tCtrl+S",     ID_FILE_SAVE
+        MENUITEM "Save Character &As...",       ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit Defaults...",           ID_FILE_EDITDEFAULTS
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "S&cript"
+    BEGIN
+        MENUITEM "&Read Script...",             ID_SESSION_READSCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "Edit &Script...",             ID_CONFIGURATION_ACTIONSTRIGGERS
+
+        MENUITEM "&Actions...",                 ID_CONFIGURATION_ACTIONS
+        MENUITEM "A&liases...",                 ID_CONFIGURATION_ALIASES
+        MENUITEM "&Events...",                  ID_CONFIGURATION_EVENTS
+        MENUITEM "Macros...",                   ID_CONFIGURATION_MACROS
+        MENUITEM "Status &Bar Items...",        ID_CONFIGURATION_STATUSBARITEMS
+
+    END
+    POPUP "&Session"
+    BEGIN
+        MENUITEM "&Connect",                    ID_SESSION_CONNECT
+        MENUITEM "&Zap",                        ID_SESSION_ZAP
+        MENUITEM SEPARATOR
+        MENUITEM "&Log Session...",             ID_SESSION_LOG
+        MENUITEM "&Save Scrollback...",         ID_SESSION_SAVESCROLLBACK
+        MENUITEM SEPARATOR
+        MENUITEM "Star&t Chat Server",          ID_SESSION_STARTCHATSERVER
+        MENUITEM "Sto&p Chat Server",           ID_SESSION_STOPCHATSERVER
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...",                 ID_VIEW_OPTIONS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "F&ull Screen",                ID_FULL_SCREEN
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Bug Report...",              ID_HELP_SENDBUGREPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&About Mud Master 2000...",   ID_APP_ABOUT
+        MENUITEM "&Help for Mud Master 2000",   ID_HELP_FINDER
+    END
+END
+
+IDR_CONTEXT_MENU MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Find",                       ID_EDIT_FIND
+    END
+END
+
+IDR_POPUP_TOOLBAR MENU 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "Standard Toolbar",            ID_VIEW_TOOLBAR
+        MENUITEM "&Managers",                   ID_VIEW_WORKSPACE
+        MENUITEM "&Debug",                      ID_VIEW_OUTPUT
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR1
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR2
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR3
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR4
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR5
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR6
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR7
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR8
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR9
+        MENUITEM "<User Toolbar>",              ID_VIEW_USER_TOOLBAR10
+        MENUITEM SEPARATOR
+        MENUITEM "&Customize...",               ID_VIEW_CUSTOMIZE
+    END
+END
+
+IDR_SESSMGRTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Categories"
+    BEGIN
+        MENUITEM "&New Category...",            ID_CATEGORIES_NEWCATEGORY
+        MENUITEM "&Edit Category...",           ID_CATEGORIES_EDITCATEGORY
+        MENUITEM "&Delete Category...",         ID_CATEGORIES_DELETECATEGORY
+    END
+    POPUP "&Session"
+    BEGIN
+        MENUITEM "&New Session...",             ID_SESSION_NEWSESSION
+        MENUITEM "&Edit Session...",            ID_SESSION_EDITSESSION
+        MENUITEM "&Delete Session...",          ID_SESSION_DELETESESSION
+        MENUITEM SEPARATOR
+        MENUITEM "&Launch Session...",          ID_SESSION_LAUNCHSESSION
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Mud Master 2000...",   ID_APP_ABOUT
+    END
+END
+
+IDR_INPUTMENU MENU 
+BEGIN
+    POPUP "_INPUT_CONTEXT_"
+    BEGIN
+        MENUITEM "Cu&t\tShift+Del",             ID_INPUTCONTEXT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_INPUTCONTEXT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_INPUTCONTEXT_PASTE
+    END
+END
+
+IDR_POPUP_MENU MENU 
+BEGIN
+    POPUP "POPUP"
+    BEGIN
+        MENUITEM "About Mud Master 2000",       ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Maximize",                    ID_DEMO_MAXIMISE
+        MENUITEM "Minimize to system tray",     ID_DEMO_MINIMISE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_APP_EXIT
+    END
+END
+
+IDR_CHAT_MGR_MENU MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Mark &Private",               ID_POPUP_MARKPRIVATE
+        MENUITEM "Allow &Commands",             ID_POPUP_ALLOWCOMMANDS
+        MENUITEM "Allow &Transfers",            ID_POPUP_ALLOWTRANSFERS
+        MENUITEM "Ignore",                      ID_POPUP_IGNORE
+        MENUITEM "&Serve",                      ID_POPUP_SERVE
+        MENUITEM "Allow Snoop",                 ID_POPUP_ALLOWSNOOP
+        MENUITEM SEPARATOR
+        MENUITEM "&Send File...",               ID_POPUP_SENDFILE
+        MENUITEM "S&noop",                      ID_POPUP_SNOOP
+        MENUITEM "&Un-Chat",                    ID_POPUP_UNCHAT
+        MENUITEM "&Ping",                       ID_POPUP_PING
+        MENUITEM "Request Connections",         ID_POPUP_REQUESTCONNECTIONS
+        MENUITEM "Peek Connections",            ID_POPUP_PEEKCONNECTIONS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_WIZARD,         VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 225, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "About Mud Master 2000"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,168,135,50,14,WS_GROUP
+    CTEXT           "MudMaster 2000 v3.0 beta 1",IDC_VERSION,7,46,211,8,
+                    SS_NOPREFIX
+    CTEXT           "Copyright © 1997-2003 by Kevin Cook",IDC_STATIC,7,60,
+                    211,8
+    CTEXT           "Portions Copyright ©  1996-2003 by Aaron O'Neil",
+                    IDC_STATIC,7,76,211,9
+    LTEXT           "Static",IDC_PHYSICAL_MEM,55,107,39,8
+    LTEXT           "Static",IDC_DISK_SPACE,7,118,211,8
+    LTEXT           "Free Memory:",IDC_STATIC,7,107,44,8
+    CTEXT           "Portions Copyright © 1997-2003 Tim Bowen",IDC_STATIC,7,
+                    91,211,9
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,130,211,2
+    CONTROL         228,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN | WS_BORDER,7,7,211,33,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_INPUT_CONTROL DIALOG  0, 0, 363, 134
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_INPUT_CTRL,"RICHEDIT",TCS_HOTTRACK | 
+                    TCS_MULTISELECT | WS_TABSTOP,0,0,313,71
+    CONTROL         "",IDC_MMSTATUSCTRL1,
+                    "{B3044927-6C00-11D5-BCDA-00E029482496}",WS_TABSTOP,63,
+                    100,171,25
+END
+
+IDD_IPLISTDLG DIALOGEX 0, 0, 264, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Machine IP Addresses"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Select the IP Address for this session",IDC_STATIC,7,7,
+                    120,9
+    CONTROL         "List1",IDC_IPLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,24,193,90
+    DEFPUSHBUTTON   "OK",IDOK,207,7,50,14
+END
+
+IDD_MESSAGE_OPTIONS DIALOG  0, 0, 206, 159
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Message"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Action",IDC_ACTION_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,22,36,10
+    CONTROL         "A&lias",IDC_ALIAS_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,34,31,10
+    CONTROL         "A&rray",IDC_ARRAY_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,46,32,10
+    CONTROL         "&Status Bar Item",IDC_STATUSBARITEM_MESSAGES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,58,64,10
+    CONTROL         "&Enable/Disable",IDC_ENABLE_MESSAGES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,70,65,10
+    CONTROL         "E&vent",IDC_EVENT_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,22,35,10
+    CONTROL         "&Gag",IDC_GAG_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,34,29,10
+    CONTROL         "&Highlight",IDC_HIGH_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,46,43,10
+    CONTROL         "List &Item",IDC_LISTITEM_MESSAGES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,82,58,42,10
+    CONTROL         "Lis&t",IDC_LIST_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,70,27,10
+    CONTROL         "&Macro",IDC_MACRO_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,22,36,10
+    CONTROL         "S&ubstitution",IDC_SUB_MESSAGES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,34,53,10
+    CONTROL         "Ta&b",IDC_TAB_MESSAGES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,46,29,10
+    CONTROL         "&Variable",IDC_VAR_MESSAGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,58,41,10
+    CONTROL         "All",IDC_IGNORE_ALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,113,23,10
+    CONTROL         "Actions",IDC_IGNORE_ACTIONS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,127,39,10
+    CONTROL         "Gags",IDC_IGNORE_GAGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,63,127,33,10
+    CONTROL         "Highlights",IDC_IGNORE_HIGHS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,127,47,10
+    CONTROL         "Subs",IDC_IGNORE_SUBS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,157,127,32,10
+    GROUPBOX        "Message Options",IDC_STATIC,7,7,192,81
+    GROUPBOX        "Trigger Ignore Options",IDC_STATIC,7,94,192,58
+END
+
+IDD_PATH_OPTIONS DIALOGEX 0, 0, 239, 239
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Folders"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Download Folder:",IDC_STATIC,7,7,183,10
+    EDITTEXT        IDC_DOWNLOAD_PATH,7,35,184,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PICK_DOWNLOAD,197,35,35,14
+    LTEXT           "&Log Folder:",IDC_STATIC,7,53,183,10
+    EDITTEXT        IDC_LOG_PATH,7,73,183,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PICK_LOG,197,73,35,14
+    LTEXT           "&Help File Folder:",IDC_HELP_LABEL,7,90,183,10
+    EDITTEXT        IDC_SESSION_PATH,7,116,183,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PICK_SESSION,197,116,35,14
+    LTEXT           "Sou&nd Folder:",IDC_STATIC,7,134,183,10
+    EDITTEXT        IDC_SOUND_PATH,7,171,183,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PICK_SOUND,197,171,35,14
+    LTEXT           "&Upload Folder:",IDC_STATIC,7,188,183,10
+    EDITTEXT        IDC_UPLOAD_PATH,7,218,183,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PICK_UPLOAD,197,218,35,14
+    LTEXT           "This is where Mud Master 2000 will place any files that are sent to you from other Mud Master Chat protocol users",
+                    IDC_STATIC,7,16,183,16
+    LTEXT           "This is the folder where Mud Master 2000 will write log files",
+                    IDC_STATIC,7,62,183,11
+    LTEXT           "This folder specifies where Mud Master 2000 should look for help files when using the /help command",
+                    IDC_HELP_DESC,7,99,183,16
+    LTEXT           "This is the folder that Mud Master 2000 should use to find wav files for the /playwav and /playmidi commands as well as the root folder for the mMSP sounds.",
+                    IDC_STATIC,7,144,183,25
+    LTEXT           "This is where Mud Master 2000 will look for files you wish to send to other Mud Master Chat Protocol users.",
+                    IDC_STATIC,7,198,183,18
+END
+
+IDD_TERMINAL_OPTIONS DIALOGEX 0, 0, 239, 239
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Term/Input"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "&Local Echo",IDC_LOCAL_ECHO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,20,51,10
+    CONTROL         "Telnet &GA Support",IDC_TELNET_GA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,36,75,10
+    CONTROL         "&Full Screen Scrollback",IDC_FULLSCREEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,52,87,10
+    CONTROL         "Ti&me stamp log files",IDC_TIMESTAMP_LOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,67,77,10
+    PUSHBUTTON      "Msg Fore",IDC_MESSAGE_FORE,107,15,56,15,BS_FLAT
+    PUSHBUTTON      "Msg Back",IDC_MESSAGE_BACK,169,15,56,15,BS_FLAT
+    PUSHBUTTON      "Default Fore",IDC_TERM_FORECOLOR,107,36,56,15,BS_FLAT
+    PUSHBUTTON      "Default Back",IDC_TERM_BACKCOLOR,169,36,56,15,BS_FLAT
+    PUSHBUTTON      "Highlight Fore",IDC_HIGHLIGHTTEXT,107,57,56,15,BS_FLAT
+    PUSHBUTTON      "Highlight Back",IDC_HIGHLIGHT,169,57,56,15,BS_FLAT
+    PUSHBUTTON      "Fo&nt",IDC_TERM_FONT,169,80,56,15
+    LTEXT           "Number of lines to &hold in scrollback buffer",
+                    IDC_STATIC,14,101,140,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_SCROLLBACK_BUFFER_SIZE,157,101,68,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SBB_SPNNER,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,215,101,11,14
+    PUSHBUTTON      "Background",IDC_INPUT_BACKCOLOR,14,148,56,15,BS_FLAT
+    CONTROL         "R&etain commands ",IDC_ZMUD_RETENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,81,148,82,15
+    PUSHBUTTON      "F&ont",IDC_INPUT_FONT,169,148,56,15
+    LTEXT           "# of commands to hold in histor&y buffer",IDC_STATIC,14,
+                    169,130,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_COMMAND_BUFFER_SIZE,150,169,75,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_CHB_SPNNER,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,201,169,11,14
+    PUSHBUTTON      "Text",IDC_STAT_FORECOLOR,14,210,56,15,BS_FLAT
+    PUSHBUTTON      "Background",IDC_STAT_BACKCOLOR,91,210,56,15,BS_FLAT
+    PUSHBUTTON      "Fon&t",IDC_STAT_FONT,168,210,56,15
+    GROUPBOX        "Terminal Options",IDC_STATIC,7,7,225,117
+    GROUPBOX        "Input Options",IDC_STATIC,7,132,225,56
+    GROUPBOX        "Status Bar",IDC_STATIC,7,198,225,34
+END
+
+IDD_MISC_OPTIONS DIALOGEX 0, 0, 239, 239
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Chat/Sound"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Chat Name",IDC_STATIC,15,21,36,8
+    EDITTEXT        IDC_CHAT_NAME,14,33,112,14,ES_AUTOHSCROLL
+    CONTROL         "&Auto Accept Calls",IDC_AUTO_ACCEPT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,53,72,10
+    PUSHBUTTON      "Chat Fore Color",IDC_CHAT_FORECOLOR,14,69,92,15,BS_FLAT
+    LTEXT           "Chat &Port",IDC_STATIC,133,21,30,8
+    EDITTEXT        IDC_CHAT_PORT,133,33,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Do Not Disturb",IDC_DND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,54,63,10
+    PUSHBUTTON      "Chat Background Color",IDC_CHAT_BACKCOLOR,133,69,92,15,
+                    BS_FLAT
+    CONTROL         "P&rocess Mud Sound Protocol",IDC_USE_MSP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,126,108,10
+    CONTROL         "Process MSP &music instructions",IDC_PROCESS_MUSIC,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,41,
+                    140,116,10
+    CONTROL         "Process MSP &sound instructions",IDC_PROCESS_SOUND,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,41,
+                    154,117,10
+    CONTROL         "&Use Direct X 8.0",IDC_DX_80,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,41,186,68,10
+    CONTROL         "Use P&laySound",IDC_PLAYSOUND,"Button",
+                    BS_AUTORADIOBUTTON,127,186,65,10
+    CONTROL         "Print MUD Sound Protocol &triggers to the screen",
+                    IDC_DEBUG_MSP_TRIGGERS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,213,167,10
+    GROUPBOX        "Chat Options",IDC_STATIC,7,7,225,83
+    GROUPBOX        "Sound Rendering Mode",IDC_STATIC,22,172,196,34
+    GROUPBOX        "Mud Sound Protocol Options",IDC_STATIC,7,112,225,120
+END
+
+IDD_TERMINAL_FORE_COLORS DIALOGEX 0, 0, 239, 238
+STYLE DS_SETFONT | WS_CHILD | WS_CAPTION
+CAPTION "Palette"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Black",IDC_FORE_BLACK,14,17,66,15,BS_FLAT
+    PUSHBUTTON      "Blue",IDC_FORE_BLUE,86,17,66,15,BS_FLAT
+    PUSHBUTTON      "Green",IDC_FORE_GREEN,158,17,67,15,BS_FLAT
+    PUSHBUTTON      "Cyan",IDC_FORE_CYAN,14,38,66,15,BS_FLAT
+    PUSHBUTTON      "Red",IDC_FORE_RED,86,38,66,15,BS_FLAT
+    PUSHBUTTON      "Magenta",IDC_FORE_MAGENTA,158,38,67,15,BS_FLAT
+    PUSHBUTTON      "Brown",IDC_FORE_BROWN,14,59,66,15,BS_FLAT
+    PUSHBUTTON      "Light Gray",IDC_FORE_GRAY,86,59,66,15,BS_FLAT
+    PUSHBUTTON      "Dark Gray",IDC_FORE_DARKGRAY,14,96,66,15,BS_FLAT
+    PUSHBUTTON      "Light Blue",IDC_FORE_LIGHTBLUE,86,96,66,15,BS_FLAT
+    PUSHBUTTON      "Light Green",IDC_FORE_LIGHTGREEN,158,96,67,15,BS_FLAT
+    PUSHBUTTON      "Light Cyan",IDC_FORE_LIGHTCYAN,14,117,66,15,BS_FLAT
+    PUSHBUTTON      "Light Red",IDC_FORE_LIGHTRED,86,117,66,15,BS_FLAT
+    PUSHBUTTON      "Light Magenta",IDC_FORE_LIGHTMAGENTA,158,117,67,15,
+                    BS_FLAT
+    PUSHBUTTON      "Yellow",IDC_FORE_YELLOW,14,138,66,15,BS_FLAT
+    PUSHBUTTON      "White",IDC_FORE_WHITE,86,138,66,15,BS_FLAT
+    PUSHBUTTON      "Black",IDC_BACK_BLACK,14,174,66,14,BS_FLAT
+    PUSHBUTTON      "Red",IDC_BACK_RED,86,174,66,14,BS_FLAT
+    PUSHBUTTON      "Blue",IDC_BACK_BLUE,158,174,67,14,BS_FLAT
+    PUSHBUTTON      "Magenta",IDC_BACK_MAGENTA,14,192,66,14,BS_FLAT
+    PUSHBUTTON      "Green",IDC_BACK_GREEN,86,192,66,14,BS_FLAT
+    PUSHBUTTON      "Brown",IDC_BACK_BROWN,158,192,67,14,BS_FLAT
+    PUSHBUTTON      "Cyan",IDC_BACK_CYAN,14,210,66,14,BS_FLAT
+    PUSHBUTTON      "Light Gray",IDC_BACK_GRAY,86,210,66,14,BS_FLAT
+    GROUPBOX        "Normal Fore Colors",IDC_STATIC,7,7,225,73
+    GROUPBOX        "Bold Fore Colors",IDC_STATIC,7,85,225,72
+    GROUPBOX        "Background Colors",IDC_STATIC,7,160,225,71
+END
+
+IDD_FORE_COLORS DIALOGEX 0, 0, 220, 169
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Current Fore Colors"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    RTEXT           "Blac&k",IDC_STATIC,21,19,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_BLACK,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,61,19,20,16
+    RTEXT           "Dar&k Gray",IDC_STATIC,107,19,48,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_DARKGRAY,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,160,19,20,16
+    RTEXT           "B&lue",IDC_STATIC,21,37,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_BLUE,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,61,37,20,16
+    RTEXT           "&Light Blue",IDC_STATIC,107,37,48,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_LIGHTBLUE,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,160,37,20,16
+    RTEXT           "&Green",IDC_STATIC,21,55,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_GREEN,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,61,55,20,16
+    RTEXT           "Light &Green",IDC_STATIC,107,55,48,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_LIGHTGREEN,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,160,55,20,16
+    RTEXT           "&Cyan",IDC_STATIC,21,73,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_CYAN,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,61,73,20,16
+    RTEXT           "Light &Cyan",IDC_STATIC,107,73,48,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_LIGHTCYAN,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,160,73,20,16
+    RTEXT           "&Red",IDC_STATIC,21,91,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_RED,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,61,91,20,16
+    RTEXT           "Light &Red",IDC_STATIC,107,91,48,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_LIGHTRED,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,160,91,20,16
+    RTEXT           "&Magenta",IDC_STATIC,21,109,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_MAGENTA,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,61,109,20,16
+    RTEXT           "Light &Magenta",IDC_STATIC,107,109,48,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_LIGHTMAGENTA,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,160,109,20,16
+    RTEXT           "Brow&n",IDC_STATIC,21,127,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_BROWN,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,61,127,20,16
+    RTEXT           "&Yellow",IDC_STATIC,107,127,48,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_YELLOW,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,160,127,20,16
+    RTEXT           "Lig&ht Gray",IDC_STATIC,21,145,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_GRAY,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,61,145,20,16
+    RTEXT           "&White",IDC_STATIC,107,145,48,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_WHITE,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,160,145,20,16
+    CTEXT           "Normal Colors",IDC_STATIC,21,7,59,8
+    CTEXT           "Bold Colors",IDC_STATIC,107,7,71,8
+END
+
+IDD_BACK_COLORS DIALOGEX 0, 0, 186, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Current Back Colors"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    RTEXT           "Blac&k",IDC_STATIC,14,16,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_BLACK,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,54,16,20,16
+    RTEXT           "B&lue",IDC_STATIC,14,34,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_BLUE,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,54,34,20,16
+    RTEXT           "&Green",IDC_STATIC,14,51,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_GREEN,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,54,51,20,16
+    RTEXT           "&Cyan",IDC_STATIC,14,69,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_CYAN,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,54,69,20,16
+    RTEXT           "&Red",IDC_STATIC,91,16,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_RED,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,131,16,20,16
+    RTEXT           "&Magenta",IDC_STATIC,91,34,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_MAGENTA,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,131,34,20,16
+    RTEXT           "Brow&n",IDC_STATIC,91,51,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_BROWN,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,131,51,20,16
+    RTEXT           "Lig&ht Gray",IDC_STATIC,91,69,35,16,SS_CENTERIMAGE
+    CONTROL         "",IDC_FORE_GRAY,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,131,69,20,16
+END
+
+IDD_SESSION_INFO DIALOGEX 0, 0, 239, 239
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Session"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Session &Name:",IDC_STATIC,7,7,48,8
+    EDITTEXT        IDC_SESSION_NAME,7,18,225,14,ES_AUTOHSCROLL
+    LTEXT           "Server &Address:",IDC_STATIC,7,35,51,8
+    EDITTEXT        IDC_SESSION_ADDRESS,7,44,169,14,ES_AUTOHSCROLL
+    LTEXT           "&Port:",IDC_STATIC,185,35,16,8
+    EDITTEXT        IDC_SESSION_PORT,185,44,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCRIPT_PATH,13,73,156,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_SCRIPT_BROWSE,177,73,47,14
+    CONTROL         "Auto - Load/Save Script ",IDC_AUTO_LOADSCRIPT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,89,95,10
+    CONTROL         "Show Information",IDC_SHOW_INFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,122,89,71,10
+    EDITTEXT        IDC_LOG_FILENAME,13,117,156,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_LOGFILE_BROWSE,177,117,47,14
+    CONTROL         "Auto Log",IDC_AUTO_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,135,45,10
+    CONTROL         "Append Log",IDC_APPEND_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,65,135,55,10
+    CONTROL         "&Ignore Aliases",IDC_IGNORE_ALIASES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,164,60,10
+    CONTROL         "&Maximize",IDC_MAXIMIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,175,45,10
+    CONTROL         "&Pre-Sub",IDC_PRESUB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,186,41,10
+    CONTROL         "&Events",IDC_EVENTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,197,38,10
+    CONTROL         "Prompt &Overwrite",IDC_PROMPT_OVERWRITE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,94,164,70,10
+    CONTROL         "Status &Bar",IDC_STATUSBAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,94,175,49,10
+    CONTROL         "C&hat Server",IDC_CHAT_SERVER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,94,186,53,10
+    CONTROL         "Speed &Walk",IDC_SPEEDWALK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,94,197,55,10
+    LTEXT           "Sub Depth:",IDC_STATIC,9,212,37,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_SUB_DEPTH,49,212,40,14,ES_AUTOHSCROLL
+    LTEXT           "Pace:",IDC_STATIC,104,211,20,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PACE,127,211,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Notes",IDC_NOTES,182,218,50,14,WS_DISABLED
+    GROUPBOX        "Session Options",IDC_STATIC,7,154,166,78
+    GROUPBOX        "Script File",IDC_STATIC,7,62,225,39
+    GROUPBOX        "Log File",IDC_STATIC,7,105,225,44
+END
+
+IDD_SESSION_NOTES DIALOGEX 0, 0, 240, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Session Notes"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,183,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,183,24,50,14
+    CONTROL         "List1",IDC_NOTE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,167,108
+END
+
+IDD_LOG DIALOGEX 0, 0, 245, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Log File"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Log File Name:",IDC_STATIC,7,7,48,8
+    EDITTEXT        IDC_LOG_FILE_NAME,7,18,130,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE_LOGFILE,143,18,36,14
+    CONTROL         "Append to existing log",IDC_APPEND_LOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,37,85,10
+    CONTROL         "Include existing scrollback",IDC_INCLUDE_SCROLLBACK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,50,99,10
+    DEFPUSHBUTTON   "OK",IDOK,188,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,188,24,50,14
+    PUSHBUTTON      "&Close Log",IDC_CLOSE_LOG,188,50,50,14
+END
+
+IDD_ACTION_LIST DIALOGEX 0, 0, 340, 142
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Script Entities"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Tree1",IDC_ACTION_GROUPS,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,7,270,128
+    DEFPUSHBUTTON   "&Close",IDC_CLOSE,283,7,50,14
+END
+
+IDD_ACTION_EDIT DIALOGEX 0, 0, 308, 174
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Edit Action"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,251,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,251,24,50,14
+    LTEXT           "Trigger:",IDC_TRIGGER_STATIC,7,7,25,8
+    EDITTEXT        IDC_TRIGGER,7,17,238,14,ES_AUTOHSCROLL
+    LTEXT           "Action:",IDC_ACTION_STATIC,7,40,23,8
+    EDITTEXT        IDC_ACTION,7,50,238,71,ES_MULTILINE | ES_AUTOVSCROLL
+    LTEXT           "Group:",IDC_GROUP_STATIC,7,127,22,8
+    EDITTEXT        IDC_GROUP,7,137,238,14,ES_AUTOHSCROLL
+    CONTROL         "Disabled",IDC_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,157,43,10
+END
+
+IDD_ALIAS_EDIT DIALOGEX 0, 0, 256, 175
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Edit Alias"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,24,50,14
+    LTEXT           "Alias Text:",IDC_ALIAS_TEXT_LABEL,7,7,34,8
+    EDITTEXT        IDC_ALIAS_TEXT,7,17,186,14,ES_AUTOHSCROLL
+    LTEXT           "Action",IDC_ACTION_LABEL,7,40,21,8
+    EDITTEXT        IDC_ALIAS_ACTION,7,50,242,71,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Group:",IDC_GROUP_LABEL,7,127,22,8
+    EDITTEXT        IDC_ALIAS_GROUP,7,137,242,14,ES_AUTOHSCROLL
+    CONTROL         "Disabled",IDC_ALIAS_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,158,43,10
+END
+
+IDD_BARITEM_EDIT DIALOGEX 0, 0, 252, 174
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Edit Bar Item"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Separator",IDC_SEPARATOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,47,10
+    LTEXT           "Name:",IDC_NAME_LABEL,7,19,22,8
+    EDITTEXT        IDC_NAME,7,30,175,14,ES_AUTOHSCROLL
+    LTEXT           "Text (Or Variable or Procedure Call)",IDC_TEXT_LABEL,7,
+                    48,112,8
+    EDITTEXT        IDC_TEXT,7,58,176,14,ES_AUTOHSCROLL
+    LTEXT           "Position:",IDC_POSITION_LABEL,7,76,28,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_POSITION,47,76,40,14,ES_AUTOHSCROLL
+    LTEXT           "Length:",IDC_LENGTH_LABEL,115,76,25,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_LENGTH,153,76,40,14,ES_AUTOHSCROLL
+    LTEXT           "Fore Color",IDC_FORE_LABEL,33,100,33,8
+    CONTROL         "",IDC_BAR_FORECOLOR,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,7,97,19,14
+    LTEXT           "Back Color",IDC_BACK_LABEL,144,100,36,8
+    CONTROL         "",IDC_BAR_BACKCOLOR,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,117,97,19,14
+    LTEXT           "Group:",IDC_GROUP_LABEL,7,119,22,8
+    EDITTEXT        IDC_GROUP,7,130,187,14,ES_AUTOHSCROLL
+    CONTROL         "Disabled",IDC_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,157,43,10
+    DEFPUSHBUTTON   "OK",IDOK,195,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,195,24,50,14
+END
+
+IDD_VAR_EDIT DIALOGEX 0, 0, 256, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Edit Variable"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,24,50,14
+    LTEXT           "Variable Name:",IDC_STATIC,7,7,49,8
+    EDITTEXT        IDC_VAR_NAME,7,17,186,14,ES_AUTOHSCROLL
+    LTEXT           "Variable Value:",IDC_STATIC,7,40,48,8
+    EDITTEXT        IDC_VAR_VALUE,7,50,242,71,ES_MULTILINE | ES_AUTOVSCROLL
+    LTEXT           "Group:",IDC_STATIC,7,127,22,8
+    EDITTEXT        IDC_VAR_GROUP,7,137,242,14,ES_AUTOHSCROLL
+END
+
+IDD_EVENT_EDIT DIALOGEX 0, 0, 266, 175
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Edit Event"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Event Name",IDC_NAME_LABEL,7,7,40,8
+    EDITTEXT        IDC_EVENT_NAME,7,17,186,14,ES_AUTOHSCROLL
+    LTEXT           "Action:",IDC_ACTION_LABEL,7,40,23,8
+    EDITTEXT        IDC_EVENT_ACTION,7,50,242,71,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    LTEXT           "Group:",IDC_GROUP_LABEL,7,127,22,8
+    EDITTEXT        IDC_EVENT_GROUP,7,137,242,14,ES_AUTOHSCROLL
+    CONTROL         "Disabled",IDC_EVENT_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,158,43,10
+    LTEXT           "Seconds:",IDC_SECONDS_LABEL,171,160,31,8
+    EDITTEXT        IDC_EVENT_SECONDS,209,154,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,209,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,209,24,50,14
+END
+
+IDD_GAG_EDIT DIALOGEX 0, 0, 265, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Edit Gag"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,208,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,208,24,50,14
+    LTEXT           "Mask:",IDC_STATIC,7,7,20,8
+    EDITTEXT        IDC_GAG_MASK,7,17,186,14,ES_AUTOHSCROLL
+    LTEXT           "Group:",IDC_STATIC,7,34,22,8
+    EDITTEXT        IDC_GAG_GROUP,7,44,242,14,ES_AUTOHSCROLL
+    CONTROL         "Disabled",IDC_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,66,43,10
+END
+
+IDD_SUB_EDIT DIALOGEX 0, 0, 256, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Edit Substitution"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,24,50,14
+    LTEXT           "Mask:",IDC_STATIC,7,7,20,8
+    EDITTEXT        IDC_SUB_MASK,7,17,186,14,ES_AUTOHSCROLL
+    LTEXT           "Substitution:",IDC_STATIC,7,40,40,8
+    EDITTEXT        IDC_SUB_SUB,7,50,242,71,ES_MULTILINE | ES_AUTOVSCROLL
+    LTEXT           "Group:",IDC_STATIC,7,127,22,8
+    EDITTEXT        IDC_SUB_GROUP,7,137,242,14,ES_AUTOHSCROLL
+    CONTROL         "Disabled",IDC_SUB_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,158,43,10
+END
+
+IDD_MACRO_EDIT DIALOGEX 0, 0, 314, 174
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Edit Macro"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Key:",IDC_KEY_LABEL,7,7,15,8
+    EDITTEXT        IDC_MACRO_KEY,7,18,183,14,ES_AUTOHSCROLL
+    CONTROL         "Send to MUD",IDC_SEND_TO_MUD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,49,59,10
+    CONTROL         "Input control",IDC_INPUT_CONTROL,"Button",
+                    BS_AUTORADIOBUTTON,89,49,55,10
+    CONTROL         "Input control with CR",IDC_INPUT_CONTROLCR,"Button",
+                    BS_AUTORADIOBUTTON,161,50,80,10
+    LTEXT           "Action:",IDC_ACTION_LABEL,7,68,23,8
+    EDITTEXT        IDC_ACTION,7,77,235,44,ES_MULTILINE | ES_AUTOVSCROLL
+    LTEXT           "Group:",IDC_GROUP_LABEL,7,127,22,8
+    EDITTEXT        IDC_GROUP,7,137,237,14,ES_AUTOHSCROLL
+    CONTROL         "Disabled",IDC_MACRO_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,157,43,10
+    DEFPUSHBUTTON   "OK",IDOK,257,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,257,24,50,14
+    GROUPBOX        "Macro Destination",IDC_DEST_GROUP,7,38,236,27
+END
+
+IDD_HIGH_EDIT DIALOGEX 0, 0, 256, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Edit Hightlight"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,24,50,14
+    LTEXT           "Mask:",IDC_STATIC,7,7,20,8
+    EDITTEXT        IDC_HIGH_MASK,7,17,186,14,ES_AUTOHSCROLL
+    LTEXT           "Group:",IDC_STATIC,7,65,22,8
+    EDITTEXT        IDC_HIGH_GROUP,7,76,242,14,ES_AUTOHSCROLL
+    CONTROL         "Disabled",IDC_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,97,43,10
+    CONTROL         "",IDC_FORE_COLOR,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,7,42,20,16
+    CONTROL         "",IDC_BACK_COLOR,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,105,42,20,16
+    LTEXT           "Fore Color",IDC_STATIC,33,42,33,16,SS_CENTERIMAGE
+    LTEXT           "Back Color",IDC_STATIC,133,42,36,16,SS_CENTERIMAGE
+END
+
+IDD_ACTION_LISTDLG DIALOGEX 0, 0, 350, 169
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Defined Actions"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "List1",IDC_ACTIONLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_TABSTOP,7,7,281,155
+    PUSHBUTTON      "Close",IDOK,292,7,50,14
+    PUSHBUTTON      "&Add",IDC_BTN_ADD_ACTION,292,111,50,14
+    PUSHBUTTON      "&Edit",IDC_BTN_EDIT_ACTION,292,130,50,14,WS_DISABLED
+    PUSHBUTTON      "&Delete",IDC_BTN_DELETE_ACTION,292,148,50,14,
+                    WS_DISABLED
+END
+
+IDD_ALIAS_LISTDLG DIALOGEX 0, 0, 350, 169
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Defined Aliases"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "List1",IDC_ALIASLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,7,7,283,
+                    155
+    DEFPUSHBUTTON   "Close",IDOK,293,7,50,14
+    PUSHBUTTON      "&Add",IDC_BTN_ADD_ACTION,293,111,50,14
+    PUSHBUTTON      "&Edit",IDC_BTN_EDIT_ACTION,293,130,50,14,WS_DISABLED
+    PUSHBUTTON      "&Delete",IDC_BTN_DELETE_ACTION,293,148,50,14,
+                    WS_DISABLED
+END
+
+IDD_SCRIPT_PROGRESS DIALOGEX 0, 0, 214, 44
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    7,30,200,7
+    CONTROL         228,IDC_STATIC,"Static",SS_BITMAP,7,7,200,23
+END
+
+IDD_VBSCRIPT_TEST DIALOGEX 0, 0, 275, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "VB Script Tester"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,218,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,218,24,50,14
+    EDITTEXT        IDC_CODE,7,7,203,142,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_EVENT_LISTDLG DIALOGEX 0, 0, 350, 169
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Defined Events"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,293,7,50,14
+    CONTROL         "List1",IDC_EVENT_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,282,155
+    PUSHBUTTON      "&Add",IDC_EVENT_ADD,293,111,50,14
+    PUSHBUTTON      "&Edit",IDC_EVENT_EDIT,293,130,50,14,WS_DISABLED
+    PUSHBUTTON      "&Delete",IDC_EVENT_DELETE,293,148,50,14,WS_DISABLED
+END
+
+IDD_MACRO_LISTDLG DIALOGEX 0, 0, 350, 169
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Defined Macros"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,293,7,50,14
+    CONTROL         "List1",IDC_MACRO_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,282,155
+    PUSHBUTTON      "&Add",IDC_MACRO_ADD,293,111,50,14
+    PUSHBUTTON      "&Edit",IDC_MACRO_EDIT,293,130,50,14,WS_DISABLED
+    PUSHBUTTON      "&Delete",IDC_MACRO_DELETE,293,148,50,14,WS_DISABLED
+END
+
+IDD_BARITEM_LISTDLG DIALOGEX 0, 0, 350, 169
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Defined Status Bar Items"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "List1",IDC_BARITEM_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_TABSTOP,7,7,283,155
+    DEFPUSHBUTTON   "Close",IDOK,293,7,50,14
+    PUSHBUTTON      "&Add",IDC_BTN_ADD_BARITEM,293,111,50,14
+    PUSHBUTTON      "&Edit",IDC_BTN_EDIT_BARITEM,293,130,50,14,WS_DISABLED
+    PUSHBUTTON      "&Delete",IDC_BTN_DELETE_BARITEM,293,148,50,14,
+                    WS_DISABLED
+END
+
+IDD_MSP_OPTIONS DIALOG  0, 0, 210, 154
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "MSP/Sound Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use MSP",IDC_USE_MSP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,46,10
+    CONTROL         "Process MSP MUSIC",IDC_PROCESS_MUSIC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,23,83,10
+    CONTROL         "Process MSP SOUND",IDC_PROCESS_SOUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,36,87,10
+    CONTROL         "Use Direct X 8.0",IDC_DX_80,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,26,77,68,10
+    CONTROL         "Use PlaySound",IDC_PLAYSOUND,"Button",
+                    BS_AUTORADIOBUTTON,107,77,65,10
+    CONTROL         "Debug MSP Triggers",IDC_DEBUG_MSP_TRIGGERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,126,82,10
+    GROUPBOX        "Sound Rendering Mode",IDC_STATIC,7,63,196,34
+END
+
+IDD_NEWSESSION_SCRIPT_INFO DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Character Script File"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Mud Master 2000 stores configuration information (font and color preferences, folder locations) in a special file called a ""Session"" file. This file will be named after the character name you chose on the previous page.",
+                    IDC_STATIC,7,7,303,26
+    LTEXT           "One of the strengths of Mud Master 2000 is its well known scripting language that allows you to automatically react to events from the MUD, write shortcut commands, highlight text etc.   These scripts are stored in script files",
+                    IDC_STATIC,7,39,303,26
+    LTEXT           "You can select a script file that you wish to load every time you open this character's session in Mud Master 2000:",
+                    IDC_STATIC,7,71,303,17
+    LTEXT           "Script File Name:",IDC_STATIC,14,94,54,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_SCRIPT_NAME,74,94,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "B&rowse...",IDC_BROWSE_FOR_SCRIPT,260,94,50,14
+END
+
+IDD_NEWSESSION_WELCOME DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "New Character Wizard"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Welcome to the Mud Master 2000 New Character Wizard",
+                    IDC_WELCOME_HEAD,115,8,195,24
+    LTEXT           "This wizard will guide you through the process of creating a new Mud Master 2000 character file.",
+                    IDC_WELCOME_BODY,115,40,195,17
+    LTEXT           "When you customize Mud Master 2000, those settings will be stored in a Character File.  Character files hold the following:",
+                    IDC_STATIC,115,63,195,18
+    LTEXT           "Mud name, address and port",IDC_STATIC,122,87,91,8
+    LTEXT           "Customized color information",IDC_STATIC,122,101,90,8
+    LTEXT           "Various path information (upload, download, etc)",
+                    IDC_STATIC,122,115,188,8
+    LTEXT           "Font selections",IDC_STATIC,122,129,48,8
+    LTEXT           "Scrollback buffer size",IDC_STATIC,122,143,68,8
+    LTEXT           "And more!",IDC_STATIC,122,157,33,8
+END
+
+IDD_NEWSESSION_MUD_PAGE DIALOGEX 0, 0, 317, 142
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "MUD/Character Information"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Name:",IDC_STATIC,14,19,22,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CHARACTER_NAME,46,19,99,14,ES_AUTOHSCROLL
+    LTEXT           "&Address:",IDC_STATIC,14,69,28,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_MUD_ADDRESS,46,69,99,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_FOR_MUD,153,69,50,14,WS_DISABLED
+    LTEXT           "&Port:",IDC_STATIC,14,89,16,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_IDC_MUD_PORT,46,89,61,14,ES_AUTOHSCROLL
+    LTEXT           "The character name is the name by which you are known on the MUD.",
+                    IDC_STATIC,7,7,224,8
+    LTEXT           "The addess is the internet address of the MUD you wish for this session to connect to.  An internet  address for a MUD usually consists of an IP address and a port number. (e.g. medievia.com 4000 ... medievia.com is the address and 4000 is the port.",
+                    IDC_STATIC,7,39,303,24
+    CONTROL         "Some MUDS use the Telnet ""Go Ahead"" signal to let a MUD client know that the MUD has finished sending data.  Check this box if you know that your MUD supports this.  If you're not sure, leave it unchecked.",
+                    IDC_END_OF_LINE_DETECT,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    BS_MULTILINE | WS_TABSTOP,14,109,296,26
+END
+
+IDD_NEWSESSION_COMPLETE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Finished"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Completing the New Session Wizard",IDC_COMPLETE_HEADER,
+                    115,8,195,24
+    LTEXT           "You have successfully completed the new session wizard.  This session will be stored in the file:",
+                    IDC_STATIC,115,40,195,23
+    EDITTEXT        IDC_SESSION_PATH,115,68,195,48,ES_MULTILINE | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Load character now",IDC_CONNECT_NOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,115,130,195,10
+    CONTROL         "You can configure Mud Master 2000 to load a character file each time Mud Master 2000 starts. Would you like for Mud Master 2000 to load this character at startup every time it starts up?",
+                    IDC_DEFAULT_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,115,149,195,30
+END
+
+IDD_FIRSTTIME_WELCOME DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "First Time Setup Wizard"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Mud Master 2000 First Time Startup Wizard",IDC_TITLE,
+                    115,8,195,24
+    LTEXT           "Welcome the Mud Master 2000 First Time Startup Wizard.",
+                    IDC_STATIC,115,40,195,27
+END
+
+IDD_FIRSTTIME_COMPLETE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "First Time Setup Complete"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Mud Master 2000 First Time Setup Complete",IDC_TITLE,
+                    115,8,195,32
+    CONTROL         "Run the Character Setup Wizard to create a new Mud Master 2000 Character File",
+                    IDC_RUN_CHARACTER_SETUP,"Button",BS_AUTOCHECKBOX | 
+                    BS_TOP | BS_MULTILINE | WS_TABSTOP,115,92,195,19
+END
+
+IDD_FIRSTTIME_PATHS DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Mud Master 2000 Folders"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Help Files:",IDC_STATIC,14,39,34,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_HELP_FILES,73,39,181,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_HELP,260,39,50,14
+    LTEXT           "&Download Folder:",IDC_STATIC,14,59,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_DOWNLOAD_FOLDER,73,59,181,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_DOWNLOAD,260,59,50,14
+    LTEXT           "&Upload Folder:",IDC_STATIC,14,79,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_UPLOAD_FOLDER,73,79,181,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_UPLOAD,260,79,50,14
+    LTEXT           "&Sound Files",IDC_STATIC,14,99,37,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_SOUND_FOLDER,73,99,181,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_SOUND,260,99,50,14
+    LTEXT           "&Log Files:",IDC_STATIC,14,119,31,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_LOG_FOLDER,73,119,181,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_LOG,260,119,50,14
+    LTEXT           "Mud Master 2000 needs to know where several different kinds of files can be located on your computer and has identified the following locations as defaults.  Please confirm that these folders are set up the way you wish them to be:",
+                    IDC_STATIC,7,7,303,26
+END
+
+IDD_FIRSTTIME_CHAT DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Mud Master 2000 Chat Server Options"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Mud Master 2000 has a built in p2p chat server. This chat server needs to know what ""Port"" you wish to listen for connections on. Generally the default port of 4050 is perfect, but some users may wish to have their chat server listen on another port",
+                    IDC_STATIC,7,7,303,26
+    LTEXT           "Chat Server Port:",IDC_STATIC,14,39,58,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,76,39,48,14,ES_AUTOHSCROLL
+    LTEXT           "When you communicate with other Mud Master users through the Mud Master peer to peer chat network, you will be identified by your ""chat name"".  Each session can have its own chat name, but we can set the default chat name for all sessions here",
+                    IDC_STATIC,7,59,303,26
+    LTEXT           "Chat Name:",IDC_STATIC,14,91,58,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CHATNAME,76,91,82,14,ES_AUTOHSCROLL
+END
+
+IDD_DEFAULTS_DIALOG DIALOGEX 0, 0, 305, 74
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Mud master 2000 Defaults"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Which session file should Mud Master 2000 load every time it starts?",
+                    IDC_STATIC,7,7,200,8
+    EDITTEXT        IDC_DEFAULT_SESSION_PATH,7,18,234,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_DEFAULT,248,18,50,14
+    PUSHBUTTON      "&Defaults...",IDC_EDIT_DEFAULTS,248,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,53,50,14
+    PUSHBUTTON      "OK",IDOK,160,53,50,14
+END
+
+IDD_MUD_MANAGER DIALOGEX 0, 0, 328, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "MUD Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_MUD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,24,257,163
+    PUSHBUTTON      "&Add",IDC_BUTTON3,271,7,50,14
+    PUSHBUTTON      "&Edit",IDC_BUTTON4,271,26,50,14
+    PUSHBUTTON      "&Delete",IDC_BUTTON5,271,45,50,14
+    PUSHBUTTON      "&Save",IDOK,271,76,50,14
+    PUSHBUTTON      "Discard",IDCANCEL,271,94,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_MESSAGE_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_PATH_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        VERTGUIDE, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_TERMINAL_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        VERTGUIDE, 14
+        VERTGUIDE, 163
+        VERTGUIDE, 169
+        VERTGUIDE, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+        HORZGUIDE, 15
+        HORZGUIDE, 30
+        HORZGUIDE, 36
+        HORZGUIDE, 51
+        HORZGUIDE, 57
+        HORZGUIDE, 62
+        HORZGUIDE, 67
+        HORZGUIDE, 72
+        HORZGUIDE, 115
+        HORZGUIDE, 124
+        HORZGUIDE, 139
+        HORZGUIDE, 148
+        HORZGUIDE, 163
+        HORZGUIDE, 169
+        HORZGUIDE, 225
+    END
+
+    IDD_MISC_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        VERTGUIDE, 14
+        VERTGUIDE, 22
+        VERTGUIDE, 41
+        VERTGUIDE, 127
+        VERTGUIDE, 133
+        VERTGUIDE, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+        HORZGUIDE, 14
+        HORZGUIDE, 21
+        HORZGUIDE, 33
+        HORZGUIDE, 38
+        HORZGUIDE, 52
+        HORZGUIDE, 59
+        HORZGUIDE, 69
+        HORZGUIDE, 75
+        HORZGUIDE, 90
+    END
+
+    IDD_TERMINAL_FORE_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        VERTGUIDE, 14
+        VERTGUIDE, 80
+        VERTGUIDE, 86
+        VERTGUIDE, 152
+        VERTGUIDE, 158
+        VERTGUIDE, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+        HORZGUIDE, 17
+        HORZGUIDE, 32
+        HORZGUIDE, 38
+        HORZGUIDE, 53
+        HORZGUIDE, 59
+        HORZGUIDE, 96
+        HORZGUIDE, 111
+        HORZGUIDE, 117
+        HORZGUIDE, 132
+        HORZGUIDE, 138
+    END
+
+    IDD_FORE_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_BACK_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_SESSION_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_SESSION_NOTES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_ACTION_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_ACTION_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_ALIAS_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_BARITEM_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_VAR_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_EVENT_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_GAG_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_SUB_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_MACRO_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_HIGH_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_ACTION_LISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_ALIAS_LISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_SCRIPT_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 37
+    END
+
+    IDD_VBSCRIPT_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_EVENT_LISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_MACRO_LISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_BARITEM_LISTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_MSP_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_NEWSESSION_SCRIPT_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 14
+        VERTGUIDE, 68
+        VERTGUIDE, 74
+        VERTGUIDE, 254
+        VERTGUIDE, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+        HORZGUIDE, 33
+        HORZGUIDE, 39
+        HORZGUIDE, 65
+        HORZGUIDE, 71
+        HORZGUIDE, 88
+        HORZGUIDE, 94
+    END
+
+    IDD_NEWSESSION_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        VERTGUIDE, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_NEWSESSION_MUD_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 7
+        VERTGUIDE, 14
+        VERTGUIDE, 46
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+        HORZGUIDE, 33
+        HORZGUIDE, 39
+        HORZGUIDE, 63
+        HORZGUIDE, 69
+        HORZGUIDE, 83
+        HORZGUIDE, 89
+        HORZGUIDE, 103
+        HORZGUIDE, 109
+    END
+
+    IDD_NEWSESSION_COMPLETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_FIRSTTIME_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_FIRSTTIME_COMPLETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_FIRSTTIME_PATHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 14
+        VERTGUIDE, 69
+        VERTGUIDE, 73
+        VERTGUIDE, 254
+        VERTGUIDE, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+        HORZGUIDE, 33
+        HORZGUIDE, 39
+        HORZGUIDE, 53
+        HORZGUIDE, 59
+        HORZGUIDE, 73
+        HORZGUIDE, 79
+        HORZGUIDE, 93
+        HORZGUIDE, 99
+        HORZGUIDE, 113
+        HORZGUIDE, 119
+    END
+
+    IDD_FIRSTTIME_CHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 14
+        VERTGUIDE, 72
+        VERTGUIDE, 76
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+        HORZGUIDE, 33
+        HORZGUIDE, 39
+        HORZGUIDE, 53
+        HORZGUIDE, 59
+        HORZGUIDE, 85
+        HORZGUIDE, 91
+        HORZGUIDE, 105
+    END
+
+    IDD_DEFAULTS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+        HORZGUIDE, 53
+    END
+
+    IDD_MUD_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        VERTGUIDE, 264
+        VERTGUIDE, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_INPUTCALLBACK       REGISTRY                "InputCallback.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INPUT_CONTROL DLGINIT
+BEGIN
+    IDC_MMSTATUSCTRL1, 0x376, 72, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1a90, 0x0000, 0x043d, 0x0000, 0x000d, 
+0x0000, 0x0000, 0x0000, 0xc0c0, 0x00c0, 0x0300, 0xe352, 0x910b, 0xce8f, 
+0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0000, 0x9000, 0x4401, 0x0142, 
+0x0d00, 0x534d, 0x5320, 0x6e61, 0x2073, 0x6553, 0x6972, 0x6566, 0x6972, 
+
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SPLITTER            CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_MAIN_TOOLBAR        "Mud Master 2000"
+    IDS_IFX_TOOLBAR         "Session Tool Bar"
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_VARIABLE_REMOVED    "The variable has been removed"
+    CG_IDS_PHYSICAL_MEM     "%lu KB"
+    CG_IDS_DISK_SPACE       "%lu KB Free on %c:"
+    CG_IDS_DISK_SPACE_UNAVAIL "Unavailable"
+    IDS_INVALID_VARIABLE_INDEX "That variable index is invalid. [%d]"
+    IDS_VARNAME_NOT_FOUND   "A variable by that name could not be found. [%s]"
+    IDS_WIZARD_HEAD_FACE_NAME "Verdana Bold"
+    IDS_BROWSE_HELP_FOLDER  "Select the folder where your Mud Master 2000 help files are stored"
+    IDS_BROWSE_DOWNLOAD_FOLDER 
+                            "Select the folder where you would like Mud Master 2000 to store files sent to you from other Mud Master users"
+    IDS_BROWSE_UPLOAD_FOLDER 
+                            "Select the default folder where Mud Master 2000 should look for files you wish to send to other Mud Master users"
+    IDS_BROWSE_SOUND_FOLDER "Select the folder where Mud Master 2000 will search for sound files, this is the root folder for MSP"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_IFX                 "\nsession\nSession File\nSession Files (*.mms)\n.mms\nmmses.Document\nMud Master Session"
+    IDR_MAINFRAME           "Mud Master 2000"
+    IDR_IFXTYPE             "\nsession\nSession File\nSession Files (*.mms)\n.mms\nmmses.Document\nMud Master Session"
+    IDR_SESSMGRTYPE         "\ncharman\nCharacter Manager\nCharacter Manager Files (*.cmg)\n.cmg\ncharman.Document\nCharacter Manager Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Mud Master 2000"
+    AFX_IDS_IDLEMESSAGE     "Mud Master 2000, there IS no substitute."
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_IP         "888.888.888.888"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_ONLINE     "OFFLINE"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new session\nNew"
+    ID_FILE_OPEN            "Open an existing session\nOpen"
+    ID_FILE_CLOSE           "Close the active session\nClose"
+    ID_FILE_SAVE            "Save the active session\nSave"
+    ID_FILE_SAVE_AS         "Save the active session with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active session\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active session through electronic mail\nSend Mail"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_USER_TOOLBAR8   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR9   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR10  "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_WORKSPACE       "Show or hide the workspace bar\nToggle Workspace"
+    ID_VIEW_OUTPUT          "Show or hide the debug bar\nToggle Debug Window"
+    ID_TOOLS_ENTRY          "User-defined tools\nUser Tools"
+    ID_USER_TOOL1           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL2           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL3           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL4           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL5           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL6           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL7           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL8           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL9           "Activates user-defined tool\nUser Tool"
+    ID_USER_TOOL10          "Activates user-defined tool\nUser Tool"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MACRO_START          "Activates user-defined macro\nUser Macro"
+    ID_MACRO_1              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_2              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_3              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_4              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_5              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_6              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_7              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_8              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_9              "Activates user-defined macro\nUser Macro"
+    ID_MACRO_10             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_11             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_12             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_13             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_14             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_15             "Activates user-defined macro\nUser Macro"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MACRO_16             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_17             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_18             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_19             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_20             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_21             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_22             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_23             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_24             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_25             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_26             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_27             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_28             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_29             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_30             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_31             "Activates user-defined macro\nUser Macro"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MACRO_32             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_33             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_34             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_35             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_36             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_37             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_38             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_39             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_40             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_41             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_42             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_43             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_44             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_45             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_46             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_47             "Activates user-defined macro\nUser Macro"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MACRO_48             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_49             "Activates user-defined macro\nUser Macro"
+    ID_MACRO_50             "Activates user-defined macro\nUser Macro"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MACRO_END            "Activates user-defined macro\nUser Macro"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "The folder you selected for your sound path does not exists...please select another folder"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSGBOX_TITLE        "Mud Master 2000"
+    IDS_DOWNLOAD_TITLE      "Select a directory for downloads."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOG_TITLE           "Select a directory for log files."
+    IDS_SESSION_TITLE       "Select a directory for script files."
+    IDS_SOUND_TITLE         "Select a directory where sound files can be found."
+    IDS_UPLOAD_TITLE        "Select a destination directory for uploaded files."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_CUSTOMIZE       "Customize toolbars and menus.\nCustomize"
+    ID_DEMO_MAXIMISE        "Restore Mud Master 2000 from the System Tray\nRestore"
+    ID_DEMO_MINIMISE        "Minimize Mud Master 2000 to the system tray\nMinimize"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_MANAGER       "Manages the currently open windows\nWindow List"
+    ID_VIEW_USER_TOOLBAR1   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR2   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR3   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR4   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR5   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR6   "Show or hide the user toolbar\nToggle User ToolBar"
+    ID_VIEW_USER_TOOLBAR7   "Show or hide the user toolbar\nToggle User ToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_OPTIONS         "View and change options\nOptions"
+    ID_SESSION_CONNECT      "Connect to server\nConnect"
+    ID_SESSION_ZAP          "Disconnect from server\nZap"
+    ID_FULL_SCREEN          "Puts the application in full screen mode\nFull Screen Mode"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SESSION_LOG          "Log this session to a file\nLog"
+    ID_SESSION_SAVESCROLLBACK 
+                            "Save the contents of the scroll back buffer to a file\nSave Scrollback"
+    ID_SESSION_READSCRIPT   "Load a script file\nLoad Script"
+    ID_SESSION_STARTCHATSERVER "Start the chat server\nStart Chat Server"
+    ID_SESSION_STOPCHATSERVER 
+                            "Stops the chat server from accepting new connections\nStop Chat Server"
+    ID_FILE_EXIT            "Exits the application\nExit"
+    ID_SESSION_NEWSESSION   "Create a new session.\nNew Session"
+    ID_SESSION_EDITSESSION  "Change the information for the selected session.\nEdit Session"
+    ID_SESSION_DELETESESSION "Delete the selected session.\nDelete Session"
+    ID_SESSION_LAUNCHSESSION "Launch the selected session.\nLaunch Session"
+    ID_CATEGORIES_NEWCATEGORY "Create a new category.\nNew Category"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CATEGORIES_EDITCATEGORY "Change category information.\nChange Category"
+    ID_CATEGORIES_DELETECATEGORY "Delete Category.\nDelete Category"
+    ID_INPUTCONTEXT_COPY    "Copy the selection to the clipboard\nCopy"
+    ID_INPUTCONTEXT_CUT     "Cut the selection from the input control\nCut"
+    ID_INPUTCONTEXT_PASTE   "Paste current clipboard contents to the input control\nPaste"
+    ID_SESSION_CONFIGURATION 
+                            "Configure session related settings\nSession Configuration"
+    ID_CONFIGURATION_DEFAULTSESSION 
+                            "&Set the default session\\Default Session"
+    ID_HELP_SENDBUGREPORT   "Send a bug report to mmgui@mud-master.com\nBug Report"
+    ID_CONFIGURATION_ACTIONSTRIGGERS 
+                            "Manage actions, aliases, events...etc\nScript Entity Editor"
+    ID_VIEW_CAPTIONS        "Turns on the captions for the workspace and the output window\nView Captions"
+    ID_FORCE_GRADIENT       "Force a gradient caption on the workspace and output bars\nForce Gradient"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONFIGURATION_ACTIONS "Display, edit and remove actions\nActions"
+    ID_CONFIGURATION_ALIASES "Display, edit and remove aliases\nAliases"
+    ID_SESSION_TESTVBSCRIPT "Test VBScript\nVBScript"
+    ID_POPUP_SENDFILE       "Send a file to this chat connection.\nSend File"
+    ID_POPUP_MARKPRIVATE    "Mark this connection as private\nMark Private"
+    ID_POPUP_ALLOWCOMMANDS  "Allow this chat connection to send commands to you\nAllow Commands"
+    ID_POPUP_ALLOWTRANSFERS "Allow this chat connection to send files to you\nAllow transfers"
+    ID_POPUP_IGNORE         "Ignore this chat connection\nIgnore"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_POPUP_SERVE          "Serve this connection to your other connections\nServe"
+    ID_POPUP_ALLOWSNOOP     "Allow this connection to snoop you\nAllow Snoop"
+    ID_POPUP_SNOOP          "Snoop this connection\nSnoop"
+    ID_CONFIGURATION_EVENTS "Add, Edit or Delete Events\nEvents"
+    ID_POPUP_UNCHAT         "Disonnect this chat session from your chat server\nUn-Chat"
+    ID_POPUP_PING           "Ping this connection\nPing"
+    ID_POPUP_REQUESTCONNECTIONS 
+                            "Request the connections this chat connection currently has\nRequest Connections"
+    ID_POPUP_PEEKCONNECTIONS 
+                            "Peek at the connections this chat connection currently has\nPeek Connections"
+    ID_CONFIGURATION_MACROS "Add, Edit or Delete Macros\nMacros"
+    ID_CONFIGURATION_SELECTSKIN "Select a skin for MM2K"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONFIGURATION_STATUSBARITEMS 
+                            "Edit your list of status bar items\nStatus Bar Items"
+    ID_WINDOW_DESKTOP       "Make the desktop window the parent of this window\nDesktop"
+    ID_FILE_WIZARD          "Create a new Mud Master 2000 Character\nNew Character"
+    ID_FILE_EDITDEFAULTS    "Edit the default configuration and set the default session."
+    ID_FILE_EDITDEFAULTS32906 
+                            "Edit the default configuration and set the default session."
+    ID_HELP_HELPFORMUDMASTER2000 "Mud Master 2000 Help"
+    ID_HELP_HELPFORMUDMASTER2001 "Mud Master 2000 Help"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BROWSE_LOG_FOLDER   "Select the folder where you would like for Mud Master 2000 to store log files"
+    IDS_MISSING_CHATNAME    "Please set your default chat name before continuing"
+    IDS_MISSING_HELPPATH    "Please select a default folder for your help files"
+    IDS_MISSING_DOWNLOADPATH 
+                            "Please select a default folder for your download files"
+    IDS_MISSING_UPLOADPATH  "Please select a default folder for your uploaded files"
+    IDS_MISSING_SOUNDPATH   "Please select a folder where Mud Master 2000 can find your sound files"
+    IDS_MISSING_LOGPATH     "Please select a folder where Mud Master 2000 should store log files"
+    IDS_INVALID_HELPPATH    "The folder you selected for your help path does not exist.\nWould you like to create it now?"
+    IDS_INVALID_DOWNLOADPATH 
+                            "The folder you selected for your download path does not exist.\nWould you like to create it now?"
+    IDS_INVALID_UPLOADPATH  "The folder you selected for your upload path does not exist.\nWould you like to create it now?"
+    IDS_INVALID_SOUNDPATH   "The folder you selected for your sound files does not exist.\nWould you like to create it now?"
+    IDS_INVALID_LOGPATH     "The folder you selected for your log files does not exist.\nWould you like to create it now?"
+    IDS_EMPTYMUDADDRESS     "Please enter the address of the MUD that this session should connect to."
+    IDS_EMPTYCHARACTERNAME  "Please enter the name of the character that this session will manage.\nThe value you enter here will also be used as the filename for session file."
+    IDS_EMPTYSOUNDPATH      "You must specify a path for the sound files."
+    IDS_EMPTY_SCRIPT_PATH   "You must enter a path to the script that you wish to use for this session"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INVALID_SCRIPT_PATH "The file you specified for your script does not exist.\nWould you like to create it now?"
+    IDS_SESSION_OPTIONS_TITLE "Session Options"
+    IDS_EDIT_DEFAULTS       "Default options used for new sessions"
+    IDS_LOST_SOCKET_HANDLE  "Lost the socket handle somewhere.  You shouldn't ever see this message."
+    IDS_CHATSERVER_REMOTE_CLOSED_CONNECTION 
+                            "%s has closed the chat connection."
+    IDS_CHATSERVER_CHAT_CONNECTION_NOT_FOUND 
+                            "\n<CHAT> Could not find chat connection.\n"
+    IDS_CHATSERVER_ERROR_OCCURRED 
+                            "\n<CHAT> an error occured while parsing response!.\n"
+    IDS_CHATSERVER_FILE_TRANSFER_CANCELED 
+                            "\n<CHAT> File transfer cancelled.\n"
+    IDS_CHATSERVER_PING_REQUEST_SENT "\n<CHAT> Ping Request Sent.\n"
+    IDS_CHATSERVER_COMMAND_SENT "\n<CHAT> Command sent.\n"
+    IDS_CHATSERVER_FILE_TRANSFER_ALREADY_IN_PROGRESS 
+                            "\n<CHAT> There is already a file transfer in progress.\n"
+    IDS_CHATSERVER_FILE_TRANSFER_STARTED "\n<CHAT> File transfer started.\n"
+    IDS_CHATSERVER_YOU_CHAT_TO_EVERYONE "\nYou chat to everybody, '%s'\n"
+    IDS_CHATSERVER_CHATS_TO_EVERYONE "%c\n%s chats to everybody, '%s%s%s'\n%c"
+    IDS_CHATSERVER_YOU_CHAT_TO_GROUP "\nYou chat to <%s%s%s>, '%s%s%s'\n"
+    IDS_CHATSERVER_CHATS_TO_GROUP "%c%-15s\n%s chats to the group, '%s'\n%c"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHATSERVER_YOU_CHAT_TO_PERSON "\nYou chat to %s, '%s'\n"
+    IDS_CHATSERVER_CHATS_TO_YOU "%c\n%s chats to you, '%s'\n%c"
+    IDS_CHATSERVER_YOU_EMOTE_TO_EVERYONE "\nYou emote to everybody: %s %s\n"
+    IDS_CHATSERVER_FAILED_TO_CREATE_SOCKET "Error starting chat server: %s"
+    IDS_CHATSERVER_YOU_EMOTE_TO_GROUP "\nYou emote to <%s>: %s %s\n"
+    IDS_CHATSERVER_YOU_EMOTE_TO_PERSON "\nYou emote to %s: %s %s\n"
+    IDS_CHATSERVER_NAME_CHANGE "\n<CHAT> %s is now %s.\n"
+    IDS_CHATSERVER_REQUESTED_YOUR_PUBLIC_CONNECTIONS 
+                            "\n<CHAT> %s has requested your public connections.\n"
+    IDS_CHATSERVER_CONNECTIONS_RETURNED "\n<CHAT> %d connections returned.\n"
+    IDS_CHATSERVER_ALREADY_CONNECTED_WITH "Already connected with: %s:%s"
+    IDS_CHATSERVER_DND_IS_ON "\n<CHAT> %s has do not disturb enabled.\n"
+    IDS_CHATSERVER_NOT_ALLOWING_TRANSFERS "%cNot allowing file transfers.%c"
+    IDS_CHATSERVER_CURRENTLY_TRANSFERRING "%cCurrently transferring a file.%c"
+    IDS_CHATSERVER_INVALID_PACKET "%cInvalid start packet.%c"
+    IDS_CHATSERVER_FILE_ALREADY_EXISTS "%cFile already exists.%c"
+    IDS_CHATSERVER_FILE_BEING_SENT_ALREADY_EXISTS 
+                            "\n<CHAT> File [%s] being sent by %s, already exists.\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHATSERVER_UNABLE_TO_CREATE_FILE "%cUnable to create the file. %c"
+    IDS_CHATSERVER_FAILED_TO_CREATE_FILE 
+                            "\n<CHAT> Failed to create [%s]: ([%-8.8x]) - [%s]\n"
+    IDS_CHATSERVER_RECEIVING_FILE_FROM 
+                            "\n<CHAT> Receiving a file from %s -- Filename: %s, Length: %u\n"
+    IDS_CHATSERVER_CALLING  "Calling %s:%u ..."
+    IDS_CHATSERVER_CONNECTION_FAILED "Connection to %s:%d failed: %s"
+    IDS_CHATSERVER_WAITING_FOR_RESPONSE "Waiting for response from %s:%d ..."
+    IDS_CHATSERVER_CHAT_WAS_DENIED "Chat to %s:%d was denied."
+    IDS_CHATSERVER_CONNECTION_ACCEPTED 
+                            "\n<CHAT> Connection to %s at %s:%d accepted.\n"
+    IDS_CHATSERVER_NEGOTIATION_FAILED "Chat negotiation failed."
+    IDS_CHATSERVER_ACCEPT_REQUEST_QUESTION "Chat request from %s.  Accept it?"
+    IDS_CHATSERVER_CHATREQUEST "Chat Request"
+    IDS_CHATSERVER_CHAT_REQUEST_ACCEPTED 
+                            "\n<CHAT> request from %s at %s:%d accepted.\n"
+    IDS_CHATSERVER_LOST_SOCKET_HANDLE 
+                            "Lost the socket handle somewhere.  You shouldn't ever see this message."
+    IDS_CHATSERVER_CHAT_CONNECTION_LOST "Chat connection with %s lost."
+    IDS_CHATSERVER_FAILED_TO_ACCEPT_SOCKET "Failed accepting the socket."
+    IDS_CHATSERVER_FAILED_TO_SET_NONBLOCK 
+                            "Failed to set the socket non-blocking."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHATSERVER_NEGOTIATING_INCOMING_CHAT 
+                            "\n<CHAT> Negotiating incoming chat ...\n"
+    IDS_CHATSERVER_FILE_START_DENIED 
+                            "\n<CHAT> File start denied from %s: %s\n"
+    IDS_CHATSERVER_FILE_TRANSFER_COMPLETE 
+                            "\n<CHAT> File transfer complete.  File: %s, Length: %u, Time: %d:%02d  bps: %d\n"
+    IDS_CHATSERVER_NEGOTIATION_FAILED_S "Negotiation failed: %s"
+    IDS_CHATSERVER_PING_RETURNED "\n<CHAT> Ping returned from %s: %.3f\n"
+    IDS_CHATSERVER_IS_PEEKING_AT_YOUR_CONNECTIONS 
+                            "\n<CHAT> %s is peeking at your connections.\n"
+    IDS_CHATSERVER_DOESNT_HAVE_OTHER_CONNECTIONS 
+                            "\n<CHAT> %s doesn't have any other connections."
+    IDS_CHATSERVER_CHAT_PEEK_FOUND_CONNECTIONS 
+                            "\n<CHAT> Peek found %d connections.\n"
+    IDS_CHATSERVER_HAS_NOT_GIVEN_PERM_TO_SNOOP 
+                            "<CHAT> %s has not given you permission to snoop."
+    IDS_CHATSERVER_HAS_STOPPED_SNOOPING_YOU 
+                            "<CHAT> %s has stopped snooping you."
+    IDS_CHATSERVER_YOU_STOPPED_SNOOPING "<CHAT> You have stopped snooping %s."
+    IDS_CHATSERVER_YOU_ARE_BEING_SNOOPED_BY 
+                            "<CHAT> You are being snooped by %s."
+    IDS_CHATSERVER_YOU_HAVE_BEGUN_SNOOPING 
+                            "\n<CHAT> You have begun snooping %s.\n"
+    IDS_CHATSERVER_IS_NOT_ALLOWING_COMMANDS 
+                            "%c<CHAT> %s is not allowing commands.%c"
+    IDS_CHATSERVER_RECEIVED "\n<CHAT> %s received.\n"
+    IDS_CHATSERVER_FILE_NOT_FOUND "\n<CHAT> File not found: %s\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHATSERVER_CHAT_CONNECTION_S_NOT_FOUND 
+                            "Chat connection [%s] not found."
+    IDS_CHATSERVER_CHAT_CONNECTION_S_DISCONNECTED 
+                            "Chat connection [%s] disconnected."
+    IDS_CHATSERVER_NO_NAME_PROVIDED "No name provided."
+    IDS_CHATSERVER_ADDRESS_SEGMENT_CORRUPT "Address segment corrupt."
+    IDS_CHATSERVER_YOU_DO_NOT_HAVE_CONNECTIONS 
+                            "You do not have any chat connections."
+    IDS_CHATSERVER_NO_FILE_TRANSFER_IN_PROGRESS 
+                            "No file transfer in progress."
+    IDS_CHATSERVER_RECEIVING_S_FROM_S "Receiving %s from %s.\n"
+    IDS_CHATSERVER_SENDING_S_TO_S "Sending %s to %s.\n"
+    IDS_CHATSERVER_FILE_LENGTH_U "      File Length: %u\n"
+    IDS_CHATSERVER_BYTES_RECEIVED_U "   Bytes Received: %u\n"
+    IDS_CHATSERVER_BYTES_REMAINING "  Bytes Remaining: %u\n"
+    IDS_CHATSERVER_BYTES_PER_SECOND_U "              bps: %u\n"
+    IDS_CHATSERVER_BYTES_SENT "       Bytes Sent: %u\n"
+    IDS_CHATSERVER_NO_LONGER_ACCEPTING_COMMANDS_FROM_S 
+                            "No longer accepting commands from %s."
+    IDS_CHATSERVER_S_IS_NO_LONGER_ACCEPTING_COMMANDS_FROM_YOU 
+                            "<CHAT> %s is no longer accepting commands from you."
+    IDS_CHATSERVER_NOW_ACCEPTING_COMMANDS_FROM_S 
+                            "Now accepting commands from %s."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHATSERVER_S_IS_NOW_ACCEPTING_COMMANDS_FROM_YOU 
+                            "<CHAT> %s is now accepting commands from you."
+    IDS_CHATSERVER_NO_LONGER_IGNORING_S "No longer ignoring %s."
+    IDS_CHATSERVER_NOW_IGNORING_S "Now ignoring %s."
+    IDS_CHATSERVER_S_MARKED_AS_PUBLIC "%s marked as public."
+    IDS_CHATSERVER_S_HAS_MARKED_YOUR_CONNECTION_PUBLIC 
+                            "<CHAT> %s has marked your connection public."
+    IDS_CHATSERVER_S_MARKED_AS_PRIVATE "%s marked as private."
+    IDS_CHATSERVER_S_HAS_MARKED_YOUR_CONNECTION_PRIVATE 
+                            "<CHAT> %s has marked your connection private."
+    IDS_CHATSERVER_S_IS_NO_LONGER_BEING_SERVED "%s is no longer being served."
+    IDS_CHATSERVER_YOU_ARE_NO_LONGER_SERVED_BY_S 
+                            "<CHAT> You are no longer being ChatServed by %s."
+    IDS_CHATSERVER_S_IS_BEING_SERVED "%s is being served."
+    IDS_CHATSERVER_YOU_ARE_BEING_SERVED_BY_S 
+                            "<CHAT> You are now being ChatServed by %s."
+    IDS_CHATSERVER_S_IS_NO_LONGER_ALLOWED_TO_SNOOP_YOU 
+                            "%s is no longer allowed to snoop you."
+    IDS_CHATSERVER_YOU_ARE_NO_LONGER_ALLOWED_TO_SNOOP_S 
+                            "<CHAT> You are no longer allowed to snoop %s."
+    IDS_CHATSERVER_S_IS_NOW_ALLOWED_TO_SNOOP_YOU 
+                            "%s is now allowed to snoop you."
+    IDS_CHATSERVER_YOU_ARE_NOW_ALLOWED_TO_SNOOP_S 
+                            "<CHAT> You are now allowed to snoop %s."
+    IDS_CHATSERVER_S_IS_NO_LONGER_ALLOWED_TO_SEND_YOU_FILES 
+                            "%s is no longer allowed to send you files."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHATSERVER_S_IS_NO_LONGER_ACCEPTING_FILE_TRANSFERS_FROM_YOU 
+                            "<CHAT> %s is no longer accepting file transfers from you."
+    IDS_CHATSERVER_S_IS_ALLOWED_TO_SEND_YOU_FILES 
+                            "%s is allowed to send you files."
+    IDS_CHATSERVER_S_IS_ACCEPTING_FILE_TRANSFERS_FROM_YOU 
+                            "<CHAT> %s is accepting file transfers from you."
+    IDS_CHATSERVER_ALREADY_STARTED "Chat server already started."
+    IDS_CHATSERVER_STARTING_CHAT_SERVER_ON_PORT_D 
+                            "Starting chat server on port: %d..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Ifx.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,8 @@
+[1;33mSound Commands[0m
+[1;44m                                                                 [0m[1;44m                                                                 [0m
+bell               msp                 playmidi            playwav 
+processfx          processmidi         showmsptriggers     soundpath           
+useplaysound       volumedefault       volumemax           volumebits    
+
+[1;44m                                                                 [0m
+

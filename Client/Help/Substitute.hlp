@@ -1,0 +1,15 @@
+[1;33mSubstitute[0m
+[1;44m                                                                                [0m
+
+Format: [1m/substitute [0m{[1;35mtext pattern[0m} {[1;35mreplacement text[0m} {[1;35mgroup name[0m}
+
+A substitute looks for text patterns in the same way that an action does. When
+it finds a match it substitutes the text in the pattern with the replacement
+text.
+
+   þ {[1;35mtext pattern[0m} The text to substitute.
+   þ {[1;35mreplacement text[0m} The text to display.
+   þ {[1;35mgroup name[0m} This is an optional parameter. See the user guide for help on
+     groups.
+
+[1;44m                                                                                [0m

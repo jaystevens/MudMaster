@@ -1,0 +1,42 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>Loop</b></h3>
+
+<hr>
+<br><b>Format: /loop {start,end} {commands}</b><b></b>
+<p><b>Loop increments or decrements a number from start to end. Each time
+the number</b>
+<br><b>is incremented or decremented the commands are executed. The loop
+number is</b>
+<br><b>placed in the system variable $LoopCount.</b><b></b>
+<p><b><li> {start,end} The start and ending numbers for
+the loop. If start is bigger</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; than end, the loop will count backwards.</b>
+<br><b><li> {commands} The commands to execute for each
+count of the loop.</b><b></b>
+<p><b>/loop {1,3} {look $LoopCount.man}</b>
+<br><b>This would send the text "look 1.man" "look 2.man" and "look 3.man"
+to the</b>
+<br><b>mud.</b><b></b>
+<p><b>/loop {3,1} {look $LoopCount.man}</b>
+<br><b>This does exactly the opposite. The number is decremented rather
+than</b>
+<br><b>incremented and would send the text: "look 3.man" "look 2.man" "look
+1.man"</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

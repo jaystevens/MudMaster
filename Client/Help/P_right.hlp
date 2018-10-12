@@ -1,0 +1,16 @@
+[1;33m@Right[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Right(text,number of characters)[0m
+
+Right returns a number of characters from the right side of a string.
+
+   þ text - The text you want to take the left hand portion of.
+   þ number of characters - Number of characters you want.
+
+Examples:
+
+@Right(Arithon,3)
+Would return the string "hon". The 3 rightmost characters.
+
+[1;44m                                                                                [0m

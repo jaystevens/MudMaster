@@ -1,0 +1,17 @@
+[1;33mChatServe[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatserve [0m{[1;35mreference number[0m}
+Format: [1m/chatserve [0m{[1;35mchat name[0m}
+
+ChatServe toggles the Serve flag of a chat connection. When you serve a chat
+connection any /chatalls from that person are sent out to all of your other
+connections. Likewise, when text comes in from any of your other connections,
+it is sent to anybody being served. This would allow two people who are both
+firewalled to still communicate with each other as long as they connected with
+another person who can connect to the both of them.
+
+   þ {[1;35mreference number[0m} The number of the chat connection you want to change.
+   þ {[1;35mchat name[0m} The name of the chat connection you want to change.
+
+[1;44m                                                                                [0m

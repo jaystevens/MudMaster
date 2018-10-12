@@ -1,0 +1,17 @@
+[1;33mListSort[0m
+[1;44m                                                                                [0m
+
+Format: [1m/listsort [0m{[1;35mlist[0m} {[1;35ma or d[0m}
+
+Sorts an entire list either ascending or descending.
+
+   þ {[1;35mold list[0m} Name of the list you want to copy from.
+   þ {[1;35ma or d[0m} A will sort the list in ascending order, D will sort the list in
+     descending order.
+
+Examples:
+
+/listcopy [0m{[1;35mKhraitShips[0m} {[1;35ma[0m}
+This will sort the list called KhraitShips into ascending order.
+
+[1;44m                                                                                [0m

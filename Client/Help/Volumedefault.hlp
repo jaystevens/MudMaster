@@ -1,0 +1,9 @@
+[1;33mVolumeDefault[0m
+[1;44m                                                                 [0m
+
+Format: [1m/volumedefault {[1;35m1-100[0m}[0m
+
+This is the percentage of the max volume that sounds are played at if a 
+volume value is not given.
+
+[1;44m                                                                 [0m

@@ -1,0 +1,75 @@
+[1;33mUser DLLs[0m
+[1;44m                                                                                [0m
+
+User DLLs allow you to expand on the functionality of Mud Master. By creating
+your own DLLs MM can be expanded to do just about anything you can program.
+When calling a function in your DLL you can pass data from MM and return data
+to MM.
+
+The following commands are used to manage DLLs within MM:
+
+   LoadLibrary - This command loads the DLL. This must be done before you can
+	   use your DLL from within MM.
+   FreeLibrary - Removes a DLL from memory.
+   Dll - Displays a list of DLLs you currently have loaded.
+   CallDLL - Used to call functions in your DLL.
+
+Functions delcared in a DLL must follow the format shown below.
+
+extern "C" DllExport void Version(const char *pszParams, char *pszResult)
+{
+   strcpy(pszResult,"1.0 - Auth:arithon@earthlink.net");
+}
+
+If you are using C++ make sure you put the extern "C" in front of the function
+delclaration or C++ will name mangle it and you will not be able to call it
+from MM. The function must take a const char pointer as the first parameter.
+This is the data that MM passes to your function. The second parameter is a
+pointer to a buffer you can use to return data to MM. This must be returned as
+a NULL terminated string. The buffer is 5000 characters long. If you exceed
+the 5000 characters or don't null terminate the text you are going to ecounter
+problems (probably a gpf).
+
+When MM returns from your function it will send the text you returned to the
+input parser; which is essentially the same as typing the text in the input
+bar. So, if you want to store some result of the function in a var make sure
+the text returned uses the /var command: "/var Result [0m{[1;35msome text[0m}"
+
+There is one function required to be in every MM DLL: Version. This has a
+couple of purposes. MM checks to make sure this function is there before it
+will load the DLL as a MM user DLL. Second, this function should return a
+string that tells the version number of the DLL, and possibly some information
+about it. This information is shown when a user lists the DLLs loaded. The
+maximum length of the string is 50 characters. The Version function is
+declared the same way as any of the other MM functions.
+
+MM2k6 dll plugins now support raw processing of
+
+   1. incoming text from the mud
+   2. chat text
+   3. input text
+
+This means that dlls can now process things before they are modified in any
+way by MudMaster opening the door to dlls that provide new script language
+support or MUD extensions.
+
+Any dll that has a procedures called onReceivedTextLine will be called with
+the raw input from the MUD as it is received. If the dll executes
+/handledByDll {TRUE} then the text won't be processed any further by MM2k6
+otherwise MM2k6 will continue processing the MUD text normally.
+
+Any dll that has a procedure called onReceivedChatLine will be called with the
+chat text which is about to be displayed. If the dll executes
+/handledByDll {TRUE} then MM2k6 won't process the chat text any further.
+
+Any dll that has a procedure called onInputLine will be called with the text
+from the input line. If the dll executes /handledByDll {TRUE} then MM2k6 won't
+process the input any further.
+
+MM2k6 always attempts to call onLoad when a dll is loaded using /loadlib. You
+can put any initialization code you want there.
+
+MM2k6 always attempts to call onUnload when a dll is removed with /freelib or
+when a session with dlls is closed or when MM2k6 is closed.
+
+[1;44m                                                                                [0m

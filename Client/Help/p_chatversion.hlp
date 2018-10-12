@@ -1,0 +1,16 @@
+[1;33m@ChatVersion[0m
+[1;44m                                                                                [0m
+
+Format: [1m@ChatVersion(chat connection)[0m
+
+Returns the current client version of the person's connection your checking.
+You may use their chat connection # or name
+
+   þ chat connection - The number of the chat connection for which you wish to
+   retrieve the chat name
+
+Example:
+
+/showme [0m{[1;35m@ChatVersion(1) is my first connection's client![0m}
+
+[1;44m                                                                                [0m

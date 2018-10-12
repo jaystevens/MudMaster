@@ -1,0 +1,16 @@
+[1;33mSendVariable[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sendvariable [0m{[1;35mchat name[0m} {[1;35mreference number[0m}
+Format: [1m/sendvariable [0m{[1;35mchat name[0m} {[1;35mvariable name[0m}
+Format: [1m/sendvariable [0m{[1;35mchat reference number[0m} {[1;35mreference number[0m}
+Format: [1m/sendvariable [0m{[1;35mchat reference number[0m} {[1;35mvariable name[0m}
+
+SendVariable sends one of your variables to another chat user.
+
+   þ {[1;35mchat name[0m} The chat name of the person you want to send to.
+   þ {[1;35mchat reference number[0m} The number of the person you want to send to.
+   þ {[1;35mreference number[0m} The number of the variable you want to send.
+   þ {[1;35mvariable name[0m} The name of the variable you want to send.
+
+[1;44m                                                                                [0m

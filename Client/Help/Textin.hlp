@@ -1,0 +1,12 @@
+[1;33mTextIn[0m
+[1;44m                                                                                [0m
+
+Format: [1m/textin [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/textin [0m{[1;35mfilename.ext[0m}
+
+Sends the contents of a textfile to the mud.
+
+   þ {[1;35mdrive:\filename.ext[0m} The path and filename of the file to send.
+   þ {[1;35mfilename.ext[0m} The name of the file to send.
+
+[1;44m                                                                                [0m

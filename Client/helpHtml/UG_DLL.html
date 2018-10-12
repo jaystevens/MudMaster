@@ -1,0 +1,76 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>User DLLs</b></h3>
+
+<hr>
+<br><b>User DLLs allow you to expand on the functionality of Mud Master.
+By creating</b>
+<br><b>your own DLLs MM can be expanded to do just about anything you can
+program.</b>
+<br><b>When calling a function in your DLL you can pass data from MM and
+return data</b>
+<br><b>to MM.</b><b></b>
+<p><b>The following commands are used to manage DLLs within MM:</b><b></b>
+<p><b>&nbsp;&nbsp; LoadLibrary - This command loads the DLL. This must
+be done before you can</b>
+<br><b>&nbsp;&nbsp;&nbsp; use your DLL from within MM.</b>
+<br><b>&nbsp;&nbsp; FreeLibrary - Removes a DLL from memory.</b>
+<br><b>&nbsp;&nbsp; Dll - Displays a list of DLLs you currently have loaded.</b>
+<br><b>&nbsp;&nbsp; CallDLL - Used to call functions in your DLL.</b><b></b>
+<p><b>Functions delcared in a DLL must follow the format shown below.</b><b></b>
+<p><b>extern "C" DllExport void Version(const char *pszParams, char *pszResult)</b>
+<br><b>{</b>
+<br><b>&nbsp;&nbsp; strcpy(pszResult,"1.0 - Auth:arithon@earthlink.net");</b>
+<br><b>}</b><b></b>
+<p><b>If you are using C++ make sure you put the extern "C" in front of
+the function</b>
+<br><b>delclaration or C++ will name mangle it and you will not be able
+to call it</b>
+<br><b>from MM. The function must take a const char pointer as the first
+parameter.</b>
+<br><b>This is the data that MM passes to your function. The second parameter
+is a</b>
+<br><b>pointer to a buffer you can use to return data to MM. This must
+be returned as</b>
+<br><b>a NULL terminated string. The buffer is 5000 characters long. If
+you exceed</b>
+<br><b>the 5000 characters or don't null terminate the text you are going
+to ecounter</b>
+<br><b>problems (probably a gpf).</b><b></b>
+<p><b>When MM returns from your function it will send the text you returned
+to the</b>
+<br><b>input parser; which is essentially the same as typing the text in
+the input</b>
+<br><b>bar. So, if you want to store some result of the function in a var
+make sure</b>
+<br><b>the text returned uses the /var command: "/var Result {some text}"</b><b></b>
+<p><b>There is one function required to be in every MM DLL: Version. This
+has a</b>
+<br><b>couple of purposes. MM checks to make sure this function is there
+before it</b>
+<br><b>will load the DLL as a MM user DLL. Second, this function should
+return a</b>
+<br><b>string that tells the version number of the DLL, and possibly some
+information</b>
+<br><b>about it. This information is shown when a user lists the DLLs loaded.
+The</b>
+<br><b>maximum length of the string is 50 characters. The Version function
+is</b>
+<br><b>declared the same way as any of the other MM functions.</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

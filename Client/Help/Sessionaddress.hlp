@@ -1,0 +1,10 @@
+[1;33mSessionAddress
+[1;44m                                                                                [0m
+
+Format: [1m/sessionaddress [0m{[1;35mAddress[0m}
+
+This sets the connection address for your session.
+
+   þ {[1;35mAddress[0m} The internet address you wish to connect to.
+
+[1;44m                                                                                [0m

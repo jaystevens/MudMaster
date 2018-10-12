@@ -1,0 +1,21 @@
+[1;33mResetEvent[0m
+[1;44m                                                                                [0m
+
+Format: [1m/resetevent [0m{[1;35mevent number[0m}
+Format: [1m/resetevent [0m{[1;35mevent name[0m}
+Format: [1m/resetevent *[0m
+
+ResetEvent causes the time elapsed for an event to be reset back to 0. If
+instead of passing an event number you pass an asterisk instead, all events
+will be reset. You might want to reset all events if you are trying to get
+several events to fire at the same time. If you define two events, each to
+fire every 10 seconds they are most likely not going to fire at exactly the
+same time (since created them at different times). If you reset all the events
+they would both be reset to fire in 10 seconds and would fire at the same time
+from then on.
+
+   þ {[1;35mevent number[0m} The number of the event you want to reset.
+   þ {[1;35mevent name[0m} The name of the event you want to reset.
+   þ [1;35m*[0m Will reset all of the events.
+
+[1;44m                                                                                [0m

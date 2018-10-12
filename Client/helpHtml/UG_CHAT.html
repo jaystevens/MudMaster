@@ -1,0 +1,192 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>Chat</b></h3>
+
+<hr>
+<br><b>Mud Master chat allows you to establish a site to site link with
+another MM</b>
+<br><b>user. Once you have a connection you are able to talk with any or
+all of your</b>
+<br><b>chat connections, transfers commands (actions, aliases, variables,
+etc...),</b>
+<br><b>and transfer files. Site to site means the clients are connected
+directly.</b>
+<br><b>Often you will experience less lag using MM to chat than you would
+talking to</b>
+<br><b>the same person through a mud.</b><b></b>
+<p><b>Before you connect to anybody you need to set your chat name. Everybody
+you</b>
+<br><b>connect to will see this name when you talk. The command is:</b>
+<br><b>/chatname {chat name}.</b><b></b>
+<p><b>To start a chat with another person you use the call command and
+their network</b>
+<br><b>address. Call will accept both IP address and named address. You
+can see your</b>
+<br><b>IP address in MM in two ways. First, you can type /info. Second,
+you can use</b>
+<br><b>the procedure @IP(). Example: tell arithon My address is @IP().
+Once you know</b>
+<br><b>another user's ip address use call to connect to them. /call 204.120.248.148</b><b></b>
+<p><b>Sometimes MM will be unable to reach an IP address when you /call.
+This is</b>
+<br><b>usually because the person you are trying to call has a firewall.
+A firewall</b>
+<br><b>prevents remote systems from connecting to an internal network.
+If you cannot</b>
+<br><b>connect to somebody have them try to call you instead. If you still
+cannot</b>
+<br><b>connect to each other you may both be firewalled. You can still
+chat if you</b>
+<br><b>can both connect to another person who is willing to be a chat server
+for you.</b><b></b>
+<p><b>An easy way to get connected with a group of people already chatting
+is to use</b>
+<br><b>/requestconnects {name/number}. Once you connect to a user, you
+can request</b>
+<br><b>all of their chat connections with this command. MM will then try
+to connect</b>
+<br><b>you with all of the other user's connections. Only public connections
+are</b>
+<br><b>returned when somebody requests your connections. If you don't want
+people to</b>
+<br><b>see some of your connections, flag them as private.</b><b></b>
+<p><b>There are several things that can happen when a chat call comes in.
+You can</b>
+<br><b>prevent people from connecting to you by using the DND (Do Not Disturb)</b>
+<br><b>command. When a call comes in DND is checked, if it is on, the chat
+connection</b>
+<br><b>is hung up on without interrupting you. /dnd will toggle the option
+on and</b>
+<br><b>off. You can see the DND status by using /info. Autoaccept also
+affects how</b>
+<br><b>incoming calls are handled. If you have autoaccept off you will
+be prompted to</b>
+<br><b>accept the call when it comes in -- this will pause your mudding
+until you</b>
+<br><b>press Y or N. If you leave autoaccept on chat calls get accepted
+without</b>
+<br><b>prompting you. You can see the status of autoaccept with /info.</b><b></b>
+<p><b>/Chat will show you all the chat connections you have. It also shows
+you some</b>
+<br><b>status flags associated with the different connections. The flags
+and a</b>
+<br><b>description of them are listed below. If you are transferring a
+file thru a</b>
+<br><b>chat connection, the chat name color will change. If the name is
+blue, you are</b>
+<br><b>receiving a file, if it is green, you are sending a file.</b><b></b>
+<p><b>&nbsp;&nbsp; A - You are allowing that chat connection to transfer
+commands to you</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (aliases, actions, variables,
+etc...). /chatcommands {name/number} will</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; toggle this flag.</b>
+<br><b>&nbsp;&nbsp; F - Means that chat connection is behind a firewall.</b>
+<br><b>&nbsp;&nbsp; I - You are ignoring that chat connection. You will
+not see any chats or</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name changes from that person.
+/chatignore {name/number} will toggle</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this flag.</b>
+<br><b>&nbsp;&nbsp; P - Private connection. Connections marked as private
+are not given out</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; when somebody requests your
+chat connections. /chatprivate</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {name/number} will toggle this
+flag.</b>
+<br><b>&nbsp;&nbsp; S - You are serving this connection. When serving,
+/chatalls coming from</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; people not being served are
+sent to those you are serving -- text from</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; those being served is sent
+to all of your other connections.</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /chatserver {name/number} will
+toggle this flag.</b>
+<br><b>&nbsp;&nbsp; T - Allow transfers. You are allowing file transfers
+from this connection.</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /chattransfers {name/number}
+will toggle this flag.</b><b></b>
+<p><b>To talk with a specific connection you use /chat. /chat {chat name/chat
+number}</b>
+<br><b>{text}. Like with the other lists you can use either the name of
+the</b>
+<br><b>connection, or the number you see when you list your connections
+with /chat. To</b>
+<br><b>talk with all of your connections at the same time use /chatall
+{text}.</b><b></b>
+<p><b>You can also group chat connections and talk just to that group.
+Use</b>
+<br><b>/chatgroupset {name/number} {group name} and /chatgroupremove {name/number}
+to</b>
+<br><b>set and remove group names from a chat connection. Once you have
+people grouped</b>
+<br><b>you talk to the group with /chatgroup {group name} {text}. You can
+also use /cg</b>
+<br><b>as a shortcut for /chatgroup.</b><b></b>
+<p><b>Emoting on the chat channel works very similar to the commands used
+for</b>
+<br><b>chatting. /emote, /emoteall, and /emotegroup. When you emote you
+chat name and</b>
+<br><b>the text you emote is sent to the chat connection. /emoteall licks
+you would</b>
+<br><b>send "{Chat Name} licks you." to all your connections.</b><b></b>
+<p><b>To hang up on a chat connection use /unchat {name/number}.</b><b></b>
+<p><b>If you want to send commands to another chat connection you have
+to first get</b>
+<br><b>them to enable the reception of commands from you with /chatcommands.
+Once they</b>
+<br><b>have flagged you able to send commands you can use the following
+to send them:</b>
+<br><b>/sendaction, /sendalias, /sendarray, /sendbaritem, /sendevent, /sendgag,</b>
+<br><b>/sendhighlight, /sendlist, /sendmacro and /sendvariable. If you
+want to send a</b>
+<br><b>group of commands use /sendgroup. When you send a list or array,
+all the items</b>
+<br><b>belonging to the list or array are transfered as well.</b><b></b>
+<p><b>To send files through a chat connection you have to get the chat
+the other</b>
+<br><b>party to flag with allow transfers. Use /sendfile to transfer files.
+Both</b>
+<br><b>users are notified when a file transfer has been started and notified
+again</b>
+<br><b>when the transfer is complete. You can check the status of a file
+transfer with</b>
+<br><b>/filestatus {name/number}. The {name/number} refers to the chat
+connection, not</b>
+<br><b>the name of the file being transferred. /Filecancel {name/number}
+will cancel a</b>
+<br><b>file transfer in progress.</b><b></b>
+<p><b>/ChatBack and /ChatFore can be used to change the default colors
+of the chat</b>
+<br><b>text.</b><b></b>
+<p><b>/ChatVersions will show you the version of MM that each of the chat
+connections</b>
+<br><b>is using.</b><b></b>
+<p><b>By default when you start up MM it will listen for chat calls on
+port 4050. You</b>
+<br><b>can tell MM to listen to an alternate port if you want. You can
+only change the</b>
+<br><b>listen port when you first run MM, using a command line parameter.</b>
+<br><b>"mudmast L:port num" will cause MM to listen to a specific port.</b>
+<br><b>"mudmast L:4000" will cause MM to listen to port 4000. You can see
+what port MM</b>
+<br><b>is listening to with /info. /call uses port 4050 by default as well.
+If you</b>
+<br><b>change the port that MM is listening to you will have to let people
+know which</b>
+<br><b>port number to call.</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

@@ -1,0 +1,16 @@
+[1;33mChatCommands[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatcommands [0m{[1;35mreference number[0m}
+Format: [1m/chatcommands [0m{[1;35mchat name[0m}
+
+ChatCommands is a toggle that enables or disables the ability for a chat
+connection to send you commands. You can see if a connection has command sending
+enabled by looking at /chat. You will see an A flag if the option is enabled.
+Once enabled the other person can send you commands (actions, aliases, events,
+etc...).
+
+   þ {[1;35mreference number[0m} The number of the chat connection to toggle.
+   þ {[1;35mchat name[0m} The chat name of the chat connection to toggle.
+
+[1;44m                                                                                [0m

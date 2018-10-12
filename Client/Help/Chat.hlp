@@ -1,0 +1,27 @@
+[1;33mChat[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chat[0m
+Format: [1m/chat [0m{[1;35mchat name[0m} {[1;35mtext[0m}
+Format: [1m/chat [0m{[1;35mreference number[0m} {[1;35mtext[0m}
+
+Chat has two purposes. Without parameters it lists all the chat connections you
+currently have. It is also used to chat privately with another user.
+
+   þ {[1;35mchat name[0m} The chat name of the person you want to send some text to.
+   þ {[1;35mreference number[0m} The number of the person you want to send some text to.
+     The number is from the list of chat connections.
+   þ {[1;35mtext[0m} The text to send.
+
+Examples:
+
+/chat
+Displays all the chat connections you have.
+
+/chat [1;35mbosozoku Heya Boso![0m
+Sends a private chat of "Heya Boso!" to Bosozoku.
+
+/chat [1;35m1 Hi.[0m
+Sends a private chat of "Hi." to the first connection in your chat list.
+
+[1;44m                                                                                [0m

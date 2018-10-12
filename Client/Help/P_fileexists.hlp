@@ -1,0 +1,10 @@
+[1;33m@FileExists[0m
+[1;44m                                                                                [0m
+
+Format: [1m@FileExists(filename)[0m
+
+Returns a 1 if the file exists, otherwise a 0.
+
+   þ filename - The path and filename of the file to look for.
+
+[1;44m                                                                                [0m

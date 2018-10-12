@@ -1,0 +1,12 @@
+[1;33mListItems[0m
+[1;44m                                                                                [0m
+
+Format: [1m/listitems [0m{[1;35mlist name[0m}
+Format: [1m/listitems [0m{[1;35mlist number[0m}
+
+Displays all the items in a particular list.
+
+   þ {[1;35mlist name[0m} The name of the list of items you want to see.
+   þ {[1;35mlist number[0m} The number of the list of items you want to see.
+
+[1;44m                                                                                [0m

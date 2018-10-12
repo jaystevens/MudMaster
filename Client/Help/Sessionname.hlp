@@ -1,0 +1,10 @@
+[1;33mSessionName[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sessionname [0m{[1;35mName[0m}
+
+This sets the name for your session.
+
+   þ {[1;35mName[0m} The name you wish to give to your current session.
+
+[1;44m                                                                                [0m

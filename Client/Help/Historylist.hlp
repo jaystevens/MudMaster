@@ -1,0 +1,10 @@
+[1;33mHistory List[0m
+[1;44m                                                                                [0m
+
+The history list keeps track of the last 100 (by default) lines you have typed.
+You can scroll through the history buffer by using the up and down arrow keys.
+As you scroll through the history list the lines are loaded into the input line
+so that you can edit any of the lines before resending them. Scrolling to the
+bottom of the list and pressing the down arrow key will clear the input line.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,14 @@
+[1;33mPace[0m
+[1;44m                                                                                [0m
+
+Format: [1m/pace [0m{[1;35mnumber of milliseconds[0m}
+
+Pace controls has fast commands are sent to the mud when you are speedwalking.
+
+   þ {[1;35mnumber of milliseconds[0m} The number of milliseconds to wait before
+     sending the next movement command.
+
+For those of you not metrically aware 1000 milliseconds is equal to 1 second.
+500 milliseconds is half a second, etc...
+
+[1;44m                                                                                [0m

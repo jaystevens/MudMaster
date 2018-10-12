@@ -1,0 +1,12 @@
+[1;33m@GetArrayCols[0m
+[1;44m                                                                                [0m
+
+Format: [1m@GetArrayCols(array name)[0m
+Format: [1m@GetArrayCols(array number)[0m
+
+GetArrayCols returns the max number of columns dimensioned in an array.
+
+   þ array name - The name of the array which you want the column dimension.
+   þ array number - The number of the array which you want the column dimension.
+
+[1;44m                                                                                [0m

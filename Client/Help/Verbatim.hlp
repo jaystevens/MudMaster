@@ -1,0 +1,12 @@
+[1;33mVerbatim[0m
+[1;44m                                                                                [0m
+
+Format: [1m/verbatim[0m
+
+Toggles Verbatim mode on or off. This stops all processing of typed alias or
+variables etc. This is extreamly useful when trying to tell someone a scripting
+component such as an alias or action without having MudMaster 2k6 processing it.
+
+This does not work over chat, only on the mud your connected to.
+
+[1;44m                                                                                [0m

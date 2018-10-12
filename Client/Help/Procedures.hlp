@@ -1,0 +1,65 @@
+[1;44mProcedures[0m
+
+[1;44mArrays                                                                          [0m
+                 == @a                  @arr                @GetArray
+                 == @getArrayCols       @GetArrayRows
+
+[1;44mChat                                                                            [0m
+                 == @ChatConnectIP      @ChatConnectName    @ChatConnects
+                 == @ChatFlags          @ChatName           @ChatVersion
+
+[1;44mChronographical                                                                 [0m
+                 == @Day                @Hour               @Month
+                 == @Microsecond
+                 == @Minute             @ReadableTime       @Second
+                 == @Time               @TimeToDay          @TimeToDayOfWeek
+                 == @TimeToHour         @TimeToMinute       @TimeToMonth
+                 == @TimeToSecond       @TimeToYear         @TimeZone
+                 == @Year
+
+[1;44mColor Formatting                                                                [0m
+                 == @AnsiBold           @AnsiReset          @AnsiRev
+                 == @BackBlack          @BackBlue           @BackColor
+                 == @BackCyan           @BackGreen          @BackMagenta
+                 == @BackRed            @BackYellow         @BackWhite
+                 == @ForeBlack          @ForeBlue           @ForeColor
+                 == @ForeCyan           @ForeGreen          @ForeMagenta
+                 == @ForeRed            @ForeYellow         @ForeWhite
+
+[1;44mInput Processing                                                                [0m
+                 == @Abs                @BaritemBack        @BaritemFore
+                 == @CharColor          @CharColor
+                 == @ConCat             @Exists             @IsEmpty
+                 == @IsNumber           @Left               @LeftPad
+                 == @Len                @Lower              @LTrim
+                 == @Math               @Mid                @PadLeft
+                 == @PadRight           @PreTrans           @Replace
+                 == @Right              @RightPad           @RTrim
+                 == @StripAnsi          @StrStr 
+                 == @StrStrRev          @SubStr
+                 == @TextColor          @Upper              @Val
+                 == @Word               @WordColor          @WordCount
+
+[1;44mList                                                                            [0m
+                 == @CommandToList      @Enum               @EnumList
+                 == @GetCount           @GetItem            @InList
+
+[1;44mMisc Functional                                                                 [0m
+                 == @Alias              @Asc                @BackWard
+                 == @Chr                @Comma              @Connected
+                 == @EventTime          @FileExists         @If
+                 == @IP                 @IPP                @Random
+                 == @SessionName        @SessionPath        @StatusbarSize
+                 == @Var
+
+[1;44mRegular Expressions                                                             [0m
+                 == @Regex              @RegexMatch
+
+[1;44mSystem-Statistic                                                                [0m
+                 == @CommandCount       @NumActions         @NumAliases
+                 == @NumArrays          @NumBaritems        @NumEvents
+                 == @NumGags            @NumHighlights      @NumLists
+                 == @NumMacros          @NumSubstitutes     @NumTablist
+                 == @NumVariables       @ProcedureCount     @Version
+
+[1;44m                                                                                [0m

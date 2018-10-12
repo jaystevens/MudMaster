@@ -1,0 +1,11 @@
+[1;33mUsePlaySound[0m
+[1;44m                                                                                [0m
+
+Format: [1m/useplaysound [0m{[1;35mState[0m}
+
+Tells MudMaster 2k6 to use PlaySound or DirectX to process sound.
+
+   þ {[1;35mState[0m} ON or OFF  Tells MudMaster 2k6 to use PlaySound if ON, and DirectX
+     if OFF.
+
+[1;44m                                                                                [0m

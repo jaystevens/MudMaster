@@ -1,0 +1,11 @@
+[1;33mListAdd[0m
+[1;44m                                                                                [0m
+
+Format: [1m/listadd [0m{[1;35mlist name[0m} {[1;35mgroup name[0m}
+
+Creates a new user defined list.
+
+   þ {[1;35mlist name[0m} Name of the list you want to create.
+   þ {[1;35mgroup name[0m} Optional, see the user guide for help on groups.
+
+[1;44m                                                                                [0m

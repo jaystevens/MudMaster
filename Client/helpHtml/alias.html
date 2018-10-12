@@ -1,0 +1,51 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+<TITLE>
+	Mudmaster 2k6 Command Reference
+</TITLE>
+</head>
+<BODY>
+	<h3>Alias</h3>
+	<HR>
+	<B>Format:</B>
+	<blockquote>
+	/alias {shortcut} {commands} {group name}
+	</blockquote>
+	<B>Description:</B><br><br>
+	An alias lets you define some "shortcut" text to execute a command or
+	commands. Your alias list is checked each time you press enter to send some
+	text to the mud. If the text you typed is found in your alias list the text
+	from the commands side of the alias is sent instead.  An alias is only 
+	replaced if it is the first text typed on a line.
+	<P>
+	Typing /alias by itself will list your current aliases on the screen.
+	<P>
+	<B>Arguments:</B>
+	<UL>
+	<LI>{alias name} This is the shortcut text you want to be able to type to execute commands. </LI>
+	<LI>{commands} The commands to execute when the alias name is typed.</LI>
+	<LI>{group name} This is an optional parameter. See the user guide on groups for help.</LI>
+	</UL>
+
+	<B>Examples:</B>
+	<blockquote>
+	/alias {eat} {take food bag;eat food} 
+	</blockquote>
+	If you typed "eat" on the input line the commands "take food bag" and "eat food" would be sent to the mud instead. 
+	<blockquote>
+	/alias {targ %0} {/var Target $0} 
+	</blockquote>
+	You can also use the variable %0 to represent the text typed after the alias
+	shortcut. In this case the alias is used to quickly set a targeting variable.
+	Typing "targ Vecna" would set a variable called "Target" to "Vecna" 
+	<HR>
+	<B>Related Commands:</B>
+	<A HREF=disablealias.html>/disablealias</A>,
+	<A HREF=enablealias.html>/enablealias</A>,
+	<A HREF=groupalias.html>/groupalias</A>,
+	<A HREF=sendalias.html>/sendalias</A>,
+	<A HREF=unalias.html>/unalias</A>
+	<P>
+	Click <A HREF=javascript:history.back(1)>here</A> to return to previous page.
+</BODY>
+</HTML>

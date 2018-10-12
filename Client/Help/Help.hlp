@@ -1,0 +1,20 @@
+[1;33m[1;33mHelp[0m
+[1;44m                                                                                [0m
+
+Format: [1m/help[0m
+Format: [1m/help [0m{[1;35mcommand name[0m}
+Format: [1m/help [0m{[1;35m@procedure name[0m}
+
+By itself with no arguments, this will display the starting help
+file. [1m/help / [0m to list command help files. [1m/help @[0m
+to list all procedures.
+
+Using a / in front of a command name [1m/help [1;35m/commandname[0m  will
+allow you to abbreviate the command. If the help is not found try
+spelling it out completely.
+
+   þ {[1;35mcommand name[0m} Name of the command you want to read the help file for.
+   þ {[1;35m@procedure name[0m} Name of the procedure you want to read the help file
+     for.
+
+[1;44m                                                                                [0m

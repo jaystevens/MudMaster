@@ -1,0 +1,8 @@
+[1;33mPromptOverwrite[0m
+[1;44m                                                                                [0m
+
+Format: [1m/promptoverwrite[0m
+
+Toggles prompting before overwriting a command file with /write.
+
+[1;44m                                                                                [0m

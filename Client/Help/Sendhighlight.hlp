@@ -1,0 +1,16 @@
+[1;33mSendHighlight[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sendhighlight [0m{[1;35mchat name[0m} {[1;35mreference number[0m}
+Format: [1m/sendhighlight [0m{[1;35mchat name[0m} {[1;35mhighlight text[0m}
+Format: [1m/sendhighlight [0m{[1;35mchat reference number[0m} {[1;35mreference number[0m}
+Format: [1m/sendhighlight [0m{[1;35mchat reference number[0m} {[1;35mhighlight text[0m}
+
+SendHighlight sends one of your highlights to another chat user.
+
+   þ {[1;35mchat name[0m} The chat name of the person you want to send to.
+   þ {[1;35mchat reference number[0m} The number of the person you want to send to.
+   þ {[1;35mreference number[0m} The number of the highlight you want to send.
+   þ {[1;35mhighlight text[0m} The text of the highlight you want to send.
+
+[1;44m                                                                                [0m

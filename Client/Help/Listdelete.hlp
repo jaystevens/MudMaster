@@ -1,0 +1,12 @@
+[1;33mListDelete[0m
+[1;44m                                                                                [0m
+
+Format: [1m/listdelete [0m{[1;35mlist name[0m}
+Format: [1m/listdelete [0m{[1;35mlist number[0m}
+
+Deletes a user defined list and any items in the list.
+
+   þ {[1;35mlist name[0m} The name of the list you want to delete.
+   þ {[1;35mlist number[0m} The number of the list you want to delete.
+
+[1;44m                                                                                [0m

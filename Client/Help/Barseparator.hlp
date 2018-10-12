@@ -1,0 +1,19 @@
+[1;33mBarSeparator[0m
+[1;44m                                                                                [0m
+
+Format: [1m/barseparator [0m{[1;35mitem name[0m} {[1;35mposition[0m}
+
+BarSeparator lets you add a separator character into the status bar; which is a
+vertical bar.
+
+   þ {[1;35mitem name[0m} Gives the separator a name so it can be edited, disabled,
+     enabled or removed.
+   þ {[1;35mposition[0m} The character position on the status bar you want the separator
+     to appear. The position must be between 1 and 160.
+
+Example:
+
+/barseparator [0m{[1;35mTarg Sep[0m} {[1;35m15[0m}
+This will add a separator as position 15 in the statusbar.
+
+[1;44m                                                                                [0m

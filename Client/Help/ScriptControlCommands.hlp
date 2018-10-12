@@ -1,0 +1,18 @@
+[1;33mScript Control Commands[0m
+[1;44m                                                                 [0m=
+autoexec           char               disableaction       disablealias
+disablebaritem     disableevent       disablegag          disablegroup
+disablehighlight   disablemacro       disablesubstitute   doevents
+editaction         editalias          editevent           editgag
+edithighlight      editmacro          editsubstitute      editvariable
+enableaction       enablealias        enablebaritem       enableevent
+enablegag          enablegroup        enablehighlight     enablemacro
+enablesubstitute   fireevent          ignore              ignorealiases
+killall            killgroup          resetevent          seteventtime
+substitutedepth    unaction           unalias             unarray
+unautoexec         unbaritem          unchat              undo
+unevent            ungag              unhighlight         unmacro
+unsubstitute       unvariable         
+
+[1;44m                                                                 [0m
+

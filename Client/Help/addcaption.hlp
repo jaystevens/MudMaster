@@ -1,0 +1,10 @@
+[1;33mAddCaption[0m
+[1;44m                                                                                [0m
+
+Format: [1m/addcaption[0m
+
+Adds the title bar and thick borders to the session window. This can be used
+with the /window command to remove the caption of another window, such as
+"/window {helpview.mms} {/addcaption}"
+
+[1;44m                                                                                [0m

@@ -1,0 +1,11 @@
+[1;33mStatusBar[0m
+[1;44m                                                                                [0m
+
+Format: [1m/statusbar [0m{[1;35mposition[0m}
+
+Toggles the statusbar on and off.
+
+   þ {[1;35mposition[0m} Can be either "above" or "below". Defines whether you want the
+     status bar above the input line or below it.
+
+[1;44m                                                                                [0m

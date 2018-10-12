@@ -1,0 +1,12 @@
+[1;33mRead[0m
+[1;44m                                                                                [0m
+
+Format: [1m/read [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/read [0m{[1;35mfilename.ext[0m}
+
+Reads a saved command file.
+
+   þ {[1;35mdrive:\filename.ext[0m} Name and path of the command file to read in.
+   þ {[1;35mfilename.ext[0m} Name of the command file to read in.
+
+[1;44m                                                                                [0m

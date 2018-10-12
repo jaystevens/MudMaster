@@ -1,0 +1,63 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>Highlight</b></h3>
+
+<hr>
+<br><b>Format: /highlight {mask} {foreground color, background color}</b><b></b>
+<p><b>Adds a highlight to the highlight list. Before the client prints
+a line of</b>
+<br><b>text to the screen it checks the highlight list. If {mask} is found
+in a</b>
+<br><b>line of text the colors for that word or words are changed to colors
+that</b>
+<br><b>you specify.</b><b></b>
+<p><b><li> {mask} This is the text pattern to search for
+to determine what lines of</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; text to highlight. The mask can be defined
+the same way you define the</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; text pattern for an action-- using %0 through
+%9. If the mask does not</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; contain any wildcards (%0 - %9) then just
+the word is highlighted. If the</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; mask uses a wildcard, the whole line is
+changed to the color.</b>
+<br><b><li> {color,color} The foreground and background
+color to change the text to.</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; Valid color names are in the table below.
+If you don't specify a</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; background color "back black" will be used.</b><b></b>
+<p><b>Color Names</b><b></b>
+<p><b>&nbsp;&nbsp; Foreground Colors:</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; black, blue, green, cyan, red, magenta,
+brown, light</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; grey, dark grey, light blue, light green,
+light cyan, light</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; red, light magenta, yellow, white</b><b></b>
+<p><b>&nbsp;&nbsp; Background Colors:</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; back black, back blue, back green, back
+cyan, back</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; red, back magenta, back brown, back light
+grey</b><b></b>
+<p><b>/highlight {disarms you} {yellow}</b>
+<br><b>Any time you see the text "disarms you" it will appear in yellow.</b><b></b>
+<p><b>/highlight {You hear %0 shout} {white,back blue}</b>
+<br><b>Since a wildcard was used in the mask, when the text is found the
+entire line</b>
+<br><b>will be changed to white on blue.</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

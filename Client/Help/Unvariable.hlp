@@ -1,0 +1,14 @@
+[1;33mUnVariable[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unvariable [0m{[1;35mreference number[0m}
+Format: [1m/unvariable [0m{[1;35mvariable name[0m}
+
+Removes a variable from your list of defined variables. You can either type the
+number of the variable which you see when you list the variables or an exact
+text math of the variable name.
+
+   þ {[1;35mreference number[0m} The number of the variable you want to remove.
+   þ {[1;35mvariable name[0m} The name of the variable you want to remove.
+
+[1;44m                                                                                [0m

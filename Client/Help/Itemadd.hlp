@@ -1,0 +1,13 @@
+[1;33mItemAdd[0m
+[1;44m                                                                                [0m
+
+Format: [1m/itemadd [0m{[1;35mlist name[0m} {[1;35mitem text[0m}
+Format: [1m/itemadd [0m{[1;35mlist number[0m} {[1;35mitem text[0m}
+
+Adds a text string to a user defined list. Lists are sorted by order input.
+
+   þ {[1;35mlist name[0m} The name of the list to add the item to.
+   þ {[1;35mlist number[0m} The number of the list to add the item to.
+   þ {[1;35mitem text[0m} The text to add to the list.
+
+[1;44m                                                                                [0m

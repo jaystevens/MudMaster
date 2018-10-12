@@ -1,0 +1,13 @@
+[1;33mEnableBarItem[0m
+[1;44m                                                                                [0m
+
+Format: [1m/enablebaritem [0m{[1;35mreference number[0m}
+Format: [1m/enablebaritem [0m{[1;35mitem name[0m}
+
+EnableBarItem allows you to turn bar items on that have been disabled with
+/disablebaritem. When a bar item is enabled it will reappear on the status bar.
+
+   þ {[1;35mreference number[0m} The number of the bar item to enable.
+   þ {[1;35mitem name[0m} The name of the bar item to enable.
+
+[1;44m                                                                                [0m

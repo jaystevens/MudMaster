@@ -1,0 +1,13 @@
+[1;33mDisableBarItem[0m
+[1;44m                                                                                [0m
+
+Format: [1m/disablebaritem [0m{[1;35mreference number[0m}
+Format: [1m/disablebaritem [0m{[1;35mitem name[0m}
+
+Disables a bar item. When a bar item is disabled you cannot see it on the
+status bar.
+
+   þ {[1;35mreference number[0m} The number of the bar item to disable.
+   þ {[1;35mitem name[0m} The name of the bar item to disable.
+
+[1;44m                                                                                [0m

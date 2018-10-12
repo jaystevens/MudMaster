@@ -1,0 +1,14 @@
+[1;33mSnoop[0m
+[1;44m                                                                                [0m
+
+Format: [1m/snoop [0m{[1;35mreference number[0m}
+Format: [1m/snoop {[1;35mchat name[0m}
+
+Starts snooping a chat connection. The other person has to allow you to snoop
+before you can do this. When snooping you see anything printed on their
+screen.
+
+   þ {[1;35mreference number[0m} The number of the chat connection you want to snoop.
+   þ {[1;35mchat name[0m} The name of the chat connection you want to snoop.
+
+[1;44m                                                                                [0m

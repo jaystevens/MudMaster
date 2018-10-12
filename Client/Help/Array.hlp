@@ -1,0 +1,29 @@
+[1;33mArray[0m
+[1;44m                                                                                [0m
+
+Format: [1m/array [0m{[1;35marray name[0m} {[1;35mrows[0m} {[1;35mgroup name[0m}
+Format: [1m/array [0m{[1;35marray name[0m} {[1;35mrows,columns[0m} {[1;35mgroup name[0m}
+
+Array lets you create both single and two dimensional arrays. If you are not
+familiar with arrays, you can think of them like a spreadsheet. A single
+dimensional array would have only 1 column, and as many rows as you specify. A
+two dimensional array would have both rows and columns. Each cell in the array
+would be accessed by giving a row and a column number. In the case of single
+dimensional array, only a row number is needed. Each cell can hold data like a
+variable.
+
+   þ {[1;35marray name[0m} The name of the array.
+   þ {[1;35mrows[0m} When creating a single dimensional array, the number of rows.
+   þ {[1;35mrows,columns[0m} For creating a two dimensional array.
+   þ {[1;35mgroup name[0m} This is optional, see the user guide for help with groups.
+
+Examples:
+
+/array [0m{[1;35mTargets[0m} {[1;35m3[0m}
+This would create an array called Targets. The array can hold up to 3 items.
+
+/array [0m{[1;35mGrid[0m} {[1;35m5,5[0m}
+This creats a two dimensional array, or a grid. The grid has 5 rows, with 5
+columns in each row.
+
+[1;44m                                                                                [0m

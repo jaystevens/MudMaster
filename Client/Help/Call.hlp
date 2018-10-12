@@ -1,0 +1,18 @@
+[1;33mCall[0m
+[1;44m                                                                                [0m
+
+Format: [1m/call [0m{[1;35maddress[0m} {[1;35mport[0m}
+
+Call establishes a link with another user using a client with a compatible
+chat protocol, such as zMud, TinTin++, etc, as well as other MudMaster users.
+If you are connected with another MudMaster user you can chat, transfer
+commands and transfer files. The number of people you can be connected to at
+one time is limited only by the number of socket connections windows will let
+you have.
+
+   þ {[1;35maddress[0m} The address of the person you wish to call. This can be either
+     a named address or an IP address.
+   þ {[1;35mport[0m} The port is optional. If you don't specify a port number Mud
+     Master will use a default of 4050.
+
+[1;44m                                                                                [0m

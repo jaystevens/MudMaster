@@ -1,0 +1,17 @@
+[1;33m@Random[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Random(Max Number)[0m
+
+Random returns a number between 1 and Max Number.
+
+Examples:
+
+say @Random(100)
+Would say a number between 1 and 100.
+
+say @GetItem(Greetings,@Random(@GetCount(Greetings))) Rand!
+If you had a list that contained a bunch of different greetings the above would
+randomly select one to use.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,16 @@
+[1;33mLogPath[0m
+[1;44m                                                                                [0m
+
+Format: [1m/logpath [0m{[1;35mdrive:\folder[0m}
+Format: [1m/logpath [0m{[1;35mfolder[0m}
+
+This will set the path for logging to the desired location.
+
+   þ {[1;35mdrive:\folder[0m} The location for the log path.
+   þ {[1;35mfolder[0m} The sub-folder to be used. This will be in the program folder.
+
+Example:
+
+/logpath [0m{[1;35mC:\Program Files\MudMaster 2k6\[0m}
+
+[1;44m                                                                                [0m

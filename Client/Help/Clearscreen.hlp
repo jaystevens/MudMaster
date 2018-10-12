@@ -1,0 +1,8 @@
+[1;33mClearScreen[0m
+[1;44m                                                                                [0m
+
+Format: [1m/clearscreen[0m
+
+Clears the display text but leaves the scrollback intact.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,24 @@
+[1;33m@Mid[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Mid(text,start character,number of characters)[0m
+
+Mid returns a portion of a string. You tell mid what character you want to
+start at, and how many characters from that point on. Strings are zero based,
+so if you want the very first character in a string the start character would
+have to be zero.
+
+   þ text - Text string from which you want to grab a portion.
+   þ  start character - The character index of the first character to get.
+   þ  number of characters - The number of characters to get.
+
+Examples:
+
+@Mid(Arithon,0,3)
+This will get you the same result as using a @Left(Arithon,3). The text "Ari"
+would be returned.
+
+@Mid(Arithon,2,4)
+Would return the string "itho".
+
+[1;44m                                                                                [0m

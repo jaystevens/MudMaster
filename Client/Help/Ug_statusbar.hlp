@@ -1,0 +1,37 @@
+[1;33mStatusBar[0m
+[1;44m                                                                                [0m
+
+The statusbar is a user definable bar at the bottom of the screen. It can be
+position either above or below the input line. What gets displayed and in what
+colors is up to you. The items can contaid literal text strings, as well as
+procedure names that return a value and variables.
+
+If you have a bar item grouped, and you disable that group, the item will not
+be drawn on the statusbar. If it is showing at the time it will be removed.
+
+/barfore and /barback control the color of the statusbar. Items added to the
+bar can either default to use the statusbar colors, or you can specify
+individual colors for each item you add.
+
+/baritemfore and /baritemback can be used to change the color of an item once
+it has been placed on the bar.
+
+/baritem is used to add items to the bar and list definitions of the items
+already on the bar.
+
+/barseparator puts a vertical bar on the status bar, to visually help you
+divide up the items you place on the bar.
+
+/updatebaritem is used to cause the bar item to redraw itself. You would use
+this if the bar item has a variable in it and you change the value of the
+variable. The item would update with the current value of the variable.
+
+/updatestatusbar is used to update the entire statusbar causing it to redraw.
+
+/baritemshift is used to shift a range of items that are already on the bar to
+the left or right. Using this is a shortcut to adjusting the positions of all
+the items by hand.
+
+/unbaritem is used to remove an item from the bar.
+
+[1;44m                                                                                [0m

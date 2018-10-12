@@ -1,0 +1,26 @@
+[1;33m[1;33mSQLQuery[0m
+[1;44m                                                                                [0m
+
+Format: [1m/SQLQuery [0m{[1;35mSQL statement[0m} [0m{[1;35marray name[0m} [0m{[1;35mdatabase connect string with prefix[0m} [0m{[1;35mdb user[0m} [0m{[1;35mdb password[0m}
+
+Runs the provided statement against the database. This is useful for running
+insert, update and delete statements but can be used for any kind of statement
+where you don't require a return.
+
+   þ {[1;35marray name[0m} The name of the array.
+   þ {[1;35mSQL statement[0m} Database command conforming to ANSI standard SQL.
+   þ {[1;35mdatabase connect string[0m} In the case of MS Access this would be the full
+     path of the database you want to use. For MySQL 5.1:
+     my5:Server=myServerAddress;Port=1234;Database=myDataBase;Uid=myUsername;
+     Pwd=myPassword;
+     For MS SqlServer:
+     mss:Server=myServerAddress;Database=myDataBase;User ID=myUsername;
+     Password=myPassword;Trusted_Connection=False;
+     For DSN based databases check out:
+     http://www.connectionstrings.com/dsn
+     In the case of Excel users this would be the full path of the database you
+     want to use with xls: prefix.
+   þ {[1;35mdb user[0m} Username needed to access the database file.
+   þ {[1;35mdb password[0m} Password needed to access the database file.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,21 @@
+[1;33mEditAction[0m
+[1;44m                                                                                [0m
+
+Format: [1m/editaction [0m{[1;35mreference number[0m}
+Format: [1m/editaction [0m{[1;35mtext pattern[0m}
+
+Editaction allows you to easily edit an action without having to type the whole
+thing over. You can either use the reference number shown when you list your
+defined actions or the trigger text to edit it. The action is then placed in the
+input line so that you have full editing capabilities.
+
+   þ {[1;35mreference number[0m} The number of the action you want to edit.
+   þ {[1;35mtext pattern[0m} The trigger text of the action you want to edit.
+
+** NOTE: Actions are stored and looked up by the trigger text. If you edit an
+action and you change the trigger portion of that action when you press enter a
+new action with that trigger will be created. This will not erase the action
+that you had originally edited. If you wish to remove the original version you
+need to use /unaction.
+
+[1;44m                                                                                [0m

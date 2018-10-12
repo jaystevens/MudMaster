@@ -1,0 +1,13 @@
+[1;33m@Asc[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Asc(character)[0m
+
+Pass in a character, it returns the ASCII value.
+
+Example:
+
+@Asc(A)
+This would return 65.
+
+[1;44m                                                                                [0m

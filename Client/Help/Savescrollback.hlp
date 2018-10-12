@@ -1,0 +1,12 @@
+[1;33mSaveScrollback[0m
+[1;44m                                                                                [0m
+
+Format: [1m/savescrollback [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/savescrollback [0m{[1;35mfilename.ext[0m}
+
+This saves your current scrollback buffer to a text file.
+
+   þ {[1;35mdrive:\filename.ext[0m} Name and path of the file you wish to save as.
+   þ {[1;35mfilename.ext[0m} Name of the file you wish to save as.
+
+[1;44m                                                                                [0m

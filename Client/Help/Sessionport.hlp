@@ -1,0 +1,10 @@
+[1;33mSessionPort[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sessionport [0m{[1;35mPort[0m}
+
+This sets the port you will connect to for the Mud address you have set.
+
+   þ {[1;35mPort[0m} The port you wish to connect to for the Mud Address you have set.
+
+[1;44m                                                                                [0m

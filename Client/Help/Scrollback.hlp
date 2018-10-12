@@ -1,0 +1,13 @@
+[1;33mScrollBack[0m
+[1;44m                                                                                [0m
+
+Format: [1m/scrollback [0m{[1;35mscrollback action[0m}
+
+to allow opening and closing and scrolling any open session window. Scrollback
+actions available are lineup, pageup, linedown, pagedown, end, and home. When
+used in combination with the /window command you can easily make macro keys to
+scroll another window without having to click on it.
+
+   þ {[1;35mscrollback action[0m} Lineup, linedown, pageup, pagedown, end, and home.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,12 @@
+[1;33mEmoteGroup[0m
+[1;44m                                                                                [0m
+
+Format: [1m/emotegroup [0m{[1;35mgroup name[0m} {[1;35mtext[0m}
+
+EmoteGroup sends an emote to all the chat connections with a specific group
+name.
+
+   þ {[1;35mgroup name[0m} The name of the group you wish to emote to.
+   þ {[1;35mtext[0m} The text to send to the group.
+
+[1;44m                                                                                [0m

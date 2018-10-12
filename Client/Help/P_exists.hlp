@@ -1,0 +1,10 @@
+[1;33mExists[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Exists(var name)[0m
+
+Returns a 1 if the variable exists, otherwise a 0.
+
+   þ var name - The name of the variable to look for.
+
+[1;44m                                                                                [0m

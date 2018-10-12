@@ -1,0 +1,35 @@
+[1;33mProcedures[0m
+==========
+
+@Abs               @AnsiBold           @AnsiReset          @Asc
+@BackBlack         @BackBlue           @BackColor          @BackCyan
+@BackGreen         @BackMagenta        @BackRed            @BackWhite
+@BackYellow        @CharColor          @ChatConnects       @ChatName
+@ChatVersion       @Chr                @CommandToCount     @CommandToList
+@ConCat            @Connected          @CWD                @Day
+@EventTime         @Exists             @FileExists         @ForeBlack
+@ForeBlue          @ForeColor          @ForeCyan           @ForeGreen
+@ForeMagenta       @ForeRed            @ForeWhite          @ForeYellow
+@GetArray          @GetCount           @GetItem            @Hour
+@InList            @IP                 @IPP                @IsEmpty
+@Left              @Len                @Lower              @LTrim
+@Math              @Mid                @Minute             @Month
+@NumActions        @NumAliases         @NumArrays          @NumBarItems
+@NumEvents         @NumGags            @NumHighlights      @NumLists
+@NumMacros         @NumSubstitutes     @NumTabList         @NumVariables
+@PadLeft           @PadRight           @PreTrans           @ProcedureCount
+@Random            @ReadableTime       @Right              @RTrim
+@Second            @SessionPath        @StripAnsi          @StrStr
+@SubAll            @SubWord            @TextColor          @Time
+@TimeToDay         @TimeToDayOfWeek    @TimeToHour         @TimeToMinute
+@TimeToMonth       @TimeToSecond       @TimeToYear         @TextColor
+@Upper             @Val                @Var                @VersionProc
+@Word              @WordColor          @WordCount          @Year
+
+Procedures are always prefaced with the @ symbol. Parameters passed to the
+procedures are always enclosed in parens ( ). Do not place spaces in the 
+parameter list unless you want to actually pass a space to the procedure. 
+@InList(Spells, Arithon) with a space after the comma would look for the 
+text " Arithon". 
+
+===

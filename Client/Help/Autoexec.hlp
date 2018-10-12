@@ -1,0 +1,27 @@
+[1;33mAutoExec[0m
+[1;44m                                                                                [0m
+
+Format: [1m/autoexec [0m{[1;35mcommands[0m}
+
+Autoexec tells the client to execute a specific set of commands once, when the
+script is loaded. Typing /autoexec by itself will list all of the autoexec
+commands you have defined.
+
+   þ {[1;35mcommands[0m} The commands are the actions you want to take when the autoexec
+     fires.
+
+Example:
+
+/autoexec [0m{[1;35m/call 24.24.27.110[0m}
+This is the most basic form of an autoexec. It sees the text "/call
+24.24.27.110" and then sends the command to the client to initiate a chat
+connection to that IP address.
+
+You can also use an alias in place of the exact commands you wish to use.
+
+Removal:
+
+To remove an autoexec first use /autoexec to see the list of current
+autoexecs then use /unautoexec with the number of the one to remove.
+
+[1;44m                                                                                [0m

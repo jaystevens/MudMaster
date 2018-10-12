@@ -1,0 +1,11 @@
+[1;33mDefault[0m
+[1;44m                                                                 [0m
+
+Format: [1m/default {[1;35mfile name[0m}[0m
+
+Default tells Mud Master which command file you want loaded for you
+automatically when you first start it up.
+
+   þ {[1;35mfile name[0m} The name of the command file to load. 
+
+[1;44m                                                                 [0m

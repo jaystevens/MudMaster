@@ -1,0 +1,13 @@
+[1;33mUnArray[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unarray [0m{[1;35mreference number[0m}
+Format: [1m/unarray [0m{[1;35marray name[0m}
+
+Removes an array from your list of defined arrays. You can either type the
+number of the array which you see when you list them or the name of the array.
+
+   þ {[1;35mreference number[0m} The number of the array you want to remove.
+   þ {[1;35marray name[0m} The name of the array you want to remove.
+
+[1;44m                                                                                [0m

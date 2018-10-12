@@ -1,0 +1,22 @@
+[1;33m@PreTrans[0m
+[1;44m                                                                                [0m
+
+Format: [1m@PreTrans(stuff to do)[0m
+
+Many commands in Mud Master translate variables and evaluate procedure when
+the command is executed. An example of this is when you define a macro that
+contains a variable -- when you press the macro key the variable gets
+translated. Sometimes, however, you will want the macro to store the value of
+that variable instead of the variable name itself. PreTrans allows you to
+expand variables and evaluate procedures at the time the command is created.
+
+Examples:
+
+/macro [0m{[1;35mf1[0m} {[1;35msay $Var[0m}
+When the F1 key is press the variable gets translated.
+
+/macro [0m{[1;35mf2[0m} {[1;35msay @PreTrans($Var)[0m}
+In this case, using PreTrans, the variable gets expanded when the macro is
+created. If $Var="Bob" the macro created is essentially: /macro [0m{[1;35mf2[0m} {[1;35msay Bob[0m}
+
+[1;44m                                                                                [0m

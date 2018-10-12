@@ -1,0 +1,27 @@
+[1;33m@InList[0m
+[1;44m                                                                                [0m
+
+Format: [1m@InList(list name,item text)[0m
+Format: [1m@InList(list number,item text)[0m
+
+Returns: 1 if the text is in the list, otherwise 0
+
+InList determines if a specific text string is in a user defined list. InList
+can be evaluated in an /if statement. While you can use the list number to
+specify a list to search I don't recommend it. If you added a new list it
+might change the number of the list are looking for.
+
+   þ list name - The name of the list you want to check.
+   þ list number - The number of the list you want to check.
+   þ item text - The item you want to search for in the list.
+
+/if [0m{[1;35m@InList(Friends,Rand)[0m} {[1;35msay Rand is in the list.[0m} {[1;35msay Rand is not in
+the list.[0m}
+If the word "Rand" is in the list called "Friends" the text "say Rand is in
+the list." would be sent to the mud, else the other string would be.
+
+/if [0m{[1;35m@InList(Friends,Rand) = 0[0m} {[1;35msay Rand is not in the list.[0m}
+Searches for the word "Rand" in the list "Friends" and if it is NOT found the
+text "say Rand is not in the list." is sent to the mud.
+
+[1;44m                                                                                [0m

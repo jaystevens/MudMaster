@@ -1,0 +1,48 @@
+[1;33mIf[0m
+[1;44m                                                                                [0m
+
+Format: [1m/if [0m{[1;35mconditional statement[0m} {[1;35mthen[0m} {[1;35melse[0m}
+
+If commands need to be activated in some fashion in order to be evaluated. Most
+commonly you would place an if command inside an action. However, they could
+also be place inside an alias or macro. The if command has been modeled after
+an if statement in C.
+
+   þ {[1;35mconditional statement[0m} This is a statement that evaluates to either true
+     or false. Any statement evaluating to a 0 is considered false, while any
+     other result would be considered true.
+   þ {[1;35mthen[0m} The commands you place here will be executed if the condition is
+     evaluated to true.
+   þ {[1;35melse[0m} The commands you place here will be executed if the condition is
+     evaluated to false. This paramater is optional.
+
+Operators recognized by if:
+
+   Operator   Description               Operator   Description
+   --------   ---------------------     --------   ------------------------
+   &&         And                       ||         Or
+   ==         Equal To                  =          Equal To
+   !=         Not Equal To              >          Greater Than
+   <          Less Than                 >=         Greater Than or Equal To
+   <=         Less Than or Equal To     ()         Precedence
+   !          Negation
+
+Operators are evaluated in this order: (), &&, ||, =, ==, !=, >, <, >=, <=.
+
+Conditional statements or parts of conditional statements can be negated with !
+as long as the portion of the statement being negated is surrounded by parentheses.
+To use !, it would be something like
+/if [0m{[1;35m$0 > 5[0m} {[1;35m/showme {$0 is smaller}[0m} {[1;35m/showme {$0 is larger}[0m}
+
+/action [0m{[1;35m^You are hungry.[0m} {[1;35m/if {$AutoEat = 1} {take food bag;eat food}[0m}
+The above would allow you to turn eating on and off. You need to define a
+variable called AutoEat and give it a value of 1 when you want eating to be
+automatic, and any other number when you want to turn it off.
+
+/action [0m{[1;35m%0 enters the room.[0m} {[1;35m/if {$MeanMode = 1 && $0 = "Atlas" || $0 = "Breedan"} {spit $0}[0m}
+Assuming the mud sent the text "<character name> enters the room." each time
+somebody entered the room. Each time somebody enters the room the client would
+check to see if MeanMode is 1, and that the name of the person who entered is
+either Atlas or Breedan, and if it is, would spit on them.
+
+[1;44m                                                                                [0m

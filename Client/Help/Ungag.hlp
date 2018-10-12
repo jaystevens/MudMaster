@@ -1,0 +1,12 @@
+[1;33mUnGag[0m
+[1;44m                                                                                [0m
+
+Format: [1m/ungag [0m{[1;35mreference number[0m}
+Format: [1m/ungag [0m{[1;35mmask[0m}
+
+This command removes a gag from the gag list.
+
+   þ {[1;35mreference number[0m} The number of the gag you want to remove.
+   þ {[1;35mmask[0m} The mask text of the gag you want to remove.
+
+[1;44m                                                                                [0m

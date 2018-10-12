@@ -1,0 +1,11 @@
+[1;33mPlayWave[0m
+[1;44m                                                                                [0m
+
+Format: [1m/playwave [0m{[1;35mfilename.ext[0m} [[1;35m{LeftVol,RightVol} or {Volume}[0m] [0m{[1;35mPriority[0m}
+
+PlayWave plays a waveform sound file.
+
+   þ {[1;35mfilename.ext[0m} Sound file to play.
+   þ {[1;35mVolume[0m} Volume of playback.
+
+[1;44m                                                                                [0m

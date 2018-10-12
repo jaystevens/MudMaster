@@ -1,0 +1,109 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>Macro</b></h3>
+
+<hr>
+<br><b>Format: /macro {key name} {commands} {group name}</b><b></b>
+<p><b><li> {key name} The name of the key and any modifiers(control,
+alt, delete)</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; you want to apply to it.</b>
+<br><b><li> {commands} The commands to execute when the
+macro key is pressed.</b>
+<br><b><li> {group name} Optional, see the user guide for
+help on groups.</b><b></b>
+<p><b>Lets you assign a command or multiple commands to a key. When you
+press the</b>
+<br><b>key, the client processes the commands. The keyname is the name
+of the key,</b>
+<br><b>or the name of a key prefixed with a modifier. Their are two ways
+to change</b>
+<br><b>the behavior of a macro:</b><b></b>
+<p><b>&nbsp;&nbsp; 1) Place a semi-colon as the last character in the commands
+section.</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instead of automatically processing
+the text in the macro the text is</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; instead inserted into the input bar.</b>
+<br><b>&nbsp;&nbsp; 2) Place a colon as the last character in the commands
+section. The text</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the macro is insterted into the
+input bar with a carriage return.</b><b></b>
+<p><b>Certain keys cannot be assigned as macro keys (they are used by the
+client):</b><b></b>
+<p><b>&nbsp;&nbsp; alt-uparrow</b>
+<br><b>&nbsp;&nbsp; home</b>
+<br><b>&nbsp;&nbsp; end</b>
+<br><b>&nbsp;&nbsp; regular ascii characters, or shifted ascii characters</b>
+<br><b>&nbsp;&nbsp; arrow keys</b>
+<br><b>&nbsp;&nbsp; control-left arrow or control-right arrow</b>
+<br><b>&nbsp;&nbsp; ctrl-x</b>
+<br><b>&nbsp;&nbsp; ctrl-c</b>
+<br><b>&nbsp;&nbsp; ctrl-]</b><b></b>
+<p><b>Special key names:</b><b></b>
+<p><b>&nbsp;&nbsp; Function Keys: f1 - f12</b>
+<br><b>&nbsp;&nbsp; Delete: del</b>
+<br><b>&nbsp;&nbsp; Keypad Delete: kpdel</b>
+<br><b>&nbsp;&nbsp; Keypad Characters: kp0 - kp9</b>
+<br><b>&nbsp;&nbsp; Insert: ins</b>
+<br><b>&nbsp;&nbsp; Home: home</b>
+<br><b>&nbsp;&nbsp; Page Up: pgup</b>
+<br><b>&nbsp;&nbsp; Page Down: pgdn</b>
+<br><b>&nbsp;&nbsp; End: end</b>
+<br><b>&nbsp;&nbsp; Up Arrow: uparrow</b>
+<br><b>&nbsp;&nbsp; Down Arrow: dnarrow</b>
+<br><b>&nbsp;&nbsp; Right Arrow: rtarrow</b>
+<br><b>&nbsp;&nbsp; Left Arrow: ltarrow</b>
+<br><b>&nbsp;&nbsp; Keypad Star: kpstar</b>
+<br><b>&nbsp;&nbsp; Keypad Plus: kpplus</b>
+<br><b>&nbsp;&nbsp; Keypad Minus: kpminus</b>
+<br><b>&nbsp;&nbsp; Keypad Slash: kpslash</b><b></b>
+<p><b>Key modifiers let you specify whether the control, alt or shift keys
+are being</b>
+<br><b>pressed. The order you use the modifiers is not important. Modifers
+must</b>
+<br><b>prefix the keyname.</b><b></b>
+<p><b>&nbsp;&nbsp; Alt: a</b>
+<br><b>&nbsp;&nbsp; Shift: s</b>
+<br><b>&nbsp;&nbsp; Control: c</b><b></b>
+<p><b>/macro {f1} {take food bag;eat food}</b>
+<br><b>This is the most basic form of a macro. You press it, it does it.</b><b></b>
+<p><b>/macro {f1} {backstab ;}</b>
+<br><b>Ending a macro with a semi-colon causes the text to appear in the
+input bar</b>
+<br><b>instead of automatically processing it. Pressing F1 with this macro
+will</b>
+<br><b>insert "backstab " where the cursor is.</b><b></b>
+<p><b>/macro {f2} {Arithon:}</b>
+<br><b>Ending a macro with a colon will insert the text into the input
+bar at the</b>
+<br><b>cursor position and then press enter for you. A use for this would
+be to</b>
+<br><b>combine several macros onto the input bar and have the final macro
+press enter</b>
+<br><b>for you. If you were to press F1 from the above example then press
+F2 it would</b>
+<br><b>send to the mud "backstab Arithon"</b><b></b>
+<p><b>/macro {sf1} {cast create food}</b>
+<br><b>This macro has a modifier in front of the key name; which creates
+the macro</b>
+<br><b>Shift-F1.</b><b></b>
+<p><b>/macro {ascf1} {cast create food}</b>
+<br><b>Creates the macro Alt-Shift-Control-F1</b><b></b>
+<p><b>/macro {ab} {bs $Target}</b>
+<br><b>Creates the macro Alt-B</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

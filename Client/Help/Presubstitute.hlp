@@ -1,0 +1,9 @@
+[1;33mPreSubstitute[0m
+[1;44m                                                                                [0m
+
+Format: [1m/presubstitute[0m
+
+When on, substitutes are processed before the actions are checked. When off
+actions are processed on the original text.
+
+[1;44m                                                                                [0m

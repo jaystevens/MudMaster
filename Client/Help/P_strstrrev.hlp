@@ -1,0 +1,19 @@
+[1;33m@StrStrRev[0m
+[1;44m                                                                                [0m
+
+Format: [1m@StrStrRev(search in,search for)[0m
+
+StrStrRev searches for the LAST occurrence of one string in another, starting
+at the end and moving toward the beginning. It returns the 0 based index of where
+the string to search for starts in the other. If the search for string is not
+found -1 is returned.
+
+   þ search in - The text you want to search.
+   þ search for - The text you want to search for.
+
+Examples:
+
+@StrStrRev(Arithonhit,it)
+This would return 8.
+
+[1;44m                                                                                [0m

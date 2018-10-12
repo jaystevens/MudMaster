@@ -1,0 +1,24 @@
+HKCR
+{
+	Ifx.MMSession.1 = s 'MMSession Class'
+	{
+		CLSID = s '{B869F3D4-62E7-4563-B731-2A0F4F0AA9EB}'
+	}
+	Ifx.MMSession = s 'MMSession Class'
+	{
+		CLSID = s '{B869F3D4-62E7-4563-B731-2A0F4F0AA9EB}'
+		CurVer = s 'Ifx.MMSession.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B869F3D4-62E7-4563-B731-2A0F4F0AA9EB} = s 'MMSession Class'
+		{
+			ProgID = s 'Ifx.MMSession.1'
+			VersionIndependentProgID = s 'Ifx.MMSession'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{BF153465-10D7-4E2E-AB60-90E2CE954EA2}'
+		}
+	}
+}

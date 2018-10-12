@@ -1,0 +1,40 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+<TITLE>
+	Mudmaster 2k6 Command Reference
+</TITLE>
+</head>
+<BODY>
+<h3>Window</h3>
+Format: /window {target session name}{mm2k6 commands}
+<p>
+Sends mm2k6 commands to the targeted session. The session name is the one normally seen on the associated 
+title bar and includes the .mms extension. The mm2k6 commands can be any script commands.
+</p>
+<p>Example:
+<blockquote>
+/action {^[CLAN] %0} {/window {helpview.mms}{/showme {@ansibold()@foreyellow()[CLAN] @forecyan() @replace($0,},@chr(125)) @ansireset()}}} {channels}
+</blockquote>
+sets up an action that captures any text on lines starting with [CLAN] and shows it in cyan after a yellow [CLAN] in a window called helpview.mms
+</p>
+<p><B>Special window sub-commands:</b>
+</p>
+<p>
+<blockquote>
+/window {target session name}{removecaption}<br>
+/window {target session name}{addcaption}
+</blockquote>
+These add and remove the session title bar and thick frames. The title bar and thick frame are usually needed
+when you are moving and resizing a session window into the desired configuration. Once
+the size and position are set removing them leaves you with much more screen area to work with.
+</p>
+	<HR>
+	<B>Related Commands:</B>
+	<A HREF=removecaption.html>removecaption</A>,
+	<A HREF=addcaption.html>addcaption</a>,
+	<A HREF=maxrestore.html>/maxrestore</A>,
+	<P>
+	Click <A HREF=javascript:history.back(1)>here</A> to return to previous page.
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+[1;33m[1;33mWhile[0m
+[1;44m                                                                                [0m
+
+Format: [1m/while [0m{[1;35mcondition[0m} {[1;35mcommands[0m}
+
+While executes the command as long as the condition is true.
+
+   þ {[1;35mcondition[0m} A condition that evaluates to true or false. See help on if
+     for information on the condition.
+   þ {[1;35mcommands[0m} The commands will be executed until the condition is false.
+
+Caution is advised when using the while command. It creates a loops that does
+not stop until the condition is evaluated as false. If you create a condition
+that never evaluates to false it will stay in an infinite loop. An example of
+an infinite loop is this: /while [0m{[1;35m1 = 1[0m} {[1;35msay doh![0m} This while will never stop
+executing and the program will appear locked up. The idea behind the while is
+to create a condition that uses variables. Somewhere in the commands portion
+you would set a variable causing the loop to fail.
+
+[1;44m                                                                                [0m

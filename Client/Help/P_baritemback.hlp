@@ -1,0 +1,9 @@
+[1;33m@BarItemBack[0m
+[1;44m                                                                                [0m
+
+Format: [1m@BarItemBack(item name)[0m
+Format: [1m@BarItemBack(item number)[0m
+
+Returns the background colour number of the item.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,8 @@
+[1;33m@StripAnsi[0m
+[1;44m                                                                                [0m
+
+Format: [1m@StripAnsi(text)[0m
+
+Pass in some text and it returns the same text with all the ansi codes removed.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,13 @@
+[1;33mEnableSubstitute[0m
+[1;44m                                                                                [0m
+
+Format: [1m/enablesubstitute [0m{[1;35mreference number[0m}
+Format: [1m/enablesubstitute [0m{[1;35mmask[0m}
+
+EnableSubstitute allows you to turn substitutes on that have been disabled with
+/disablesubstitute.
+
+   ş {[1;35mreference numer[0m} The number of the substitute to enable.
+   ş {[1;35mmask[0m} The mask text of the substitute to enable.
+
+[1;44m                                                                                [0m

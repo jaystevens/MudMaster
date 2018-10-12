@@ -1,0 +1,10 @@
+[1;33mScreenshot[0m
+[1;44m                                                                                [0m
+
+Format: [1m/screenshot [0m{[1;35mfilename with path[0m}
+
+Creates either a jpeg or a png image of the inner display portion of the 
+session window. The type is determined by the file extension supplied.
+
+
+[1;44m                                                                                [0m

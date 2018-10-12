@@ -1,0 +1,25 @@
+[1;33mAssign[0m
+[1;44m                                                                                [0m
+
+Format: [1m/assign [0m{[1;35marray name[0m} {[1;35mrow[0m} {[1;35mvalue[0m}
+Format: [1m/assign [0m{[1;35marray name[0m} {[1;35mrow,column[0m} {[1;35mvalue[0m}
+
+Assign sets the value of a cell in an array.
+
+   þ {[1;35marray name[0m} The name of the array.
+   þ {[1;35mrow[0m} For assigning cells in a single dimensional array. The number must be
+     between 1 and the number of rows you created the array with.
+   þ {[1;35mrows,columns[0m} For assigning cells in a two dimensional array. The numbers
+     must be between 1 and the number of rows and columns you created the array
+     with.
+   þ {[1;35mvalue[0m} The text or number you want to assign to the cell.
+
+Examples:
+
+/assign [0m{[1;35mTargets[0m} {[1;35m1[0m} {[1;35mSoth[0m}
+This assigns the first cell in the array to hold the text "Soth".
+
+/assign [0m{[1;35mGrid[0m} {[1;35m2,4[0m} {[1;35m16[0m}
+This assigns row 2, column 4 of the grid with a value of 16.
+
+[1;44m                                                                                [0m

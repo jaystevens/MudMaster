@@ -1,0 +1,12 @@
+[1;33mDisableHighlight[0m
+[1;44m                                                                                [0m
+
+Format: [1m/disablehighlight [0m{[1;35mreference number[0m}
+Format: [1m/disablehighlight [0m{[1;35mmask[0m}
+
+DisableHighlight allows you to turn individual highlights off.
+
+   þ {[1;35mreference number[0m} The number of the highlight to disable.
+   þ {[1;35mmask[0m} The mask text of the highlight to disable.
+
+[1;44m                                                                                [0m

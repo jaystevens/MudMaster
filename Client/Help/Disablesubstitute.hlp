@@ -1,0 +1,12 @@
+[1;33mDisableSubstitute[0m
+[1;44m                                                                                [0m
+
+Format: [1m/disablesubstitute [0m{[1;35mtext pattern[0m}
+Format: [1m/disablesubstitute [0m{[1;35mreference number[0m}
+
+Disables the given substitute.
+
+   ş {[1;35mreference number[0m} The number of the substitute to disable.
+   ş {[1;35mtext pattern[0m} The trigger text of the substitute to disable.
+
+[1;44m                                                                                [0m

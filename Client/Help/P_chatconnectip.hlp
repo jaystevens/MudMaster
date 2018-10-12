@@ -1,0 +1,16 @@
+[1;33m@ChatConnectIP[0m
+[1;44m                                                                                [0m
+
+Format: [1m@ChatConnectIP(chat connection)[0m
+
+Returns a string containing the real ip address of the specified chat connection
+
+   þ chat connection - The number or the name of the chat connection for which you wish to retrieve the real ip address
+
+Example: 
+
+@ChatConnectIP(1)
+
+@ChatConnectIP(Firm)
+
+[1;44m                                                                                [0m

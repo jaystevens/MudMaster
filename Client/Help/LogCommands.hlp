@@ -1,0 +1,7 @@
+[1;33mLog Commands[0m
+[1;44m                                                                 [0m
+logclose            logopen             logpath 
+rawmudlogopen       rawmudlogclose      savescrollback    viewlog 
+
+[1;44m                                                                 [0m
+

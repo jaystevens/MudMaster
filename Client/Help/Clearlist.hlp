@@ -1,0 +1,12 @@
+[1;33mClearList[0m
+[1;44m                                                                                [0m
+
+Format: [1m/clearlist [0m{[1;35mlist[0m}
+Format: [1m/clearlist [0m{[1;35mreference number[0m}
+
+Removes all the items from the specified list.
+
+   þ {[1;35mlist[0m} Name of the list you want to clear.
+   þ {[1;35mreference number[0m} Reference number of the list you want to clear.
+
+[1;44m                                                                                [0m

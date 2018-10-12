@@ -1,0 +1,10 @@
+[1;33mFreeLibrary[0m
+[1;44m                                                                                [0m
+
+Format: [1m/freelibrary [0m{[1;35mdll name[0m}
+
+Removes a user defined DLL from memory.
+
+   þ {[1;35mdll name[0m} Name of the user defined DLL.
+
+[1;44m                                                                                [0m

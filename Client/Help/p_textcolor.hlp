@@ -1,0 +1,10 @@
+[1;33m@TextColor[0m
+[1;44m                                                                                [0m
+
+Format: [1m@TextColor(text)[0m
+
+This procedure is only useful in an action. It searches the line of text that
+caused the action to fire for the text passed in. It returns the color of the
+first character that matches.
+
+[1;44m                                                                                [0m

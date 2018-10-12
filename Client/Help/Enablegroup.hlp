@@ -1,0 +1,11 @@
+[1;33mEnableGroup[0m
+[1;44m                                                                                [0m
+
+Format: [1m/enablegroup [0m{[1;35mgroup name[0m}
+
+Enables all the defined commands in a group. All your events, aliases, actions,
+bar items and macros belonging to the group will be enabled.
+
+   þ {[1;35mgroup name[0m} The name of the group to enable.
+
+[1;44m                                                                                [0m

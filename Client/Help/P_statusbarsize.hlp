@@ -1,0 +1,9 @@
+[1;33m@StatusbarSize[0m
+[1;44m                                                                                [0m
+
+Format: [1m@StatusbarSize(height or width)[0m
+
+Returns the current setting for either statusbar height in lines or width in
+characters per line depending on input.
+
+[1;44m                                                                                [0m

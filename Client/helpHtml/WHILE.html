@@ -1,0 +1,42 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>While</b></h3>
+
+<hr>
+<br><b>Format: /while {condition} {commands}</b><b></b>
+<p><b>While executes the command as long as the condition is true.</b><b></b>
+<p><b><li> {condition} A condition that evaluates to true
+or false. See help on if</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; for information on the condition.</b>
+<br><b><li> {commands} The commands will be executed until
+the condition is false.</b><b></b>
+<p><b>Caution is advised when using the while command. It creates a loops
+that does</b>
+<br><b>not stop until the condition is evaluated as false. If you create
+a condition</b>
+<br><b>that never evaluates to false it will stay in an infinite loop.
+An example of</b>
+<br><b>an infinite loop is this: /while {1 = 1} {say doh!} This while will
+never stop</b>
+<br><b>executing and the program will appear locked up. The idea behind
+the while is</b>
+<br><b>to create a condition that uses variables. Somewhere in the commands
+portion</b>
+<br><b>you would set a variable causing the loop to fail.</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

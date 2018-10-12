@@ -1,0 +1,16 @@
+[1;33mFileCancel[0m
+[1;44m                                                                                [0m
+
+Format: [1m/filecancel [0m{[1;35mreference number[0m}
+Format: [1m/filecancel [0m{[1;35mchat name[0m}
+
+FileCancel cancels a file transfer that is in progress. When a file is
+cancelled it is not removed from your system. If you don't want the partial
+file around you will have to delete it yourself.
+
+   þ {[1;35mreference number[0m} The number of the chat connection where the file
+     transfer is in progress.
+   þ {[1;35mchat name[0m} The name of the chat connection where the file transfer is
+     in progress.
+
+[1;44m                                                                                [0m

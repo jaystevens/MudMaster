@@ -1,0 +1,10 @@
+[1;33mEmoteAll[0m
+[1;44m                                                                                [0m
+
+Format: [1m/emoteall [0m{[1;35mtext[0m}
+
+Sends an emote to all of your chat connections.
+
+   þ {[1;35mtext[0m} The text to send.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,11 @@
+[1;33m[1;33mWrite[0m
+[1;44m                                                                                [0m
+
+Format: [1m/write [0m{[1;35mfilename.ext[0m}
+
+Writes all your commands, aliases, actions etc... to a file.
+
+   þ {[1;35mdrive:\filename.ext[0m} Name and path of the command file to write to.
+   þ {[1;35mfilename.ext[0m} Name of the command file to to write to.
+
+[1;44m                                                                                [0m

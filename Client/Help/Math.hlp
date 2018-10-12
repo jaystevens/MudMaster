@@ -1,0 +1,40 @@
+[1;33mMath[0m
+[1;44m                                                                                [0m
+
+Format: [1m/math [0m{[1;35mvariable for result[0m} {[1;35mmath expression[0m}
+
+The math command lets you perform mathematical equations and place the result in
+a variable. Math does integer math only (no floating point).
+
+   þ {[1;35mvariable for result[0m} The name of the variable to place the result in. If
+     the variable doesn't exist it will be created.
+   þ {[1;35mmath expression[0m} Mathematical expression to be evaluated.
+
+Operator  Description
+--------  -----------
+()        Precedence
+*         Multiplication
+/         Division
+%         Modulus
++         Addition
+-         Subtraction
+
+Anything enclosed in the parens will be evaulated first. Then all the
+multiplication, division and modulus operators are evaulated left to right.
+Then addition and subtraction are evaluated left to right.
+
+/math [0m{[1;35mresult[0m} {[1;35m3 + 5 * 4[0m}
+Would place the number 23 in a variable called "result."
+
+/math [0m{[1;35mresult[0m} {[1;35m(3 + 5) * 4[0m}
+Would place the number 32 in a variable called "result."
+
+/math [0m{[1;35mresult[0m} {[1;35m$result + 1[0m}
+Adds 1 to variable "result."
+
+/math [0m{[1;35mresult[0m} {[1;35m5 % 3[0m}
+The modulus operator returns the remainder of a division as an integer. This
+would place the number 2 in the variable "result." 5 divided by 3 leaves a
+remainder of 2.
+
+[1;44m                                                                                [0m

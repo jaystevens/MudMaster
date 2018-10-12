@@ -1,0 +1,22 @@
+[1;33mShowMSPTriggers[0m
+[1;44m                                                                                [0m
+
+Format: [1m/showtoast [0m{[1;35mtext to pop up in taskbar notifier[0m}
+
+Similar to /showme or /showother except that a taskbar notification pops like
+toast above the tray when this command is used. The notification pop up is
+skinned using a simple bitmap toast.bmp which must be in the same directory
+as mudmaster.exe before a session started.
+
+If /showtoast is executed while the toast is already up the new text is added
+to the old text.
+
+If you hover the mouse over the toast it will keep the notification in place.
+
+You can create your own custom skins for the popup. It must be a .bmp and be
+in the same directory as the mudmaster.exe when a session is opened for it to
+be used. Pure green RGB(0,ff,0) is treated as transparent. The text is
+displayed center justified with top margin of 40 pixels and side margins of
+15 pixels. Text will not display over transparent portions of the skin.
+
+[1;44m                                                                                [0m

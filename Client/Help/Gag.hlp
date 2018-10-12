@@ -1,0 +1,20 @@
+[1;33mGag[0m
+[1;44m                                                                                [0m
+
+Format: [1m/gag [0m{[1;35mmask[0m}
+
+Adds a gag to the gag list. Before the client prints a line of text to the
+screen it checks the gag list. If {[1;35mmask[0m} is found in a line of text that line
+will not be printed.
+
+   þ {[1;35mmask[0m} This is the text pattern to search for to determine what lines of
+     text to gag. The mask can be defined the same way you define the text
+     pattern for an action-- using %0 through %9.
+
+/gag [0m{[1;35mGeoff says[0m}
+Any lines that have the text "Geoff says" in them will not be seen.
+
+/gag [0m{[1;35mYou hear %0 shout[0m}
+Any lines that have the text "You hear <name> shout" will not be seen.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,13 @@
+[1;33m@Replace[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Replace(string,string,string)[0m
+
+Replaces all the instances of stringToReplace in string with ReplacementString
+and returns the result. Variables may be used for any of the strings.
+
+Examples:
+
+@Replace(XoXoX,o,AA) returns XAAXAAX
+
+[1;44m                                                                                [0m

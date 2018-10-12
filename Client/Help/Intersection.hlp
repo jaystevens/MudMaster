@@ -1,0 +1,17 @@
+[1;33mIntersection[0m
+[1;44m                                                                                [0m
+
+Format: [1m/intersection [0m{[1;35mX1[0m} {[1;35mY1[0m} {[1;35mRadius1[0m} {[1;35mX2[0m} {[1;35mY2[0m} {[1;35mRadius1[0m} {[1;35mVariable Name[0m}
+
+Calculates the two points where the two circles intersect.
+Result is in the form of (x,y) (x,y)
+
+   þ {[1;35mX1[0m} X coordinate of the center of the first circle
+   þ {[1;35mY1[0m} Y coordinate of the center of the first circle
+   þ {[1;35mX2[0m} X coordinate of the center of the second circle
+   þ {[1;35mY2[0m} Y coordinate of the center of the second circle
+   þ {[1;35mRadius1[0m} distance from the center of the center of the first circle
+   þ {[1;35mRadius2[0m} distance from the center of the center of the second circle
+   þ {[1;35mVariable Name[0m} Variable where the result string is placed.
+
+[1;44m                                                                                [0m

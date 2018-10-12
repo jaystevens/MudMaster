@@ -1,0 +1,14 @@
+[1;33mChatIgnore[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatignore [0m{[1;35mreference number[0m}
+Format: [1m/chatignore [0m{[1;35mchat name[0m}
+
+ChatIgnore toggles the ignore flag of a chat connection. In the /chat list you
+will see an I flag when you are ignoring a connection. While a connection is
+being ignored, you will not see any text or name changes from that connection.
+
+   þ {[1;35mreference number[0m} The number of the chat connection you want to change.
+   þ {[1;35mchat name[0m} The name of the chat connection you want to change.
+
+[1;44m                                                                                [0m

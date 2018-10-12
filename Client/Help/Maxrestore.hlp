@@ -1,0 +1,9 @@
+[1;33mMaxRestore[0m
+[1;44m                                                                                [0m
+
+Format: [1m/maxrestore[0m
+
+Toggles session window between maximized within the MudMaster child window
+area and restoring it to the last non-maximize size and position
+
+[1;44m                                                                                [0m

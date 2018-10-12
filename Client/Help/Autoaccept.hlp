@@ -1,0 +1,12 @@
+[1;33mAutoAccept[0m
+[1;44m                                                                                [0m
+
+Format: [1m/autoaccept[0m
+Format: [1m/autoaccept [0m{[1;35mon/off[0m}
+
+When a chat call comes in if AutoAccept is on you are not prompted to accept the
+call. AutoAccept without parameters toggles the option between on and off.
+
+   þ {[1;35mon/off[0m} Sets the option on or off.
+
+[1;44m                                                                                [0m

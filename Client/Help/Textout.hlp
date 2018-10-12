@@ -1,0 +1,16 @@
+[1;33mTextOut[0m
+[1;44m                                                                                [0m
+
+Format: [1m/textout [0m{[1;35mdrive:\filename.ext[0m} {[1;35mtext[0m} {[1;35mappend indicator[0m}
+Format: [1m/textout [0m{[1;35mfilename.ext[0m} {[1;35mtext[0m} {[1;35mappend indicator[0m}
+
+Sends text to a textfile.
+
+   þ {[1;35mdrive:\filename.ext[0m} The path and filename of the file to write to.
+   þ {[1;35mfilename.ext[0m} The name of the file to write to.
+   þ {[1;35mtext[0m} The text to output to the file.
+   þ {[1;35mappend indicator[0m} Optional argument. If present text will be apppended to
+     the end of the file.
+     Otherwise text will replace anything in the file if it exists.
+
+[1;44m                                                                                [0m

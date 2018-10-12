@@ -1,0 +1,8 @@
+[1;33mKillAll[0m
+[1;44m                                                                                [0m
+
+Format: [1m/killall[0m
+
+Removes all your stored commands from memory (aliases, actions, events, etc...).
+
+[1;44m                                                                                [0m

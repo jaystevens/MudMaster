@@ -1,0 +1,16 @@
+[1;33mGrep[0m
+[1;44m                                                                                [0m
+
+Format: [1m/grep [0m{[1;35mtext pattern[0m}
+
+Grep tells the client to look for a specific string of text in your script and
+displays it when it finds it.
+
+   þ {[1;35mtext pattern[0m} This is the text to search for in your script.
+
+/grep [0m{[1;35mItem ID[0m}
+
+This is how you search for text. It sees the text "Item ID" and then sends the
+search request to MudMaster 2k6 and all results are displayed.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,12 @@
+[1;33mFileDelete[0m
+[1;44m                                                                                [0m
+
+Format: [1m/filedelete [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/filedelete [0m{[1;35mfilename.ext[0m}
+
+Deletes a file.
+
+   þ {[1;35mdrive:\filename.ext[0m} Full path and filename of a file to delete.
+   þ {[1;35mfilename.ext[0m} Filename to delete. This will look in the program folder.
+
+[1;44m                                                                                [0m

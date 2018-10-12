@@ -1,0 +1,11 @@
+[1;33mBarItemFore[0m
+[1;44m                                                                                [0m
+
+Format: [1m/baritemfore [0m{[1;35mitem name[0m} {[1;35mcolor[0m}
+
+Changes the foreground color of a bar item.
+
+   þ {[1;35mitem name[0m} Name of the bar item which you want to change the color of.
+   þ {[1;35mcolor[0m} A number between 0 and 15.
+
+[1;44m                                                                                [0m

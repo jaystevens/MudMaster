@@ -1,0 +1,11 @@
+[1;33mChatGroup[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatgroup [0m{[1;35mgroup name[0m} {[1;35mtext[0m}
+
+ChatGroup sends text to all the chat connections with a specific group name.
+
+   þ {[1;35mgroup name[0m} The name of the group you wish to chat to.
+   þ {[1;35mtext[0m} The text to send to the group.
+
+[1;44m                                                                                [0m

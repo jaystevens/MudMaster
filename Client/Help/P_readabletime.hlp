@@ -1,0 +1,9 @@
+[1;33m@ReadableTime[0m
+[1;44m                                                                                [0m
+
+Format: [1m@ReadableTime(#)[0m
+
+Use 12 or 24 in place of # for the time format you wish
+12 is for standard 12hr am/12hr pm, 24 is for military time
+
+[1;44m                                                                                [0m

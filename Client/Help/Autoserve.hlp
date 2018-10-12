@@ -1,0 +1,12 @@
+[1;33mAutoServe[0m
+[1;44m                                                                                [0m
+
+Format: [1m/autoserve[0m
+Format: [1m/autoserve [0m{[1;35mon/off[0m}
+
+When a chat call comes in if autoserve is on they will be chatserved
+immediately. AutoServe without parameters toggles the option between on and off.
+
+   þ {[1;35mon/off[0m} Sets the option on or off.
+
+[1;44m                                                                                [0m

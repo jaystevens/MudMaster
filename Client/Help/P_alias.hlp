@@ -1,0 +1,16 @@
+[1;33m@Alias[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Alias(existingAlias [parameter])[0m
+
+This returns the results of executing the alias as text. In effect this allows
+you to make custom procedures by making an alias containing script to return
+some text and using @alias(yourAlias) to invoke it.
+
+Example:
+
+/alias [0m{[1;35mproper %0[0m} {[1;35m@Upper(@Left($0),1)@Lower(@Right($0),@Math(@Len($0)-1)))[0m} {[1;35mMyAliases[0m}
+and then use it like "@alias(proper mIXedCasE)" and it would return
+Mixedcase.
+
+[1;44m                                                                                [0m

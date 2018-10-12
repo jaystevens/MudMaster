@@ -1,0 +1,25 @@
+[1;33mTime Procedures[0m
+[1;44m                                                                                [0m
+
+[1m@Time()[0m - Returns the number of seconds elapsed since January 1, 1970. Time can
+          be used to create your own online timers. If you put the result of
+          @Time() in a variable, then later on get the value of time again, you
+          can subtract them for the number of seconds elapsed. The value from
+          @Time() is also used for all the functions below.
+
+[1m@TimeToDay(time value)[0m - Returns the day of the month.
+
+@TimeToDayOfWeek(time value)[0m - Returns the day of the week. 0 = Sunday,
+6 = Saturday.
+
+[1m@TimeToHour(time value)[0m - Returns the hour of the day.
+
+[1m@TimeToMinute(time value)[0m - Returns the minute of the hour.
+
+[1m@TimeToMonth(time value)[0m - Returns the month of the year.
+
+[1m@TimeToSecond(time value)[0m - Returns the seconds of the minute.
+
+[1m@TimeToYear(time value)[0m - Returns the year.
+
+[1;44m                                                                                [0m

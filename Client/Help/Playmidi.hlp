@@ -1,0 +1,12 @@
+[1;33mPlayMidi[0m
+[1;44m                                                                                [0m
+
+Format: [1m/playmidi [0m{[1;35mfilename.ext[0m}
+
+   þ {[1;35mfilename.ext[0m} Name of the midi file to play.
+
+Plays a MIDI file. The music file must be in the directory specified with
+/soundpath. If you have not set a sound path the file must be in the Mud
+Master directory.
+
+[1;44m                                                                                [0m

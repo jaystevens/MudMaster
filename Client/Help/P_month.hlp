@@ -1,0 +1,8 @@
+[1;33m@Month[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Month()[0m
+
+Returns the month number of the current date. Between 1 and 12.
+
+[1;44m                                                                                [0m

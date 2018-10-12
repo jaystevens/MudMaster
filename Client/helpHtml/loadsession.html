@@ -1,0 +1,32 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+<TITLE>
+	Mudmaster 2k6 Command Reference
+</TITLE>
+</head>
+<BODY>
+<h3>Loadsession</h4>
+Format: /loadsession {path and filename of session file}
+<p>This command allows any script to open another session. Most likely
+this is something that would be done in the start up script of
+the main session but is not limited to that. Sessions that
+are opened do not have to connect to any mud but can be used
+to display messages or log channels.</P>
+<p>Example: In a start up script you could have:
+<blockquote>
+/autoexec {/loadsession {C:\Program Files\MyMudMaster\sessionFiles\helpview.mms}}
+</blockquote>
+If you have already saved that session with its position set appropriately
+and with its Max Width=1 (checked Max Width in Options, session options)
+then you'll likely   also want to execute /window {helpview.mms}{removecaption} as well.
+</p>
+	<HR>
+	<B>Related Commands:</B>
+	<A HREF=window.html>window</A>,
+	<A HREF=removecaption.html>removecaption</a>,
+	<A HREF=loadsession.html>/loadsession</A>,
+	<P>
+	Click <A HREF=javascript:history.back(1)>here</A> to return to previous page.
+</BODY>
+</HTML>

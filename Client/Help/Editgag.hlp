@@ -1,0 +1,20 @@
+[1;33mEditGag[0m
+[1;44m                                                                                [0m
+
+Format: [1m/editgag [0m{[1;35mreference number[0m}
+Format: [1m/editgag [0m{[1;35mmask[0m}
+
+EditGag allows you to easily edit a gag without having to type the whole thing
+over. You can either use the reference number shown when you list your defined
+gags or the mask to edit it. The gag is then placed in the input line so that
+you have full editing capabilities.
+
+   þ {[1;35mreference number[0m} The number of the gag you want to edit.
+   þ {[1;35mmask[0m} The mask text of the gag you want to edit.
+
+NOTE: Gags are stored and looked up by the mask. If you edit a gag and you
+change the mask, when you press enter a new gag will be created. This will not
+erase the gag that you had originally edited. If you wish to remove the
+original version you need to use /ungag.
+
+[1;44m                                                                                [0m

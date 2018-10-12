@@ -1,0 +1,15 @@
+[1;33m@Upper[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Upper(text)[0m
+
+Upper converts all the letters in the text to upper case.  This can be useful
+when comparing items in a list or with an /if.
+
+Examples:
+
+/if [0m{[1;35m@Upper($Name) == "ARITHON"[0m}
+
+@InList(Spells,@Upper($1))
+
+[1;44m                                                                                [0m

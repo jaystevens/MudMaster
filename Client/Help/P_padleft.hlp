@@ -1,0 +1,12 @@
+[1;33m@PadLeft[0m
+[1;44m                                                                                [0m
+
+Format: [1m@PadLeft(text,character,number)[0m
+
+Returns a string padded on the left with a specific character.
+
+   þ text - Text to pad.
+   þ character - Character to use for padding.
+   þ number - number of pad characters to add.
+
+[1;44m                                                                                [0m

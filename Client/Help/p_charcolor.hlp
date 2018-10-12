@@ -1,0 +1,11 @@
+[1;33m@CharColor[0m
+[1;44m                                                                                [0m
+
+Format: [1m@CharColor(character position)[0m
+
+CharColor is useful only in actions. It returns the color of the character in
+a specific position on the line that caused the trigger to fire.
+
+   þ character position - The 0 based index of the character to check.
+
+[1;44m                                                                                [0m

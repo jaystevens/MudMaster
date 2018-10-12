@@ -1,0 +1,12 @@
+[1;33mEditVariable[0m
+[1;44m                                                                                [0m
+
+Format: [1m/editvariable [0m{[1;35mvariable text or number[0m}
+Format: [1m/editvariable [0m{[1;35mreference number[0m}
+
+Places the variable in the edit bar.
+
+   þ {[1;35mvariable text[0m} The name of the variable you want to edit.
+   þ {[1;35mreference number[0m} The number of the variable you want to edit.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,19 @@
+[1;33mSession[0m
+[1;44m                                                                                [0m
+
+Format: [1m/session [0m{[1;35msession name[0m} {[1;35mnetwork address[0m} {[1;35mport[0m}
+
+This is the command you use to create a connection to the mud.
+
+   þ {[1;35msession name[0m} The name of the session you want to start. This is not use
+     anywhere at the moment and is just included to be compatible with tintin.
+     It is still a required parameter.
+   þ {[1;35mnetword address[0m} The address of the mud. This can be in either IP
+     formation, or a named address.
+   þ {[1;35mport[0m} The port you want to connect to.
+
+Example:
+
+/session med medievia.com 4000
+
+[1;44m                                                                                [0m

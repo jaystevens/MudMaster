@@ -1,0 +1,9 @@
+[1;33m@IF(condition)[0m
+[1;44m                                                                                [0m
+
+Format: [1m@IF(condition)[0m
+
+Evaluates the condition the same way as /if does but returns 1 if the result is
+true and 0 if it is false.
+
+[1;44m                                                                                [0m

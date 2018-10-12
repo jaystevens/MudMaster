@@ -1,0 +1,11 @@
+[1;33m@Val[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Val(text)[0m
+
+Pass in some text and it returns the numerical value. This has limited value
+since MM treats string and numerical variables pretty much the same. What it
+can do is help to trim off numbers at the front of a string. It will pull as
+the value, from the start, all numerical characters.
+
+[1;44m                                                                                [0m

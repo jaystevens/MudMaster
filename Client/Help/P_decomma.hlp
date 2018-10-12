@@ -1,0 +1,14 @@
+[1;33m@Decomma[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Decomma(string)[0m
+
+Removes all the commas in the string. Variables may be used and thus intended
+to remove commas from numbers this can even be used to concatenate a comma
+separated list.
+
+Example:
+
+@Decomma(XoXoX,o,AA) returns XoAoXoAA
+
+[1;44m                                                                                [0m

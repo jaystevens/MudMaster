@@ -1,0 +1,13 @@
+[1;33mSetEventTime[0m
+[1;44m                                                                                [0m
+
+Format: [1m/seteventtime [0m{[1;35mevent number[0m} {[1;35mnew time[0m}
+Format: [1m/seteventtime [0m{[1;35mevent name[0m} {[1;35mnew time[0m}
+
+Changes the frequency of which an event fires. It also resets the time elapsed.
+
+   þ {[1;35mevent number[0m} The number of the event you want to set.
+   þ {[1;35mevent name[0m} The name of the event you want to set.
+   þ {[1;35mnew time[0m} The new frequency of the event.
+
+[1;44m                                                                                [0m

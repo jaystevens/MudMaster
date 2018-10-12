@@ -1,0 +1,8 @@
+[1;33m@EventTime[0m
+[1;44m                                                                                [0m
+
+Format: [1m@EventTime(event name)[0m
+
+EventTime returns how many seconds are left in an event before it fires.
+
+[1;44m                                                                                [0m

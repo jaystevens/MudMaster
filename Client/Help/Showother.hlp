@@ -1,0 +1,28 @@
+[1;33mShowOther[0m
+[1;44m                                                                                [0m
+
+Format: [1m/showother [0m{[1;33session name[0m} {[1;33mANSI text}[0m
+
+Just like /showme but in another open session window. Shows text in another
+named session window.
+
+   þ {[1;35msession name[0m} Name of window to send text to.
+   þ {[1;35mANSI text[0m} Text to display.
+
+Example:
+
+/showother [0m{[1;35mhelpview.mms[0m} {[1;35mHello world!![0m}
+
+or more useful:
+
+/action [0m{[1;35m^[CLAN] %0[0m} {[1;35m/showother {helpview.mms} {@AnsiBold()@ForeYellow()
+[CLAN] @ForeCyan() $0@AnsiReset()}[0m} {[1;35mchannels[0m}
+sets up an action that captures any text on lines starting with [CLAN] and shows
+it in cyan after a yellow [CLAN] in a window called helpview.mms
+
+[1;33mAlso see[0m
+removecaption
+addcaption
+window
+
+[1;44m                                                                                [0m

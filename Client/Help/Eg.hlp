@@ -1,0 +1,12 @@
+[1;33mEg[0m
+[1;44m                                                                 [0m
+
+Format: [1m/eg [0m{[1;35mgroup name[0m} {[1;35mtext[0m}
+
+Eg sends an emote to all the chat connections with a specific group
+name. This command is identical to /EmoteGroup.
+
+   þ {[1;35mgroup name[0m} The name of the group you wish to emote to. 
+   þ {[1;35mtext[0m} The text to send to the group. 
+
+[1;44m                                                                 [0m

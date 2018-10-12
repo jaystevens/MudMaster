@@ -1,0 +1,13 @@
+[1;33mEnableHighlight[0m
+[1;44m                                                                                [0m
+
+Format: [1m/enablehighlight [0m{[1;35mreference number[0m}
+Format: [1m/enablehighlight [0m{[1;35mmask[0m}
+
+EnableHighlight allows you to turn highlights on that have been disabled with
+/disablehighlight.
+
+   þ {[1;35mreference numer[0m} The number of the highlight to enable.
+   þ {[1;35mmask[0m} The mask text of the highlight to enable.
+
+[1;44m                                                                                [0m

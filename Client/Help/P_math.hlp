@@ -1,0 +1,10 @@
+[1;33m@Math[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Math(expression)[0m
+
+Returns the result of a math expression. The works the same way as /math, only
+the value is not placed into a variable. See the help on math for more
+information.
+
+[1;44m                                                                                [0m

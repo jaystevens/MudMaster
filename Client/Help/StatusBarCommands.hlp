@@ -1,0 +1,8 @@
+[1;33mStatus Bar Commands[0m
+[1;44m                                                                 [0m
+barback            barfore             baritem             baritemback
+baritemfore        baritemshift        barseparator        editbaritem
+statusbar          statusbarsize       updatebaritem       updatestatusbar
+
+[1;44m                                                                 [0m
+

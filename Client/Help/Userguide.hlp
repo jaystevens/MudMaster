@@ -1,0 +1,12 @@
+[1;33m[1;33mUser Guide[0m
+[1;44m                                                                                [0m
+
+Type [1m/help [35mcategory[0m where [1;35mcategory[0m is one of the categories
+listed here:
+
+UG_Chat             UG_Color            UG_DLL
+UG_Statusbar        UG_Time             Groups
+HistoryList         InputLine           ScrollbackBuffer
+SystemVariables     TabCompletion       UserLists
+
+[1;44m                                                                                [0m

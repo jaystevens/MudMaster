@@ -1,0 +1,39 @@
+[1;33mBarItem[0m
+[1;44m                                                                                [0m
+
+Format: [1m/baritem [0m{[1;35mitem name[0m} {[1;35mtext to print[0m} {[1;35mposition[0m} {[1;35mmax length[0m} {[1;35mfore color[0m} {[1;35mback color[0m} {[1;35mgroup[0m}
+
+BarItem adds text to the status bar.
+
+   þ {[1;35mitem name[0m} identifies the item which you can later use to enable or
+     disable, modify or delete the item later.
+   þ {[1;35mtext to print[0m} is the text you want displayed on the status bar. This can
+     either be literal text, or it can be a variable or procedure.
+   þ {[1;35mposition[0m} is the column position you want the item to start printing at on
+     the bar. The position must be a number between 1 and 160.
+   þ {[1;35mmax length[0m} is the maximum number of characters you want this item to
+     display. If the text to be printed is longer than the max length, it will be
+     truncated. This prevents items from printing over the top of neighboring items.
+   þ {[1;35mfore color[0m} Items can have colors separate from the status bar. This can
+     be a number from 0 to 15. If you leave both the fore color and the back color at 0, it
+     will use the color of the status bar. This parameter is optional and will default to 0
+     if you don't specify it.
+   þ {[1;35mback color[0m} The background color of the item. Can be a number from 0 to 7.
+     This parameter is optional and will default to 0 if you don't specify it.
+   þ {[1;35mgroup[0m} Optional parameter. See the user guide on grouping.
+
+You are responsible for making sure your bar items do not overlap. If you
+create two bar items that start at position 1,one of them will be overwritten.
+
+Examples:
+
+/baritem [0m{[1;35mTarget[0m} {[1;35m$Target[0m} {[1;35m1[0m} {[1;35m12[0m} {[1;35m11[0m} {[1;35m0[0m}
+This will create an item called Target. It will display the value of the
+variable $Target. It will start at position 1, have a maximum length of 12. It
+will use foreground color 11, and back ground color 0.
+
+/baritem [0m{[1;35mTarget[0m} {[1;35m$Target[0m} {[1;35m1[0m} {[1;35m12[0m}
+This creates the same thing as above. The colors have not been specified, so it
+will default to using the colors of the status bar.
+
+[1;44m                                                                                [0m

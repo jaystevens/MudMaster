@@ -1,0 +1,11 @@
+[1;33mEditMacro[0m
+[1;44m                                                                                [0m
+
+Format: [1m/editmacro [0m{[1;35mkey name[0m}
+
+EditMacro allows you to easily edit a macro without having to type the whole
+thing over. The macro is placed in the input line for editing.
+
+   þ {[1;35mkey name[0m} The name of the macro key you want to edit.
+
+[1;44m                                                                                [0m

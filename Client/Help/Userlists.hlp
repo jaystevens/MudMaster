@@ -1,0 +1,53 @@
+[1;33mUser Lists[0m
+[1;44m                                                                                [0m
+
+A user defined list is simply a collection of text strings stored in the order
+they are added. You can add and remove strings from the list at will. There is
+no limit to the number of lists you can define or the number of items you can
+have in a list.
+
+The procedure @InList is used to determine whether a specific string exists in
+a list. You can use @InList in an /if command the same way you would use a
+variable. If the string is in the list @InList will return a 1 otherwise it
+returns a 0. For an example let's say you want certain people and only those
+people to be able to request spells from you.
+
+The procedures @Enum and @EnumList work the same way as @InList, but they
+return the number of the item instead of a 1.
+
+First we need to create a list to hold the names of our friends:
+/listadd Spells
+
+We'll make an alias that adds a name to the list and informs the room that they
+have been added.
+/alias [0m{[1;35mspelladd %0[0m} {/itemadd {Spells} {$0}[1;32m;[1;35memote has declared $0 able to
+command spells from him.[0m}
+
+Now add the names of our friends to the list:
+spelladd Rand
+spelladd Egwene
+
+Now all we need is an action to trigger a spell. Anytime somebody says "heal
+me" we'll check to see if they are in our Spells list and heal them if they
+are.
+/action [0m{[1;35m%0 says, 'heal me'[0m} {[1;35m/if {@InList(Spells,$0) = 1} {c heal $0}[0m}
+
+The system variable $ListItem is set to the current item in the list.
+
+@CommandToList(Friends,tell $ListItem Hi!)
+This would tell everybody in your list called Friends "Hi!"
+
+/alias [0m{[1;35mfrt %0[0m} {[1;35m@CommandToList(Friends,tell $ListItem $0)[0m}
+This is probably a more useful way to accomplish the first example. In this
+case to say something to everybody in the list you just use the alias:
+"frt Hi!"
+
+Lists are not restricted to one word entries. You could fill up a list full of
+commands to execute if you wanted to. For instance to equip your gear:
+/listadd Wearing
+/itemadd Wearing [0m{[1;35mwear shirt[0m}
+/itemadd Wearing [0m{[1;35mwear boots[0m}
+/itemadd Wearing [0m{[1;35mwield sword[0m}
+/alias [0m{[1;35mwearit[0m} {[1;35m@CommandToList(Wearing,$ListItem)[0m}
+
+[1;44m                                                                                [0m

@@ -1,0 +1,12 @@
+[1;33mDisableGag[0m
+[1;44m                                                                                [0m
+
+Format: [1m/disablegag [0m{[1;35mreference number[0m}
+Format: [1m/disablegag [0m{[1;35mmask[0m}
+
+DisableGag allows you to turn individual gags off.
+
+   þ {[1;35mreference number[0m} The number of the gag to disable.
+   þ {[1;35mmask[0m} The mask text of the gag to disable.
+
+[1;44m                                                                                [0m

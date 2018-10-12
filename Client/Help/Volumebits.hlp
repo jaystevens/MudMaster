@@ -1,0 +1,14 @@
+[1;33mVolumeBits[0m
+[1;44m                                                                 [0m
+
+Format: [1m/volumebits {[1;35m[8 or 16][0m}[0m
+
+MM calculates the volume values based on 16bit or 8bit values. I don't know
+how to tell how many bits a sound card supports for the volume control. Right
+now I'm assuming if it can play 16bit samples, it has 16bit volume.  If it 
+makes a wrong assumption, you can set it with this command. You can test and
+see if MM guessed correctly by playing wave at a few dif volume levels and
+see if it actually makes a difference in the playback volume. Try 50, 75, 
+and 100.
+
+[1;44m                                                                 [0m

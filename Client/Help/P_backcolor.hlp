@@ -1,0 +1,9 @@
+[1;33m@BackColor[0m
+[1;44m                                                                                [0m
+
+Format: [1m@BackColor(ColorIndex)[0m
+
+A string containing the ANSI codes to set the back color to the color identified
+by the ColorIndex. ColorIndex can be any number between one and eight.
+
+[1;44m                                                                                [0m

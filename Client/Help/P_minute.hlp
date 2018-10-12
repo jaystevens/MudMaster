@@ -1,0 +1,8 @@
+[1;33m@Minute[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Minute()[0m
+
+Returns the minutes of the current time. Between 0 and 59.
+
+[1;44m                                                                                [0m

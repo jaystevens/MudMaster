@@ -1,0 +1,16 @@
+[1;33m@Chr[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Chr(number)[0m
+
+Chr works like the basic command Chr$. It returns the ascii equivalent of
+the number.
+
+   þ number - Must be between 0 and 255.
+
+Example:
+
+@Chr(65)
+This would return a capital A. @Chr(3) is a heart, etc...
+
+[1;44m                                                                                [0m

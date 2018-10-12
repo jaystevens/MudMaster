@@ -1,0 +1,21 @@
+[1;33mCallDll[0m
+[1;44m                                                                                [0m
+
+Format: [1m/calldll [0m{[1;35mdll name[0m} {[1;35mfunction name[0m} {[1;35mparameters to send[0m}
+
+This command is used to call functions in a user defined DLL.
+
+   þ {[1;35mdll name[0m} The name of a loaded DLL to call.
+   þ {[1;35mfunction name[0m} The name of a function to call in the DLL.
+   þ {[1;35mparameters to send[0m} Information to send to the DLL function. Variables,
+     functions, etc... are translated before being sent to the DLL.
+
+Example:
+
+/calldll [0m{[1;35mMyDLL[0m} {[1;35mMyFunction[0m} {[1;35mSome text to send and a variable $Var[0m}
+This will call the function "MyFunction" defined in the DLL "MyDLL" and send the
+text "Some text..."
+
+For more information please see the dll's help file.
+
+[1;44m                                                                                [0m

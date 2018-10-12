@@ -1,0 +1,13 @@
+[1;33mLogOpen[0m
+[1;44m                                                                                [0m
+
+Format: [1m/logopen [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/logopen [0m{[1;35mfilename.ext[0m}
+
+This will Open a new log file with the filename you specify.
+
+   þ {[1;35mdrive:\filename.ext[0m} Path and filename of the log to start recording.
+   þ {[1;35mfilename.ext[0m} Filename of the log to start recording. This will
+     save in the Log folder by default.
+
+[1;44m                                                                                [0m

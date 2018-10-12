@@ -1,0 +1,15 @@
+[1;33mChatPort[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatport [0m{[1;35mport number[0m}
+Format: [1m/chatport [0m{[1;35m4050[0m}
+
+This sets your chat port to 4050 and allows MudMaster 2k6 to listen for incoming
+chat requests on this port.
+
+   þ {[1;35mport number[0m} The number to set your current session window to.
+
+The default chat port for a new session is 4050. If you run multiple sessions,
+be sure to use different chat ports for each session.
+
+[1;44m                                                                                [0m

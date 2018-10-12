@@ -1,0 +1,8 @@
+[1;33m@RTrim[0m
+[1;44m                                                                                [0m
+
+Format: [1m@RTrim(text)[0m
+
+RTrim removes any spaces from the right side of a string.
+
+[1;44m                                                                                [0m

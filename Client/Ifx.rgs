@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{7F435C02-2743-11D4-BCD6-00E029482496} = s 'Ifx'
+		'Ifx.EXE'
+		{
+			val AppID = s {7F435C02-2743-11D4-BCD6-00E029482496}
+		}
+	}
+}

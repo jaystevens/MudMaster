@@ -1,0 +1,16 @@
+[1;33mInput Line[0m
+[1;44m                                                                                [0m
+
+This is the non-scrolling line at the bottom of the screen where you type your
+commands. If the text you type is too long to fit on the screen the text will
+scroll as you type.
+
+The input line has many line editing capabilities. The [HOME] key returns you
+to the start of the line; the [END] key to the end of the line. The left and
+right arrow keys move the cursor. The [INSERT] key toggles the line between
+insert and overwrite mode. The [DELETE] key will delete the character under
+the cursor.
+
+Pressing the down arrow key will clear the input line.
+
+[1;44m                                                                                [0m

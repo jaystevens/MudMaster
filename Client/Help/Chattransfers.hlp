@@ -1,0 +1,13 @@
+[1;33mChatTransfers[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chattransfers [0m{[1;35mreference number[0m}
+Format: [1m/chattransfers [0m{[1;35mchat name[0m}
+
+ChatTransfers toggles the Transfer flag of a chat connection. Once a connection
+has been set with the transfer flag that person is allowed to send you files.
+
+   þ {[1;35mreference number[0m} The number of the chat connection you want to change.
+   þ {[1;35mchat name[0m} The name of the chat connection you want to change.
+
+[1;44m                                                                                [0m

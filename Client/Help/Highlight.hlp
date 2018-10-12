@@ -1,0 +1,38 @@
+[1;33mHighlight[0m
+[1;44m                                                                                [0m
+
+Format: [1m/highlight [0m{[1;35mmask[0m} {[1;35mforeground color, background color[0m}
+
+Adds a highlight to the highlight list. Before the client prints a line of
+text to the screen it checks the highlight list. If [0m{[1;35mmask[0m} is found in a
+line of text the colors for that word or words are changed to colors that
+you specify.
+
+   þ {[1;35mmask[0m} This is the text pattern to search for to determine what lines of
+     text to highlight. The mask can be defined the same way you define the
+     text pattern for an action -- using %0 through %9. If the mask does not
+     contain any wildcards (%0 - %9) then just the word is highlighted. If the
+     mask uses a wildcard, the whole line is changed to the color.
+   þ {[1;35mcolor,color[0m} The foreground and background color to change the text to.
+     Valid color names are in the table below. If you don't specify a
+     background color "back black" will be used.
+
+Color Names
+
+   Foreground Colors:
+     black, blue, green, cyan, red, magenta, brown, light
+     grey, dark grey, light blue, light green, light cyan, light
+     red, light magenta, yellow, white
+
+   Background Colors:
+     back black, back blue, back green, back cyan, back
+     red, back magenta, back brown, back light grey
+
+/highlight [0m{[1;35mdisarms you[0m} {[1;35myellow[0m}
+Any time you see the text "disarms you" it will appear in yellow.
+
+/highlight [0m{[1;35mYou hear %0 shout[0m} {[1;35mwhite,back blue[0m}
+Since a wildcard was used in the mask, when the text is found the entire line
+will be changed to white on blue.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,14 @@
+[1;33m@LeftPad[0m
+[1;44m                                                                                [0m
+
+Format: [1m@LeftPad(text,character,number)[0m
+
+Returns a string padded on the left with a specific character.
+
+   þ text - Text to pad.
+   þ character - Character to use for padding.
+   þ number - number of total characters the final string should end up.
+
+Example: [1m@LeftPad(>,-,10)[0m will return --------->
+
+[1;44m                                                                                [0m

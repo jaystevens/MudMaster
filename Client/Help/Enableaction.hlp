@@ -1,0 +1,13 @@
+[1;33mEnableAction[0m
+[1;44m                                                                                [0m
+
+Format: [1m/enableaction [0m{[1;35mreference number[0m}
+Format: [1m/enableaction [0m{[1;35mtext pattern[0m}
+
+EnableAction allows you to turn actions on that have been disabled with
+/disableaction.
+
+   þ {[1;35mreference number[0m} The number of the action to enable.
+   þ {[1;35mtext pattern[0m} The trigger text of the action to enable.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,19 @@
+[1;33mTab Completion[0m
+[1;44m                                                                                [0m
+
+Tab completion is a shortcut to typing hard to remember or hard to spell
+words. You manage your tab completion list with the commands: tabadd,
+tabdelete and tablist. You can have as many words as you like in the tab
+completion list. Tab completion can be especially useful on a player killing
+mud where some of the other players' names are hard to spell quickly.
+
+Once a word is added to your tab completion list you can recall it with just
+a few of the letters that start the word and a press of the [TAB] key. Words
+are stored in the tab list in alphabetical order. Let's say you have the word
+"dahnakriss" in your list. You could type the word by typing "d[TAB]". You
+need to type enough of the word to make it unique from the other words in the
+list. If you had another word in the list that also started with a "d," you
+would need to type another letter or two to make sure you got the word
+"dahnakriss."
+
+[1;44m                                                                                [0m

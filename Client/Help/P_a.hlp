@@ -1,0 +1,28 @@
+[1;33m@a[0m
+[1;44m                                                                                [0m
+
+Format: [1m@a(array name,row,column)[0m
+
+a returns the value of a cell in an array.
+
+   þ array name - The name of the array from which you want to get the cell
+     value.
+   þ row - The row number of the array. This number must be between 1 and the
+     number of rows you defined for the array.
+   þ column - The column number of the array. This number must be between 1
+     and the numer of columns you defined for the array. This third parameter
+     is required, even when using a single dimensional array. However, when
+     using a single dimensional array, it is ignored.
+
+Examples:
+
+@a(Targets,1,0)
+If Targets is a single dimensional array the column parameter would be ignored
+but it required to be there. This would return the value of the first row of
+the array Targets.
+
+@a(Grid,2,4)
+If Grid is a two dimensional array, this would return the value of the cell at
+row 2, column 4.
+
+[1;44m                                                                                [0m

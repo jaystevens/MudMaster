@@ -1,0 +1,9 @@
+[1;33m@AnsiRev[0m
+[1;44m                                                                                [0m
+
+Format: [1m@AnsiRev()[0m
+
+A string containing the ANSI code for reversing foreground with background
+colour.
+
+[1;44m                                                                                [0m

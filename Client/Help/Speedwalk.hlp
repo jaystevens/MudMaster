@@ -1,0 +1,13 @@
+[1;33mSpeedWalk[0m
+[1;44m                                                                                [0m
+
+Format: [1m/speedwalk [0m{[1;35mon/off[0m}
+
+When speedwalking is on anytime you send a line of text that contains only
+movement characters (n, s, e, w, u and d) the client will send the commands one
+at a time at a speed determined by the /pace command. If you typed "nnnuws" the
+client would walk you north 3 times, up once, west once and finally south.
+
+   þ {[1;35mon/off[0m} Sets the option on or off.
+
+[1;44m                                                                                [0m

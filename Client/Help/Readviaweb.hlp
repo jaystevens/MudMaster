@@ -1,0 +1,11 @@
+[1;33mReadViaWeb[0m
+[1;44m                                                                                [0m
+
+Format: [1m/readviaweb [0m{[1;35mweb address[0m}
+
+Reads a script command file from specified website. This command should be used
+with extreme caution, and ONLY utilized through trusted web sites.
+
+   þ {[1;35mweb address[0m} Name of the online command script file to read in.
+
+[1;44m                                                                                [0m

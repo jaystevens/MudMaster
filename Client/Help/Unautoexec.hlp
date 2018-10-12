@@ -1,0 +1,15 @@
+[1;33mUnAutoexec[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unautoexec [0m{[1;35mreference number[0m}
+Format: [1m/unautoexec [0m{[1;35mautoexec name[0m}
+
+This will remove a defined autoexec command from your script.
+
+   þ {[1;35mreference number[0m} The number of the array you want to remove.
+   þ {[1;35mautoexec name[0m} The name of the array you want to remove.
+
+/unautoexec [0m{[1;35m1[0m}
+/unautoexec [0m{[1;35m/call 24.24.27.110[0m}
+
+[1;44m                                                                                [0m

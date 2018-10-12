@@ -1,0 +1,10 @@
+[1;33mGroupGag[0m
+[1;44m                                                                                [0m
+
+Format: [1m/groupgag [0m{[1;35mgroup name[0m}
+
+This will list all the gags belonging to a certain group.
+
+   þ {[1;35mgroup name[0m} Name of the group from which you want to list the gags.
+
+[1;44m                                                                                [0m

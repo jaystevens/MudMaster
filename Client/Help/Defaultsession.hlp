@@ -1,0 +1,21 @@
+[1;33mDefaultSession[0m
+[1;44m                                                                                [0m
+
+Format: [1m/defaultsession [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/defaultsession [0m{[1;35mfilename.ext[0m}
+
+   þ {[1;35mdrive:\filename.ext[0m} The location and filename for the default session.
+     This will save in the program folder
+   þ {[1;35mfilename.ext[0m} The filename for the default session. This will look for it
+     in the program folder.
+
+Example:
+
+/defaultsession [0m{[1;35mC:\Program Files\MudMaster 2k6\MySession.mms[0m}
+
+This sets your default SESSION to be opened when you start MudMaster 2k6.
+
+Do NOT confuse your SESSION file with your SCRIPT file.
+This could cause very undesirable effects for you.
+
+[1;44m                                                                                [0m

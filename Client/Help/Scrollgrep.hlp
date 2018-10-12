@@ -1,0 +1,94 @@
+[1;33mScrollGrep[0m
+[1;44m                                                                                [0m
+
+Format: [1m/scrollgrep [1;35m# [0m{[1;35msearch criteria[0m}
+Format: [1m/scrollgrep [0m{[1;35msearch criteria[0m}
+
+===
+
+# can be any number between 0 and 0xFFFFFFFE
+search criteria can be most regular expression syntax. The regular
+expression parser is limited so you may not be able to do all regexp,
+but some is better than none.
+
+. Matches any single character.
+[ ] Indicates a character class. Matchs any character inside brackets
+
+	example: [abc] matches "a", "b", and "c").
+
+^ If this metacharacter occurs at the start of a character class, it
+negates the character class. A negated character class matches any
+character except those inside the brackets.
+
+	example: [^abc] matches all characters except "a", "b", and "c").
+
+If ^ is at the beginning of the regular expression, it matches the
+beginning of the input.
+
+	example: ^[abc] only matches input begins with "a", "b", or "c").
+
+- In a character class, indicates a range of characters.
+
+	example: [0-9] matches any of the digits "0" through "9").
+
+? Indicates the preceding expression is optional: it matches once or
+not at all.
+
+	example: [0-9][0-9]? matches "2" and "12").
+
++ Indicates that the preceding expression matches one or more times
+
+	example: [0-9]+ matches "1", "13", "666", and so on).
+
+* Indicates that the preceding expression matches zero or more times.
+??, +?, *? Non-greedy versions of ?, +, and *. These match as little as
+possible, unlike the greedy versions which match as much as possible.
+
+     Example: the input "<abc><def>", <.*?> matches "<abc>" while <.*>
+              matches "<abc><def>".
+
+( ) Grouping operator. Example: (\d+,)*\d+ matches a list of numbers
+    separated by commas (such as "1" or "1,23,456").
+{[1;35m [0m} Indicates a match group. The actual text in the input that matches
+the expression inside the braces can be retrieved through the
+    CAtlREMatchContext object.
+
+\ Escape character: interpret the next character literally.
+
+	example: [0-9]+ matches one or more digits, but [0-9]\+ matches
+	         a digit followed by a plus character).
+
+Also used for abbreviations (such as \a for any alphanumeric character;
+see table below).
+
+If \ is followed by a number n, it matches the nth match group (starting
+from 0).
+
+	Example: <{[1;35m.*?[0m}>.*?</\0> matches "<head>Contents</head>".
+
+$ At the end of a regular expression, this character matches the end of
+the input.
+
+	Example: [0-9]$ matches a digit at the end of the input.
+
+| Alternation operator: separates two expressions, exactly one of which
+matches.
+
+	Example, T|the matches "The" or "the").
+
+! Negation operator: the expression following ! does not match the input.
+
+	Example: a!b matches "a" not followed by "b".
+
+Abbreviations
+\a Any alphanumeric character: ([a-zA-Z0-9])
+\b White space (blank): ([ \\t])
+\c Any alphabetic character: ([a-zA-Z])
+\d Any decimal digit: ([0-9])
+\h Any hexadecimal digit: ([0-9a-fA-F])
+\n Newline: (\r|(\r?\n))
+\q A quoted string: (\"[^\"]*\")|(\'[^\']*\')
+\w A simple word: ([a-zA-Z]+)
+\z An integer: ([0-9]+)
+
+[1;44m                                                                                [0m

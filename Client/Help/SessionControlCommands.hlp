@@ -1,0 +1,9 @@
+[1;33mSession Control Commands[0m
+[1;44m                                                                 [0m
+debugdepth         defaultsession       defaultscript      echo
+maxonopen          promptoverwrite      session            sessionaddress
+sessionname        sessionpath          sessionport        setip
+unzap              zap
+
+[1;44m                                                                 [0m
+

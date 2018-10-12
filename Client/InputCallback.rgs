@@ -1,0 +1,24 @@
+HKCR
+{
+	Ifx.InputCallback.1 = s 'InputCallback Class'
+	{
+		CLSID = s '{8898037B-A042-482B-828F-0481BBEA79FF}'
+	}
+	Ifx.InputCallback = s 'InputCallback Class'
+	{
+		CLSID = s '{8898037B-A042-482B-828F-0481BBEA79FF}'
+		CurVer = s 'Ifx.InputCallback.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {8898037B-A042-482B-828F-0481BBEA79FF} = s 'InputCallback Class'
+		{
+			ProgID = s 'Ifx.InputCallback.1'
+			VersionIndependentProgID = s 'Ifx.InputCallback'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{7F435C02-2743-11D4-BCD6-00E029482496}'
+			'TypeLib' = s '{7F435C01-2743-11D4-BCD6-00E029482496}'
+		}
+	}
+}

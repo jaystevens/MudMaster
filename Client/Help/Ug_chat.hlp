@@ -1,0 +1,117 @@
+[1;33mChat[0m
+[1;44m                                                                                [0m
+
+Mud Master chat allows you to establish a peer to peer link with another MM
+user or chat server. Once you have a connection you are able to talk with
+any or all of your chat connections, transfers commands (actions, aliases,
+variables, etc...), and transfer files. Peer to peer means the clients are
+connected directly. Often you will experience less lag using MM to chat
+than you would talking to the same person through a mud.
+
+Before you connect to anybody you need to set your chat name. Everybody you
+connect to will see this name when you talk. The command is:
+/chatname [0m{[1;35mchat name[0m}.
+
+To start a chat with another person you use the call command and their network
+address. Call will accept both IP address and named address. You can see your
+IP address in MM in two ways. First, you can type /info. Second, you can use
+the procedure @IP(). Example: tell arithon My address is @IP(). Once you know
+another user's ip address use call to connect to them. /call 204.120.248.148
+
+Sometimes MM will be unable to reach an IP address when you /call. This is
+usually because the person you are trying to call has a firewall. A firewall
+prevents remote systems from connecting to an internal network. If you cannot
+connect to somebody have them try to call you instead. If you still cannot
+connect to each other you may both be firewalled. You can still chat if you
+can both connect to another person who is willing to be a chat server for you.
+
+An easy way to get connected with a group of people already chatting is to use
+/requestconnects [0m{[1;35mname/number[0m}. Once you connect to a user, you can request
+all of their chat connections with this command. MM will then try to connect
+you with all of the other user's connections. Only public connections are
+returned when somebody requests your connections. If you don't want people to
+see some of your connections, flag them as private.
+
+There are several things that can happen when a chat call comes in. You can
+prevent people from connecting to you by using the DND (Do Not Disturb)
+command. When a call comes in DND is checked, if it is on, the chat connection
+is hung up on without interrupting you. /dnd will toggle the option on and
+off. You can see the DND status by using /info. Autoaccept also affects how
+incoming calls are handled. If you have autoaccept off you will be prompted to
+accept the call when it comes in -- this will pause your mudding until you
+press Y or N. If you leave autoaccept on chat calls get accepted without
+prompting you. You can see the status of autoaccept with /info.
+
+/Chat will show you all the chat connections you have. It also shows you some
+status flags associated with the different connections. The flags and a
+description of them are listed below. If you are transferring a file thru a
+chat connection, the chat name color will change. If the name is blue, you are
+receiving a file, if it is green, you are sending a file.
+
+   A - You are allowing that chat connection to transfer commands to you
+       (aliases, actions, variables, etc...). /chatcommands [0m{[1;35mname/number[0m} will
+       toggle this flag.
+   F - Means that chat connection is behind a firewall.
+   I - You are ignoring that chat connection. You will not see any chats or
+       name changes from that person. /chatignore [0m{[1;35mname/number[0m} will toggle
+       this flag.
+   P - Private connection. Connections marked as private are not given out
+       when somebody requests your chat connections. /chatprivate
+       [0m{[1;35mname/number[0m} will toggle this flag.
+   S - You are serving this connection. When serving, /chatalls coming from
+       people not being served are sent to those you are serving -- text from
+       those being served is sent to all of your other connections.
+       /chatserver [0m{[1;35mname/number[0m} will toggle this flag.
+   T - Allow transfers. You are allowing file transfers from this connection.
+       /chattransfers [0m{[1;35mname/number[0m} will toggle this flag.
+
+To talk with a specific connection you use /chat. /chat [0m{[1;35mchat name/chat number[0m}
+{[1;35mtext[0m}. Like with the other lists you can use either the name of the
+connection, or the number you see when you list your connections with /chat. To
+talk with all of your connections at the same time use /chatall [0m{[1;35mtext[0m}.
+
+You can also group chat connections and talk just to that group. Use
+/chatgroupset [0m{[1;35mname/number[0m} {[1;35mgroup name} and /chatgroupremove {name/number[0m} to
+set and remove group names from a chat connection. Once you have people grouped
+you talk to the group with /chatgroup [0m{[1;35mgroup name[0m} {[1;35mtext[0m}. You can also use /cg
+as a shortcut for /chatgroup.
+
+Emoting on the chat channel works very similar to the commands used for
+chatting. /emote, /emoteall, and /emotegroup. When you emote you chat name and
+the text you emote is sent to the chat connection. /emoteall licks you would
+send "{[1;35mChat Name[0m} licks you." to all your connections.
+
+To hang up on a chat connection use /unchat [0m{[1;35mname/number[0m}.
+
+If you want to send commands to another chat connection you have to first get
+them to enable the reception of commands from you with /chatcommands. Once they
+have flagged you able to send commands you can use the following to send them:
+/sendaction, /sendalias, /sendarray, /sendbaritem, /sendevent, /sendgag,
+/sendhighlight, /sendlist, /sendmacro and /sendvariable. If you want to send a
+group of commands use /sendgroup. When you send a list or array, all the items
+belonging to the list or array are transfered as well.
+
+To send files through a chat connection you have to get the chat the other
+party to flag with allow transfers. Use /sendfile to transfer files. Both
+users are notified when a file transfer has been started and notified again
+when the transfer is complete. You can check the status of a file transfer with
+/filestatus [0m{[1;35mname/number}. The {name/number[0m} refers to the chat connection, not
+the name of the file being transferred. /Filecancel [0m{[1;35mname/number[0m} will cancel a
+file transfer in progress.
+
+/ChatBack and /ChatFore can be used to change the default colors of the chat
+text.
+
+/ChatVersions will show you the version of MM that each of the chat connections
+is using.
+
+By default when you start up MM it will listen for chat calls on port 4050. You
+can tell MM to listen to an alternate port for each session if you want. You can
+change the listen port via the Session menu, Options... or via the Options toolbar
+icon. The listen port setting is on the  Chat/Sound tab and is called Chat Port.
+The port to used is saved in your session file when you save the changes. You
+can see what port MM is listening to with /info. /call uses port 4050 by
+default as well. If you change the port that MM is listening to you will have to
+let people know which port number to call.
+
+[1;44m                                                                                [0m

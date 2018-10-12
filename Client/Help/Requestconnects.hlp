@@ -1,0 +1,17 @@
+[1;33mRequestConnects[0m
+[1;44m                                                                                [0m
+
+Format: [1m/requestconnects [0m{[1;35mreference number[0m}
+Format: [1m/requestconnects [0m{[1;35mchat name[0m}
+
+RequestConnects will return all the public connections of another chat user.
+When the connections are returned Mud Master will call them all and attempt to
+connect you to them. This is useful for joining a group of people on chat
+without having to individually call each of the people.
+
+   þ {[1;35mreference number[0m} The number of the chat connection you want to request
+     connections from.
+   þ {[1;35mchat name[0m} The name of the chat connection you want to request
+     connections from.
+
+[1;44m                                                                                [0m

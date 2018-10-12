@@ -1,0 +1,11 @@
+[1;33mKillGroup[0m
+[1;44m                                                                                [0m
+
+Format: [1m/killgroup [0m{[1;35mgroup name[0m}
+
+Removes all the stored commands from memory that belong to a certain group
+(aliases, actions, events, etc...).
+
+   þ {[1;35mgroup name[0m} The name of the group you want to remove.
+
+[1;44m                                                                                [0m

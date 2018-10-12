@@ -1,0 +1,61 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>Modems</b></h3>
+
+<hr>
+<br><b>By default Mud Master assumes a Winsock connection. If you want
+to use a modem</b>
+<br><b>connection you need to add the word modem to the command line when
+you run Mud</b>
+<br><b>Master. "mudmast modem"</b><b></b>
+<p><b>The first thing you need to do is open a com port to use. You do
+that with the</b>
+<br><b>/openport command. Openport is formatted like this: /openport {com
+port}</b>
+<br><b>{speed} {data bits} {parity} {stop bits}. Since your port settings
+are not</b>
+<br><b>likely to change very often it would probably be easiest if you
+created either</b>
+<br><b>a macro or an alias to hold these settings.</b><b></b>
+<p><b>/alias {open} {/openport com1 57600 8 None 1}</b><b></b>
+<p><b>Once open port has successfully been called you have access to your
+modem.</b>
+<br><b>Mud Master is essentially a terminal program from that point on.
+You dial just</b>
+<br><b>like you would from any other terminal screen: "atdt &lt;number>"
+Again, making</b>
+<br><b>yourself an alias would be an easy way to take care of this.</b><b></b>
+<p><b>/alias {dial} {atdt 555-1212}</b><b></b>
+<p><b>The /disconnect command will hang up the modem. /Zap has been modified
+a</b>
+<br><b>little. If you are using a modem connection it will send the '^]'
+character</b>
+<br><b>which should abort a telnet connection.</b><b></b>
+<p><b>If your dial in account has any VT100 commands for creating menus
+and such it</b>
+<br><b>will look really messed up. Mud Master translates only color commands.
+Also,</b>
+<br><b>navigating menus can be difficult -- mud master works by sending
+a line of</b>
+<br><b>text at a time, not character by character. Two special characters
+can be used</b>
+<br><b>in the input line, however. Ctrl+C and Ctrl+]. If you need to break
+out of a</b>
+<br><b>menu you can just press Ctrl+C and then press enter.</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2000 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>User Lists</b></h3>
+
+<hr>
+<br><b>A user defined list is simply a collection of text strings stored
+in</b>
+<br><b>the order added. You can add and remove strings from the list
+at will.</b>
+<br><b>There is no limit to the number of lists you can define or the number
+of items</b>
+<br><b>you can have in a list.</b><b></b>
+<p><b>The procedure @InList is used to determine whether a specific string
+exists in</b>
+<br><b>a list. You can use @InList in an /if command the same way you would
+use a</b>
+<br><b>variable. If the string is in the list @InList will return a 1 otherwise
+it</b>
+<br><b>returns a 0. For an example let's say you want certain people and
+only those</b>
+<br><b>people to be able to request spells from you.</b><b></b>
+<p><b>First we need to create a list to hold the names of our friends:</b>
+<br><b>/listadd Spells</b><b></b>
+<p><b>We'll make an alias that adds a name to the list and informs the
+room that</b>
+<br><b>they have been added.</b>
+<br><b>/alias {spelladd %0} {/itemadd {Spells} {$0};emote has declared
+$0 able to</b>
+<br><b>command spells from him.}</b><b></b>
+<p><b>Now add the names of our friends to the list:</b>
+<br><b>spelladd Rand</b>
+<br><b>spelladd Egwene</b><b></b>
+<p><b>Now all we need is an action to trigger a spell. Anytime somebody
+says</b>
+<br><b>"heal me" we'll check to see if they are in our Spells list and
+heal them if</b>
+<br><b>they are.</b>
+<br><b>/action {%0 says, 'heal me'} {/if {@InList(Spells,$0) = 1} {c heal
+$0}}</b><b></b>
+<p><b>The @CommandToList procedure allows you to process a command once
+for each</b>
+<br><b>item in the list. The system variable $ListItem is set to the current
+item in</b>
+<br><b>the list.</b><b></b>
+<p><b>@CommandToList(Friends,tell $ListItem Hi!)</b>
+<br><b>This would tell everybody in your list called Friends "Hi!"</b><b></b>
+<p><b>/alias {frt %0} {@CommandToList(Friends,tell $ListItem $0)}</b>
+<br><b>This is probably a more useful way to accomplish the first example.
+In this</b>
+<br><b>case to say something to everybody in the list you just use the
+alias:</b>
+<br><b>"frt Hi!"</b><b></b>
+<p><b>Lists are not restricted to one word entries. You could fill up a
+list full of</b>
+<br><b>commands to execute if you wanted to. For instance to equip your
+gear:</b>
+<br><b>/listadd Wearing</b>
+<br><b>/itemadd Wearing {wear shirt}</b>
+<br><b>/itemadd Wearing {wear boots}</b>
+<br><b>/itemadd Wearing {wield sword}</b>
+<br><b>/alias {wearit} {@CommandToList(Wearing,$ListItem)}</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

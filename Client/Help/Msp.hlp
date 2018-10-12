@@ -1,0 +1,17 @@
+[1;33mMSP[0m
+[1;44m                                                                                [0m
+
+Format: [1m/msp [0m{[1;35mon/off[0m}
+
+This tells the client to gather the files for the Mud Sound Protocol.
+The On paramter makes MudMaster 2k6 read the filenames in the SOUND path
+and all subdirectories. If there are a lot of files this might take a second
+or two. It reads in all the filenames because MSP can pass in wildcards to
+make the client play random files. It's faster to have a list in memory than
+hit the disk looking for all matches of a wildcard.
+
+The Off parameter can be used to temporarily disable MSP.
+
+   þ {[1;35mon/off[0m} Sets the option on or off.
+
+[1;44m                                                                                [0m

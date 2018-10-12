@@ -1,0 +1,12 @@
+[1;33mUpdateBarItem[0m
+[1;44m                                                                                [0m
+
+Format: [1m/updatebaritem [0m{[1;35mitem number[0m}
+Format: [1m/updatebaritem [0m{[1;35mitem name[0m}
+
+Causes an item on the status bar to redraw itself.
+
+   þ {[1;35mitem number[0m} The number of the item you want to update.
+   þ {[1;35mitem name[0m} The name of the item you want to update.
+
+[1;44m                                                                                [0m

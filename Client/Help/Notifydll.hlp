@@ -1,0 +1,59 @@
+[1;33mNotifyDLL[0m
+[1;44m                                                                 [0m
+
+/notifydll {[1;35mtype of notification[0m} {[1;35mdll} {Dll function name[0m[0m}
+      
+Instructs MM to call a specific DLL function when certain events happen
+in MM.
+
+Each of the notification types must have the DLL function delcared
+in the following way. A list of parameters they take is as follows.
+None of the notification functions have a return buffer.  If you want
+to take an immediate action you must use the callback interpreter
+pointer.
+
+You can use /notifydll {[1;35mtype[0m} to list all the notifications that are in
+use for that type.
+
+   Notification Type:
+      Connected - 
+         Params: (SOCKET hSocket)
+         Return: void
+         When a connection to the mud is made.
+
+      Disconnected - 
+         Params: (void)
+         Return: void
+         When your connection to the mud is lost.
+
+      ChatConnect - 
+         Params: (SOCKET hSocket, const char *pszChatName)
+         Return: void
+         When a chat connection is established.  Regardless of whether
+         you initated the chat or it was an answered incoming.
+
+      ChatDisconnect - 
+         Params: (SOCKET hSocket, const char *pszChatName)
+         Return: void
+         Whenever you lose a chat connection.  The socket is passed in
+         here for reference only.  The socket has already been disconnected
+         and no socket operations should be preformed on it.
+
+      Input -
+         Params: (const char *pszInput)
+         Return: BOOL
+         When the user presses enter on the input bar.  Return TRUE if you
+         process the line and don't want MM to process it as well.  Return
+         FALSE mm will process the line.  Be careful of this one it -- if
+         you return TRUE the client will never process the line.  This can
+         make it so the user can never give commands to the client.
+
+      Raw -
+         Params: (char *pszBuf)
+         Return: BOOL
+         This is the data received from the socket before MM does anything
+         to it.  If you return TRUE, it means the DLL took care of 
+         processing the data and MM will ignore it. If you modify the buffer
+         just make sure you NULL terminate it.
+
+[1;44m                                                                 [0m

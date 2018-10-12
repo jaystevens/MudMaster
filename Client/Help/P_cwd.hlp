@@ -1,0 +1,16 @@
+[1;33mCwd [0m
+[1;44m                                                                 [0m 
+
+@CWD() 
+
+example: /showme @CWD() 
+
+This shows the location of your Current Working Directory for MudMaster 2k6. 
+If you use other programs in windows, or fail to set your "Start In" path in 
+your shortcut that starts MudMaster 2k6, this may need to be set again. 
+This is where MudMaster 2k6 looks for files by default such as scripts or 
+files you wish to use with the /textin command etc. 
+
+þ {[1;35mLocation[0m} This should be set to where you installed MudMaster 2k6. 
+
+[1;44m                                                                 [0m

@@ -1,0 +1,10 @@
+[1;33mProcessMidi[0m
+[1;44m                                                                                [0m
+
+Format: [1m/processmidi [0m{[1;35mon/off[0m}
+
+This will set MudMaster 2k6 to process or not process MSP Music.
+
+   þ {[1;35mon/off[0m} Sets the option on or off.
+
+[1;44m                                                                                [0m

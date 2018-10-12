@@ -1,0 +1,11 @@
+[1;33mSubstituteDepth[0m
+[1;44m                                                                                [0m
+
+Format: [1m/substitutedepth [0m{[1;35m#[0m}
+
+This sets MudMaster 2k6 to process the first # set in any given line. This can
+be changed depending on your preference.
+
+   þ {[1;35m#[0m} This is the number you wish to set this as.
+
+[1;44m                                                                                [0m

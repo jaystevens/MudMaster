@@ -1,0 +1,8 @@
+[1;33m@Connected[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Connected()[0m
+
+Returns a 1 if you have an active winsock connection. Returns a 0 if you don't.
+
+[1;44m                                                                                [0m

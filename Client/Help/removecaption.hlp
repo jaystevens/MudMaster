@@ -1,0 +1,18 @@
+[1;33mRemoveCaption[0m
+[1;44m                                                                                [0m
+
+Format: [1m/removecaption[0m
+
+Removes the title bar and thick borders from the session window.
+
+Example: In a start up script you could have:
+
+/removecaption
+to remove titlebar and caption from the current session window.
+
+/autoexec {[1;35m/window {helpview.mms} {/removecaption}[0m}
+If you have already opened that session via script the same script would
+likely also /window {helpview.mms} {/removecaption} as well to remove
+the title bar and thick borders.
+
+[1;44m                                                                                [0m

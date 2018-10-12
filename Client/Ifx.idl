@@ -1,0 +1,38 @@
+// Ifx.idl : IDL source for Ifx
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Ifx.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(CD740E14-07B7-43AD-986D-3FB3E32BE429),
+	dual,
+	nonextensible,
+	helpstring("IMMSession Interface"),
+	pointer_default(unique)
+]
+interface IMMSession : IDispatch{
+	[propget, id(1), helpstring("property Verbatim")] HRESULT Verbatim([out, retval] VARIANT_BOOL* pVal);
+	[propput, id(1), helpstring("property Verbatim")] HRESULT Verbatim([in] VARIANT_BOOL newVal);
+};
+[
+	uuid(BF153465-10D7-4E2E-AB60-90E2CE954EA2),
+	version(1.0),
+	helpstring("Ifx 1.0 Type Library")
+]
+library IfxLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(B869F3D4-62E7-4563-B731-2A0F4F0AA9EB),
+		helpstring("MMSession Class")
+	]
+	coclass MMSession
+	{
+		[default] interface IMMSession;
+	};
+};

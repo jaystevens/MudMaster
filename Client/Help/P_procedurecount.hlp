@@ -1,0 +1,9 @@
+[1;33m@ProcedureCount[0m
+[1;44m                                                                                [0m
+
+Format: [1m@ProcedureCount()[0m
+
+Returns the current amount of total Procedures coded into MudMaster 2k6. This
+will also show you every procedure.
+
+[1;44m                                                                                [0m

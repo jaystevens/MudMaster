@@ -1,0 +1,87 @@
+[1;33mMacro[0m
+[1;44m                                                                                [0m
+
+Format: [1m/macro [0m{[1;35mkey name[0m} {[1;35mcommands[0m} {[1;35mgroup name[0m}
+
+   þ {[1;35mkey name[0m} The name of the key and any modifiers(control, alt, delete)
+     you want to apply to it.
+   þ {[1;35mcommands[0m} The commands to execute when the macro key is pressed.
+   þ {[1;35mgroup name[0m} Optional, see the user guide for help on groups.
+
+Lets you assign a command or multiple commands to a key. When you press the key,
+the client processes the commands. The keyname is the name of the key, or the
+name of a key prefixed with a modifier. Their are two ways to change the
+behavior of a macro:
+
+   1) Place a semi-colon as the last character in the commands section. Instead
+      of automatically processing the text in the macro the text is instead
+      inserted into the input bar.
+   2) Place a colon as the last character in the commands section. The text of
+      the macro is insterted into the input bar with a carriage return.
+
+Certain keys cannot be assigned as macro keys (they are used by the client):
+
+   alt-uparrow
+   home
+   end
+   regular ascii characters, or shifted ascii characters
+   arrow keys
+   control-left arrow or control-right arrow
+   ctrl-x
+   ctrl-c
+   ctrl-]
+
+Special key names:
+
+   Function Keys: f1 - f12
+   Delete: del
+   Keypad Delete: kpdel
+   Keypad Characters: kp0 - kp9
+   Insert: ins
+   Home: home
+   Page Up: pgup
+   Page Down: pgdn
+   End: end
+   Up Arrow: uparrow
+   Down Arrow: dnarrow
+   Right Arrow: rtarrow
+   Left Arrow: ltarrow
+   Keypad Star: kpstar
+   Keypad Plus: kpplus
+   Keypad Minus: kpminus
+   Keypad Slash: kpslash
+
+Key modifiers let you specify whether the control, alt or shift keys are being
+pressed. The order you use the modifiers is not important. Modifers must
+prefix the keyname.
+
+   Alt: a
+   Shift: s
+   Control: c
+
+/macro [0m{[1;35mf1[0m} {[1;35mtake food bag;eat food[0m}
+This is the most basic form of a macro. You press it, it does it.
+
+/macro [0m{[1;35mf1[0m} {[1;35mbackstab ;[0m}
+Ending a macro with a semi-colon causes the text to appear in the input bar
+instead of automatically processing it. Pressing F1 with this macro will
+insert "backstab " where the cursor is.
+
+/macro [0m{[1;35mf2[0m} {[1;35mArithon:[0m}
+Ending a macro with a colon will insert the text into the input bar at the
+cursor position and then press enter for you. A use for this would be to
+combine several macros onto the input bar and have the final macro press enter
+for you. If you were to press F1 from the above example then press F2 it would
+send to the mud "backstab Arithon"
+
+/macro [0m{[1;35msf1[0m} {[1;35mcast create food[0m}
+This macro has a modifier in front of the key name; which creates the macro
+Shift-F1.
+
+/macro [0m{[1;35mascf1[0m} {[1;35mcast create food[0m}
+Creates the macro Alt-Shift-Control-F1
+
+/macro [0m{[1;35mab[0m} {[1;35mbs $Target[0m}
+Creates the macro Alt-B
+
+[1;44m                                                                                [0m

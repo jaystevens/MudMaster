@@ -1,0 +1,14 @@
+[1;33mUnAlias[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unalias [0m{[1;35mreference number[0m}
+Format: [1m/unalias [0m{[1;35malias name[0m}
+
+Remove an alias from your alias list. You can either type the number of the
+alias which you see when you list the aliases or an exact text match of the
+shortcut.
+
+   þ {[1;35mreference number[0m} The number of the alias you want to remove.
+   þ {[1;35malias name[0m} The name of the alias you want to remove.
+
+[1;44m                                                                                [0m

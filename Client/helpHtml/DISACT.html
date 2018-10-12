@@ -1,0 +1,45 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+	<h3>DisableAction</h3>
+	<hr>
+	<b>Format:</b><br>
+	<blockquote>
+		/disableaction {reference number}<p>
+		<b>or</b><p>
+		/disableaction {trigger}
+	</blockquote>
+	<b>Description:</b><br><br>
+	Disables an action, so that it no longer executes when the triggering text is seen.
+	<ul>
+		<li>{reference number} The number of the action to disable.
+		<li>{text pattern} The trigger text of the action to disable.
+	</ul>
+	<b>Examples:</b><br>
+	<blockquote>
+		/disableaction 3
+	</blockquote>
+	This will disable the action that is numbered 3 in the action list.
+	<blockquote>
+		/disableaction {^You are %0 miles away}
+	</blockquote>
+	This will disable the action that contains the provided trigger.
+	<hr>
+	<b>Related Commands:</b>
+	<A HREF=action.html>/action</A>,
+	<A HREF=ENACT.html>/enableaction</A>,
+	<A HREF=GRPACT.html>/groupaction</A>,
+	<A HREF=SENDACT.html>/sendaction</A>,
+	<A HREF=UNACTION.html>/unaction</A>
+
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>

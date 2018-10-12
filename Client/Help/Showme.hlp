@@ -1,0 +1,11 @@
+[1;33mShowMe[0m
+[1;44m                                                                                [0m
+
+Format: [1m/showme [0m{[1;35mtext[0m}
+
+Showme will echo the text to the terminal screen. The text is not sent to the
+mud.
+
+   þ {[1;35mtext[0m} Text to display.
+
+[1;44m                                                                                [0m

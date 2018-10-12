@@ -1,0 +1,10 @@
+[1;33mSessionPath[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sessionpath [0m{[1;35mPath[0m}
+
+This sets the path to your session file.
+
+   þ {[1;35mPath[0m} The path to where you keep your session files.
+
+[1;44m                                                                                [0m

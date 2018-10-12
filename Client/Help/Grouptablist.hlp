@@ -1,0 +1,11 @@
+[1;33mGroupTabList[0m
+[1;44m                                                                                [0m
+
+Format: [1m/grouptablist [0m{[1;35mgroup name[0m}
+
+This will list all the tab list words belonging to a certain group.
+
+   þ {[1;35mgroup name[0m} Name of the group from which you want to list the tab list
+     words.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,15 @@
+[1;33mFileStatus[0m
+[1;44m                                                                                [0m
+
+Format: [1m/filestatus [0m{[1;35mreference number[0m}
+Format: [1m/filestatus [0m{[1;35mchat name[0m}
+
+FileStatus shows you the progress of a current file transfer. The name of the
+file, the file size and the bytes transferred are shown.
+
+   þ {[1;35mreference number[0m} The number of the chat connection where the file
+     transfer is in progress.
+   þ {[1;35mchat name[0m} The name of the chat connection where the file transfer is in
+     progress.
+
+[1;44m                                                                                [0m

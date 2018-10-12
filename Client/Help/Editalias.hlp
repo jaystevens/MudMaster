@@ -1,0 +1,20 @@
+[1;33mEditAlias[0m
+[1;44m                                                                                [0m
+
+Format: [1m/editalias [0m{[1;35mreference number[0m}
+Format: [1m/editalias [0m{[1;35malias name[0m}
+
+Editalias allows you to easily edit an alias without having to type the whole
+thing over. You can either use the reference number shown when you list your
+defined aliases or the shortcut text to edit it. The alias is then placed in the
+input line so that you have full editing capabilities.
+
+   þ {[1;35mreference number[0m} The number of the alias you want to edit.
+   þ {[1;35malias name[0m} The name of the alias you want to edit.
+
+** NOTE: Aliases are stored and looked up by the shortcut text. If you edit an
+alias and change the shortcut portion of that alias when you press enter a new
+alias will be created. This will not erase the alias that you had originally
+edited. If you wish to remove the original version you need to use /unalias.
+
+[1;44m                                                                                [0m

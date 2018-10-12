@@ -1,0 +1,14 @@
+[1;33mUndo[0m
+[1;44m                                                                                [0m
+
+Format: [1m/undo[0m
+Format: [1m/undo [0m{[1;35mnumber[0m}
+
+   þ {[1;35mnumber[0m} Number of the command in the list to undo.
+
+Anytime a command (alias, action, macro, etc..) is delete it is place in the
+undo list. The undo list remembers the last 50 commands deleted. /Undo without
+a number will show you a list of the most recent deletions. To undelete an item
+type /undo with the number of the item you want to restore.
+
+[1;44m                                                                                [0m

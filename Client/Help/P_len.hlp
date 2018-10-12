@@ -1,0 +1,13 @@
+[1;33mLen[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Len(text)[0m
+
+Len returns the number of characters in a string.
+
+Example:
+
+@Len(Arithon)
+Would return 7.
+
+[1;44m                                                                                [0m

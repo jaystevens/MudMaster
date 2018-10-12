@@ -1,0 +1,30 @@
+[1;33mWindow[0m
+[1;44m                                                                                [0m
+
+Format: [1m/window [0m{[1;35mtarget session name[0m} {[1;35mcommands[0m}
+Format: [1m/window [0m{[1;35mtarget session name[0m} {[1;35mclose[0m}
+
+Send a MudMaster 2k6 script command to the named target session window. The
+extension .mms only appears if your folders are set to display file extensions.
+
+   þ {[1;35mtarget session name[0m} The name of the window you wish to send commands to.
+   þ {[1;35mcommands[0m} The commands to be executed.
+   þ {[1;35mclose[0m} If you send "close" as the command, it will shut down the target
+     window
+
+Example:
+
+/window {[1;35mhelpview.mms[0m} {[1;35m/showme {Hello world!!}[0m}
+
+Or, more useful:
+
+/action [0m{[1;35m^[CLAN] %0[0m} {[1;35m/window {helpview.mms} {/showme {@AnsiBold()@ForeYellow()[CLAN] @ForeCyan() @Replace($0,},@chr(125)) @AnsiReset()}}[0m} {[1;35mchannels[0m}
+sets up an action that captures any text on lines starting with [CLAN] and
+shows it in cyan after a yellow [CLAN] in a window called helpview.mms
+
+[1;33mAlso see[0m
+removecaption
+addcaption
+showother
+
+[1;44m                                                                                [0m

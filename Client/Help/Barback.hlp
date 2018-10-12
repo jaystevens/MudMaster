@@ -1,0 +1,10 @@
+[1;33mBarBack[0m
+[1;44m                                                                                [0m
+
+Format: [1m/barback [0m{[1;35mcolor[0m}
+
+Changes the background color of the status bar.
+
+   þ {[1;35mcolor[0m} Can be between 0 and 7.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,17 @@
+[1;33m@Word[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Word(string,word number)[0m
+
+Word returns a specific word from a string. A handy use for this procedure is
+passing in multiple words to an alias -- the alias can then easily separate
+the different words.
+
+@Word(This is a test,2)
+This would return the word "is".
+
+/alias [0m{[1;35mtest %0[0m} {[1;35msay @Word($0,2)[0m}
+Typing "test This is a test" would pull the second word out of the string
+passed to the alias and produce: "say is"
+
+[1;44m                                                                                [0m

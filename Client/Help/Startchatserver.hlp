@@ -1,0 +1,9 @@
+[1;33mStartChatServer[0m
+[1;44m                                                                                [0m
+
+Format: [1m/startchatserver[0m
+
+This will Start MudMaster 2k6's chat server listening for incoming chat
+requests.
+
+[1;44m                                                                                [0m

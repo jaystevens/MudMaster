@@ -1,0 +1,28 @@
+[1;33mEvent[0m
+[1;44m                                                                                [0m
+
+Format: [1m/event [0m{[1;35mname[0m} {[1;35mfrequency[0m} {[1;35mevent actions[0m} {[1;35mgroup[0m}
+
+Event causes some actions to be taken when a certain amount of time has passed.
+{[1;35mfrequency[0m} is the amount of time in seconds to pass before firing the event.
+You can create as many events as you like.  Duplicate frequencies are valid;
+so you could create several events to fire every 10 seconds.
+
+   þ {[1;35mname[0m} The name of the event.
+   þ {[1;35mfrequency[0m} The number of seconds until the event fires.
+   þ {[1;35mevent actions[0m} The commands to do when the event fires.
+   þ {[1;35mgroup[0m} Optional, see the user guide for help on groups.
+
+Typing /event by itself will list all the events you have defined. When you
+list the events you are also shown the time left before the event fires.
+
+001: [0m{[1;35mJumper[0m} {[1;35mF:30[0m} {[1;35mT:14[0m} {[1;35mjump[0m}
+This is an example of an event listing. This first parameter is the name of the
+event.  F: shows you the frequency you have set for the event.  T: shows how
+much time is left before the event gets fired. The last part contains the event
+actions to be taken when the event is fired.
+
+/event [0m{[1;35mJumper[0m} {[1;35m30[0m} {[1;35mjump[0m}
+This will create an event called Jumper that jumps every 30 seconds.
+
+[1;44m                                                                                [0m

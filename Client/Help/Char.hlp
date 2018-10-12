@@ -1,0 +1,11 @@
+[1;33mChar[0m
+[1;44m                                                                                [0m
+
+Format: [1m/char [0m{[1;35mcharacter[0m}
+
+Char lets you change the command character. When Mud Master starts up the
+default command character is a slash '/'.
+
+   þ {[1;35mcharacter[0m} The character you want to be the new command character.
+
+[1;44m                                                                                [0m

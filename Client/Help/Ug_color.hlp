@@ -1,0 +1,34 @@
+[1;33mAnsi Color[0m
+[1;44m                                                                                [0m
+
+There are a varitey of functions that return ANSI color codes.
+
+[1m@AnsiBold()[0m  - Makes all the colors come out bright.
+[1m@AnsiReset()[0m - Resets the color to grey on black.
+[1m@AnsiRev()[0m   - Inverts Fore and Back color.
+
+The following procedures set the background color. They cannot be bold.
+
+[1m@BackBlack()
+@BackBlue()
+@BackCyan()
+@BackGreen()
+@BackMagenta()
+@BackRed()
+@BackYellow()
+@BackWhite()[0m
+
+The following procedures set the foreground color. To make them appear
+bright use @AnsiBold() before calling them. To put them back to non-bright
+colors use @AnsiReset().
+
+[1m@ForeBlack()
+@ForeBlue()
+@ForeCyan()
+@ForeGreen()
+@ForeMagenta()
+@ForeRed()
+@ForeYellow()
+@ForeWhite()[0m
+
+[1;44m                                                                                [0m

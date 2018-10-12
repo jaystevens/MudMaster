@@ -1,0 +1,13 @@
+[1;33mSendGroup[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sendgroup [0m{[1;35mchat name[0m} {[1;35mgroup name[0m}
+Format: [1m/sendgroup [0m{[1;35mchat reference number[0m} {[1;35mgroup name[0m}
+
+SendGroup sends all the items in a group to another chat user.
+
+   þ {[1;35mchat name[0m} The chat name of the person you want to send to.
+   þ {[1;35mchat reference number[0m} The number of the person you want to send to.
+   þ {[1;35mgroup name[0m} The name of the group you want to send.
+
+[1;44m                                                                                [0m

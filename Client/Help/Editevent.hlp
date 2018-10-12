@@ -1,0 +1,20 @@
+[1;33mEditEvent[0m
+[1;44m                                                                                [0m
+
+Format: [1m/editevent [0m{[1;35mreference number[0m}
+Format: [1m/editevent [0m{[1;35mevent name[0m}
+
+EditEvent allows you to easily edit an event without having to type the whole
+thing over. You can either use the reference number shown when you list your
+defined events or the event name to edit it.  The event is then placed in the
+input line so that you have full editing capabilities.
+
+   þ {[1;35mreference number[0m} The number of the event you want to edit.
+   þ {[1;35mevent name[0m} The name of the even you want to edit.
+
+NOTE: Events are stored and looked up by the event name. If you edit an event
+and you change the name of that event, when you press enter a new event will
+be created. This will not erase the event that you had originally edited. If
+you wish to remove the original version you need to use /unevent.
+
+[1;44m                                                                                [0m

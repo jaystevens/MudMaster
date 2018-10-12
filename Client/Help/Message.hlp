@@ -1,0 +1,14 @@
+[1;33mMessage[0m
+[1;44m                                                                                [0m
+
+Format: [1m/message [0m{[1;35mmessage type[0m}
+
+When the alias, action, tab completion, variable or macro list is changed in any
+way the client prints a message to the terminal screen letting you know about
+it. You can toggle these messages on or off with this command.
+
+   þ {[1;35mmessage type[0m} The type of messages to turn on or off. The valid message
+     types are: actions, aliases, bar items, events, list, macros, tablist,
+     variables.
+
+[1;44m                                                                                [0m

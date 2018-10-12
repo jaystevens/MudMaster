@@ -1,0 +1,26 @@
+[1;33mLoop[0m
+[1;44m                                                                                [0m
+
+Format: [1m/loop [0m{[1;35mstart,end,variable name[0m} {[1;35mcommands[0m}
+
+Loop increments or decrements a number from start to end. Each time the number
+is incremented or decremented the commands are executed. The loop number is
+placed in the system variable $LoopCount.
+
+   þ {[1;35mstart,end,variable name[0m} The start and ending numbers for the loop. If
+     start is bigger than end, the loop will count backwards. Variable name will specify
+     which variable to store the Loop number in. This can be left blank and MudMaster will
+     default variable name to LoopCount.
+   þ {[1;35mcommands[0m} The commands to execute for each count of the loop.
+
+/loop [0m{[1;35m1,3,Loop[0m} {[1;35mlook $Loop.man[0m}
+This would send the text "look 1.man" "look 2.man" and "look 3.man" to the mud.
+Loop number was stored in variable "$Loop".
+
+/loop [0m{[1;35m3,1[0m} {[1;35mlook $LoopCount.man[0m}
+This does exactly the opposite. The number is decremented rather than
+incremented and would send the text: "look 3.man" "look 2.man" "look 1.man".
+Since there was no variable name specified to store the Loop number it is
+stored in "$LoopCount".
+
+[1;44m                                                                                [0m

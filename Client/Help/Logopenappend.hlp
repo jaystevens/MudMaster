@@ -1,0 +1,15 @@
+[1;33mLogOpenAppend[0m
+[1;44m                                                                                [0m
+
+Format: [1m/logopenappend [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/logopenappend [0m{[1;35mfilename.ext[0m}
+
+Starts logging to a file. This function adds the log text to the end of an
+already existing file. Use /logopen if you want to replace the text in the log
+file.
+
+   þ {[1;35mdrive:\filename.ext[0m} Path and filename of the log to start recording.
+   þ {[1;35mfilename.ext[0m} Filename of the log to start recording. This will
+     save in the Log folder by default.
+
+[1;44m                                                                                [0m

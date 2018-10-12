@@ -1,0 +1,43 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+<TITLE>
+	Mudmaster 2k6 Command Reference
+</TITLE>
+</head>
+<BODY>
+	<h3>Assign</h3>
+	<HR>
+	<B>Format:</B>
+	<listing>
+	/assign {array name} {row} {value}
+	/assign {array name} {row,column} {value}
+	</listing>
+	<B>Description:</B><BR>
+	Assign sets the value of a cell in an array. 
+	<P>
+	<B>Arguments:</B>
+	<UL>
+	<LI>{array name} The name of the array.</LI>
+	<LI>{row} For assigning cells in a single dimensional array. The number must be between 1 and the number of rows you created the array with.</LI>
+	<LI>{rows,columns} For assigning cells in a two dimensional array. The numbers must be between 1 and the number of rows and columns you created the array with.</LI>
+	<LI>{value} The text or number you want to assign to the cell.</LI>
+	</UL>
+	<B>Examples:</B>
+	<listing>
+	/assign {Targets} {1} {Soth} 
+	</listing>
+	This assigns the first cell in the array to hold the text "Soth". 
+	<listing>
+	/assign {Grid} {2,4} {16} 
+	</listing>
+	This assigns row 2, column 4 of the grid with a value of 16. 
+	<HR>
+	<B>Related Commands:</B>
+	<A HREF=array.html>/array</A>
+	<A HREF=grouparray.html>/grouparray</A>,
+	<A HREF=sendarray.html>/sendarray</A>,
+	<A HREF=unarray.html>/unarray</A>
+	<P>
+	Click <A HREF=javascript:history.back(1)>here</A> to return to the previous page.
+</BODY>
+</HTML>

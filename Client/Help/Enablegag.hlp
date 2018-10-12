@@ -1,0 +1,12 @@
+[1;33mEnableGag[0m
+[1;44m                                                                                [0m
+
+Format: [1m/enablegag [0m{[1;35mreference number[0m}
+Format: [1m/enablegag [0m{[1;35mmask[0m}
+
+EnableGag allows you to turn gags on that have been disabled with /disablegag.
+
+   þ {[1;35mreference numer[0m} The number of the gag to enable.
+   þ {[1;35mmask[0m} The mask text of the gag to enable.
+
+[1;44m                                                                                [0m

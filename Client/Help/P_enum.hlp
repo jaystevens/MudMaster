@@ -1,0 +1,14 @@
+[1;33m@Enum[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Enum(list name,item text)[0m
+Format: [1m@Enum(list number,item text)[0m
+
+Returns 1 based index of the item is found in the list otherwise 0 if not found.
+@Enum is identical to @EnumList.
+
+   þ list name - The name of the list you want to check.
+   þ list number - The number of the list you want to check.
+   þ item text - The item you want to search for in the list.
+
+[1;44m                                                                                [0m

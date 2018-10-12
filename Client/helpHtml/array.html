@@ -1,0 +1,49 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+<TITLE>
+	Mudmaster 2k6 Command Reference
+</TITLE>
+</head>
+<BODY>
+	<h3>Array</h3>
+	<HR>
+	<B>Format:</B>
+	<listing>
+	/array {array name} {rows} {group name}
+	/array {array name} {rows,columns} {group name}
+	</listing>
+	<B>Description:</B>
+	Array lets you create both single and two dimensional arrays. If you are not
+	familiar with arrays, you can think of them like a spreadsheet. A single
+	dimensional array would have only 1 column, and as many rows as you specify.
+	A two dimensional array would have both rows and columns. Each cell in the
+	array would be accessed by giving a row and a column number. In the case of
+	single dimensional array, only a row number is needed. Each cell can hold data
+	like a variable.
+	<P>
+	<B>Arguments:</B>
+	<UL>
+	<LI>{array name} The name of the array.</LI>
+	<LI>{rows} When creating a single dimensional array, the number of rows. The number must be between 1 and 100.</LI>
+	<LI>{rows,columns} For creating a two dimensional array. The numbers must be between 1 and 100.</LI>
+	<LI>{group name} This is optional, see the user guide for help with groups.</LI>
+	</UL>
+	<B>Examples:</B>
+	<listing>
+	/array {Targets} {3}
+	</listing>
+	This would create an array called Targets. The array can hold up to 3 items. 
+	<listing>
+	/array {Grid} {5,5} 
+	</listing>
+	This creats a two dimensional array, or a grid. The grid has 5 rows, with 5 columns in each row. 
+	<HR>
+	<B>Related Commands:</B>
+	<A HREF=assign.html>/assign</A>,
+	<A HREF=grouparray.html>/grouparray</A>,
+	<A HREF=sendarray.html>/sendarray</A>,
+	<A HREF=unarray.html>/unarray</A>
+	<P>
+	Click <A HREF=javascript:history.back(1)>here</A> to return to the previous page.
+</BODY>
+</HTML>

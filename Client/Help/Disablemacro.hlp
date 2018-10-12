@@ -1,0 +1,11 @@
+[1;33mDisableMacro[0m
+[1;44m                                                                                [0m
+
+Format: [1m/disablemacro [0m{[1;35mkey name[0m}
+
+Disables a macro key.
+
+   þ {[1;35mkey name[0m} The name of the key to disable. See the help on macros for a
+     list of key names.
+
+[1;44m                                                                                [0m

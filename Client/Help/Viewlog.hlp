@@ -1,0 +1,13 @@
+[1;33mViewlog[0m
+[1;44m                                                                                [0m
+
+Format: [1m/viewlog [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/viewlog [0m{[1;35mfilename.ext[0m}
+
+Reads a file created with /rawmudlogopen into the session scroll back buffer
+for viewing.
+
+   þ {[1;35mdrive:\filename.ext[0m} Path and filename of the log to view.
+   þ {[1;35mfilename.ext[0m} Path and filename of the log to view.
+
+[1;44m                                                                                [0m

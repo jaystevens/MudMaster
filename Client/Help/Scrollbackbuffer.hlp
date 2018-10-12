@@ -1,0 +1,14 @@
+[1;33mScrollback Buffer[0m
+[1;44m                                                                                [0m
+
+The scrollback buffer keeps track of the last 200 lines to come in from the
+mud. The lines are stored in the buffer with their color to make reading easier.
+The amount of lines stored can be changed in the Session Options.
+
+You activate the scrollback with [PAGE UP].  [ESC] exits the scrollback.
+
+Using the [CTRL-UP] and [CTRL-DOWN] arrow keys scrolls you through the backup
+buffer one line at a time. [PAGE UP] and [PAGE DOWN] are used for a screen at a
+time.
+
+[1;44m                                                                                [0m

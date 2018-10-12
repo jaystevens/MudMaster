@@ -1,0 +1,8 @@
+[1;33m@ForeWhite[0m
+[1;44m                                                                                [0m
+
+Format: [1m@ForeWhite()[0m
+
+A string containing the ANSI codes to set the forecolor to white.
+
+[1;44m                                                                                [0m

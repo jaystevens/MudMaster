@@ -1,0 +1,18 @@
+[1;33mEditSubstitute[0m
+[1;44m                                                                                [0m
+
+Format: [1m/editsubstitute [0m{[1;35mreference number[0m}
+Format: [1m/editsubstitute [0m{[1;35mmask[0m}
+
+Places the substitution in the edit bar.
+
+   þ {[1;35mreference number[0m} The number of the substitute you want to edit.
+   þ {[1;35mmask[0m} The mask text of the substitute you want to edit.
+
+** NOTE: Substitutions are stored and looked up by the trigger text. If you
+edit a sub and you change the trigger portion of that sub when you press enter
+a new sub with that trigger will be created. This will not erase the sub that
+you had originally edited. If you wish to remove the original version you need
+to use /unsub.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,20 @@
+[1;33mChanges[0m
+[1;44m                                                                                [0m
+
+Format: [1m/changes[0m
+Format: [1m/changes [0m{[1;35mweb address[0m}
+
+Changes displays the latest changes file directly from the MudMaster 2k6
+website. It will only update this file once the first time you use this command
+unless you restart MudMaster 2k6. If you put a web address as the argument, then
+it will retrieve the specified file instead.
+
+   þ {[1;35mweb address[0m} The website to get the text from.
+
+Example:
+
+/changes [0m{[1;35mhttp://MM2k6.sourceforge.net/changes.txt[0m}
+This would print out this .txt file on your screen. This is also the current
+default.
+
+[1;44m                                                                                [0m

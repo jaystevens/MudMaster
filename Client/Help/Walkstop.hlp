@@ -1,0 +1,9 @@
+[1;33mWalkStop[0m
+[1;44m                                                                                [0m
+
+Format: [1m/walkstop[0m
+
+This tells the client to STOP executing any current SPEEDWALK or waiting
+speedwalks.
+
+[1;44m                                                                                [0m

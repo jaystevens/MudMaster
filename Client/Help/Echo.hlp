@@ -1,0 +1,9 @@
+[1;33mEcho[0m
+[1;44m                                                                                [0m
+
+Format: [1m/echo[0m
+
+When toggled on, each time you press enter you will see what you just typed echo
+to the terminal screen.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,12 @@
+[1;33mUnEvent[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unevent [0m{[1;35mevent number[0m}
+Format: [1m/unevent [0m{[1;35mevent name[0m}
+
+This command removes an event from the eventlist.
+
+   þ {[1;35mreference number[0m} The number of the event you want to remove.
+   þ {[1;35mevent name[0m} The name of the event you want to remove.
+
+[1;44m                                                                                [0m

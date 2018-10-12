@@ -1,0 +1,12 @@
+[1;33mUnBarItem[0m
+[1;44m                                                                                [0m
+
+Format: [1m/unbaritem [0m{[1;35mreference number[0m}
+Format: [1m/unbaritem [0m{[1;35mitem name[0m}
+
+Remove a bar item from the list of items.
+
+   þ {[1;35mreference number[0m} The number of the bar item you want to remove.
+   þ {[1;35mitem name[0m} The name of the bar item you want to remove.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,29 @@
+[1;33mAlias[0m
+[1;44m                                                                                [0m
+
+Format: [1m/alias [0m{[1;35mshortcut[0m} {[1;35mcommands[0m} {[1;35mgroup name[0m}
+
+An alias lets you define some "shortcut" text to execute a command or commands.
+Your alias list is checked each time you press enter to send some text to the
+mud. If the text you typed is found in your alias list the text from the
+commands side of the alias is sent instead.  An alias is only replaced if it is
+the first text typed on a line.
+
+   þ {[1;35malias name[0m} This is the shortcut text you want to be able to type to
+     execute commands.
+   þ {[1;35mcommands[0m} The commands to execute when the alias name is typed.
+   þ {[1;35mgroup name[0m} This is an optional parameter. See the user guide on groups
+     for help.
+
+Examples:
+
+/alias [0m{[1;35meat[0m} {[1;35mtake food bag[1;32m;[1;35mgobble food[0m}
+If you typed "eat" on the input line the commands "take food bag" and "gobble
+food" would be sent to the mud instead.
+
+/alias [0m{[1;35mtarg %0[0m} {[1;35m/var Target $0[0m}
+You can also use the variable %0 to represent the text typed after the alias
+shortcut. In this case the alias is used to quickly set a targeting variable.
+Typing "targ Vecna" would set a variable called "Target" to "Vecna"
+
+[1;44m                                                                                [0m

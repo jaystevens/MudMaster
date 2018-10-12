@@ -1,0 +1,12 @@
+[1;33mChatGroupRemove[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatgroupremove [0m{[1;35mreference number[0m}
+Format: [1m/chatgroupremove [0m{[1;35mchat name[0m}
+
+Removes the group name from a chat connection.
+
+   þ {[1;35mreference number[0m} The number of the chat connection you want to change.
+   þ {[1;35mchat name[0m} The name of the chat connection you want to change.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,14 @@
+[1;33m[1;33mWriteGroup[0m
+[1;44m                                                                                [0m
+
+Format: [1m/writegroup [0m{[1;35mdrive:\filename.ext[0m} {[1;35mgroup[0m}
+Format: [1m/writegroup [0m{[1;35mfilename.ext[0m} {[1;35mgroup[0m}
+
+Writes all your commands, aliases, actions etc... belonging to a certain group
+to a command file.
+
+   þ {[1;35mdrive:\filename.ext[0m} Path and filename of the file to write.
+   þ {[1;35mfilename.ext[0m} Filename of the file to write.
+   þ {[1;35mgroup[0m} The name of the command group to write.
+
+[1;44m                                                                                [0m

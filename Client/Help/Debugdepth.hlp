@@ -1,0 +1,11 @@
+[1;33mDebugDepth[0m
+[1;44m                                                                                [0m
+
+Format: [1m/debugdepth [0m{[1;35msteps[0m}
+
+The number of steps to print out when you hit an error. Set it to 0 if you don't
+want to see the debug info.  Defaults to 10.
+
+   þ {[1;35msteps[0m} Amount of steps to print out.
+
+[1;44m                                                                                [0m

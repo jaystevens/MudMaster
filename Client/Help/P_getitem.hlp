@@ -1,0 +1,19 @@
+[1;33m@GetItem[0m
+[1;44m                                                                                [0m
+
+Format: [1m@GetItem(list name,number)[0m
+Format: [1m@GetItem(list number,number)[0m
+
+GetItem retrieves an item from a list by number.
+
+   þ list name - The name of the list from which you want to get an item
+   þ list number - The number of the list from which you want to get an item.
+   þ number - The number of the item you want to get.
+
+Example:
+
+@GetItem(Friends,1)
+Assuming you had a list called friends, this would give you the first item in
+that list.
+
+[1;44m                                                                                [0m

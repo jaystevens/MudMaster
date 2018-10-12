@@ -1,0 +1,26 @@
+[1;33mEditCurrentSession[0m
+[1;44m                                                                                [0m
+
+Format: [1m/editcurrentsession [0m{[1;35mdrive:\filename.ext[0m}
+Format: [1m/editcurrentsession [0m{[1;35mfilename.ext[0m}
+Format: [1m/editcurrentsession[0m
+
+With no argument the current session default script file is opened in a text
+editor. With a filename that file is opened in a text editor. You can designate
+which text editor by adding "Default Editor=drive:\filename.ext" into the
+"Defaults" section of the MudMaster2k6.ini file. Without this, the script will
+open in notepad.
+
+   þ {[1;35mdrive:\filename.ext[0m} The location and filename of the script file.
+   þ {[1;35mfilename.ext[0m} The filename of the script file. This will look in the
+     program folder.
+
+Examples:
+
+/editcurrentsession
+This opens the current default start up script in a text editor.
+
+Default Editor=C:\Windows\system32\notepad.exe
+This sets notepad as the text editor.
+
+[1;44m                                                                                [0m

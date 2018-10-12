@@ -1,0 +1,10 @@
+[1;33mChatFore[0m
+[1;44m                                                                                [0m
+
+Format: [1m/chatfore [0m{[1;35mcolor[0m}
+
+Changes the foreground color of the chat text.
+
+   þ {[1;35mcolor[0m} Is a number between 0 and 15.
+
+[1;44m                                                                                [0m

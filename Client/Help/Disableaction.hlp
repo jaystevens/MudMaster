@@ -1,0 +1,12 @@
+[1;33mDisableAction[0m
+[1;44m                                                                                [0m
+
+Format: [1m/disableaction [0m{[1;35mreference number[0m}
+Format: [1m/disableaction [0m{[1;35mtext pattern[0m}
+
+Disables an action.
+
+   þ {[1;35mreference number[0m} The number of the action to disable.
+   þ {[1;35mtext pattern[0m} The trigger text of the action to disable.
+
+[1;44m                                                                                [0m

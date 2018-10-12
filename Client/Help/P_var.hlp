@@ -1,0 +1,39 @@
+[1;33m@Var[0m
+[1;44m                                                                                [0m
+
+Format: [1m@Var(text)[0m
+
+Var returns the value of a variable named by the parameter text. This
+procedure allows you to construct a variable name as a paramter then look up
+the value of that variable. This is probably best explained by example.
+
+Let's say you have a user defined list. In this list you have a bunch of
+names. Each of these names represents a variable that you have defined. We
+have the names: Rand and Egwene in the list. And we also have variables that
+are called Rand and Egwene.
+
+This list would look like this:
+
+   # Items in list Names(2):
+   001: Egwene
+   002: Rand
+
+And we have two variables defined:
+
+   # Defined Variables:
+   001: [0m{[1;35mEgwene[0m} {[1;35m100[0m}
+   002: [0m{[1;35mRand[0m} {[1;35m250[0m}
+
+Now lets say we want to see the value of a variable using the list procedures.
+If we just use the normal list procedures we are only going to get the text
+names from the list. @Var provides a way to take that text name and look it up
+as if it were a variable.
+
+   @GetItem(Names,1) would get use the first name in the list: "Egwene"
+
+   @Var(@GetItem(Names,1)) would first get the text "Egwene" from the list
+   then the text would be used by the @Var procedure to look up "Egwene" as if
+   it were a variable name; which it is. @Var would then return the value of
+   the variable; which is 100.
+
+[1;44m                                                                                [0m

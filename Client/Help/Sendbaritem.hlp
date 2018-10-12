@@ -1,0 +1,16 @@
+[1;33mSendBarItem[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sendbaritem [0m{[1;35mchat name[0m} {[1;35mreference number[0m}
+Format: [1m/sendbaritem [0m{[1;35mchat name[0m} {[1;35mitem name[0m}
+Format: [1m/sendbaritem [0m{[1;35mchat reference number[0m} {[1;35mreference number[0m}
+Format: [1m/sendbaritem [0m{[1;35mchat reference number[0m} {[1;35mitem name[0m}
+
+SendBarItem sends one of your bar items to another chat user.
+
+   þ {[1;35mchat name[0m} The chat name of the person you want to send to.
+   þ {[1;35mchat reference number[0m} The number of the person you want to send to.
+   þ {[1;35mreference number[0m} The number of the bar item you want to send.
+   þ {[1;35mitem name[0m} The name of the item you want to send.
+
+[1;44m                                                                                [0m

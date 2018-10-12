@@ -1,0 +1,8 @@
+[1;33mExists[0m
+[1;44m                                                                                [0m
+
+Format: [1m@IsNumber(text)[0m
+
+Returns 1 if the text passed in is all numbers. Otherwise it returns 0.
+
+[1;44m                                                                                [0m

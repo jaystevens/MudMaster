@@ -1,0 +1,15 @@
+[1;33mDir[0m
+[1;44m                                                                                [0m
+
+Format: [1m/dir [0m{[1;35mfile mask[0m} {[1;35mresult list[0m}
+
+Dir fills a list with all the files matching the file mask.
+
+   þ {[1;35mfile mask[0m} Path and wildcard characters of files to find.
+   þ {[1;35mresult list[0m} The name of a list to fill with the results. If the list
+     doesn't already exist it will be created.
+
+/dir [0m{[1;35mC:\MudMaster 2k6\*.*[0m} {[1;35mDirList[0m}
+Fills a list named DirList with all the files in the Mud Master directory.
+
+[1;44m                                                                                [0m

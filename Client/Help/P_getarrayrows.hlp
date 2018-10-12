@@ -1,0 +1,12 @@
+[1;33m@GetArrayRows[0m
+[1;44m                                                                                [0m
+
+Format: [1m@GetArrayRows(array name)[0m
+Format: [1m@GetArrayRows(array number)[0m
+
+GetArrayRows returns the max number of rows dimensioned in an array.
+
+   þ array name - The name of the array which you want the row dimension.
+   þ array number - The number of the array which you want the row dimension.
+
+[1;44m                                                                                [0m

@@ -1,0 +1,21 @@
+[1;33mBackground[0m
+[1;44m                                                                                [0m
+
+Format: [1m/background [0m{[1;35mdrive:\filename.ext[0m} {[1;35mpattern[0m}
+Format: [1m/background [0m{[1;35mfilename.ext[0m} {[1;35mpattern[0m}
+
+Changes the background display to the picture specified. There are 3 pattern
+types available: Stretch, Tile, Center
+
+   þ {[1;35mdrive:\filename.ext[0m} The location and filename for the background
+     picture.
+   þ {[1;35mfilename.ext[0m} The filename for the background picture located in the
+     program folder.
+   þ {[1;35mpattern[0m} The type of pattern you want the picture aligned for. Options
+     are Tile, Center, and Stretch
+
+Example:
+
+/background [0m{[1;35mC:\MudMaster 2k6\example.jpg[0m} {[1;35mcenter[0m}
+
+[1;44m                                                                                [0m

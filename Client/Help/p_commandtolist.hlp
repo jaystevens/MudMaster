@@ -1,0 +1,24 @@
+[1;33m@CommandToList[0m
+[1;44m                                                                                [0m
+
+Format: [1m@CommandToList(List Name,Commands)[0m
+Format: [1m@CommandToList(List Number,Commands)[0m
+
+CommandToList lets you send a specific command for each of the items in the
+list. For each item in the list as the command is processed the system 
+variable $ListItem is filled in with the current item.
+
+   þ List Name - Name of the list to use. 
+   þ List Number - Number of the list to use. 
+   þ Command - Commands to execute for each item in the list. 
+
+Examples:
+
+@CommandToList(Friends,tell $ListItem Hi) 
+Assuming your list had the names Rand and Egwene in it the following text
+would be sent: "tell Rand Hi" and "tell Egwene Hi" 
+
+@CommandToList(Stuff,$ListItem) 
+The above would simply process each of the items in the list. 
+
+[1;44m                                                                                [0m

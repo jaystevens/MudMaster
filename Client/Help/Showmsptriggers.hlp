@@ -1,0 +1,11 @@
+[1;33mShowMSPTriggers[0m
+[1;44m                                                                                [0m
+
+Format: [1m/showmsptriggers [0m{[1;35mon/off[0m}
+
+This will set MudMaster 2k6 to show or not show MSP Triggers.
+This is useful in debugging MSP to find out what files are missing.
+
+   þ {[1;35mon/off[0m} Sets the option on or off.
+
+[1;44m                                                                                [0m

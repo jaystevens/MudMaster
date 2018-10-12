@@ -1,0 +1,18 @@
+[1;33mSendFile[0m
+[1;44m                                                                                [0m
+
+Format: [1m/sendfile [0m{[1;35mchat name[0m} {[1;35mfilename.ext[0m}
+Format: [1m/sendfile [0m{[1;35mchat reference number[0m} {[1;35mfilename.ext[0m}
+
+SendFile send a file to another chat user. The other user has to have transfers
+enabled for you first. When a file transfer is in progress the color of the chat
+name of the other person is changed (/chat). If the name is green, you are
+sending a file to that chat connection. If it is blue, you are receiving a file.
+The file transfer is designed to not lag your mudding--which means that file
+transfers aren't as fast as ftp.
+
+   þ {[1;35mchat name[0m} The chat name of the person you want to send to.
+   þ {[1;35mchat reference number[0m} The number of the person you want to send to.
+   þ {[1;35mfilename.ext[0m} The name of the file you want to send.
+
+[1;44m                                                                                [0m

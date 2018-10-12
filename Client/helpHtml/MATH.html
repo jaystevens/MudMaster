@@ -1,0 +1,56 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head><link rel="stylesheet" type="text/css" href="mm2k6.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; I) [Netscape]">
+   <title>	Mudmaster 2k6 Command Reference
+</title>
+</head>
+<body>
+
+<h3>
+<b>Math</b></h3>
+
+<hr>
+<br><b>Format: /math {variable for result} {math expression}</b><b></b>
+<p><b>The math command lets you perform mathematical equations and place
+the result</b>
+<br><b>in a variable. Math does integer math only (no floating point).</b><b></b>
+<p><b><li> {variable for result} The name of the variable
+to place the result in. If</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp; the variable doesn't exist it will be created.</b>
+<br><b><li> {math expression} Mathematical expression to
+be evaluated.</b><b></b>
+<p><b>Operator&nbsp; Description</b>
+<br><b>--------&nbsp; -----------</b>
+<br><b>()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Precedence</b>
+<br><b>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Multiplication</b>
+<br><b>/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Division</b>
+<br><b>%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Modulus</b>
+<br><b>+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Addition</b>
+<br><b>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Subtraction</b><b></b>
+<p><b>Anything enclosed in the parens will be evaulated first. Then all
+the</b>
+<br><b>multiplication, division and modulus operators are evaulated left
+to right.</b>
+<br><b>Then addition and subtraction are evaluated left to right.</b><b></b>
+<p><b>/math {result} {3 + 5 * 4}</b>
+<br><b>Would place the number 23 in a variable called "result."</b><b></b>
+<p><b>/math {result} {(3 + 5) * 4}</b>
+<br><b>Would place the number 32 in a variable called "result."</b><b></b>
+<p><b>/math {result} {$Result + 1}</b>
+<br><b>Adds 1 to variable "result."</b><b></b>
+<p><b>/math {result} {5 % 3}</b>
+<br><b>The modulus operator returns the remainder of a division as an integer.
+This</b>
+<br><b>would place the number 2 in the variable "result." 5 divided by
+3 leaves a</b>
+<br><b>remainder of 2.</b>
+<p>
+<hr>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Related Commands:</b>
+<br>&nbsp;
+<p>Click <a href="javascript:history.back(1)">here</a> to return to previous
+page.
+</body>
+</html>
